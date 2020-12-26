@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const AboutStyled = styled.div`
+export const IntroStyled = styled.div`
 	display: flex;
 	font-size: 3em;
 	flex-direction: column;
@@ -10,13 +10,13 @@ export const AboutStyled = styled.div`
 	word-break: break-word;
 	margin: 1em 0;
 
-	.about-title {
+	.intro-title {
 		font-size: 0.5em;
 		margin-bottom: 3em;
 		text-transform: uppercase;
 	}
 
-	.about-info {
+	.intro-info {
 		line-height: 1.5em;
 		text-align: left;
 		word-spacing: 0px;
@@ -25,7 +25,7 @@ export const AboutStyled = styled.div`
 		margin: 0 2em 0 0;
 	}
 
-	.about-scroll{
+	.intro-scroll{
 		font-size: 0.5em;
 		margin-top: 3em;
 	}

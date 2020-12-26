@@ -2,33 +2,33 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 
 //styles ==> 
-import { AboutStyled } from '../styles/styled_about';
+import { IntroStyled } from '../styles/styled_about';
 
 //strings ==>
 import strings from './strings'
 
-const AboutMe = () => {
+const Intro = () => {
 	const language = useSelector(state => state.language);
 
 	return (
-		<AboutStyled>
-			<div className='about-title'>
+		<IntroStyled>
+			<div className='intro-title'>
 				<p>
 					<span> {strings[language].title}</span>
 				</p>
 			</div>
-			<div className='about-info'>
+			<div className='intro-info'>
 				<p>
 					<span> {strings[language].info}</span>
 				</p>
 			</div>
-			<div className='about-scroll'>
+			<div className='intro-scroll'>
 				<p>
 					<span> {strings[language].scroll}</span>
 				</p>
 			</div>
-		</AboutStyled>
+		</IntroStyled>
 	)
 }
 
-export default AboutMe
+export default Intro
