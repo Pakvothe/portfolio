@@ -2,9 +2,11 @@
 	--clr-primary: #00BCD4;
 	--clr-primary-dark: #0097A7;
 	--clr-primary-light:#B2EBF2;
-	--clr-icon-text: #FFFFFF;
+	--clr-dark:#171c28;
+	--clr-light: #FFFFFF;
 	--clr-secondary: #009688;
 	--clr-primary-text: #212121;
+	--clr-dark-text: #FFFFFF;
 	--clr-secondary-text: #757575;
 	--clr-divider: #BDBDBD;
 	--clr-warning: #F6DB2D;
@@ -39,9 +41,15 @@ body {
 }
 
 .main-container {
-	width: 80%;
+	width: 95%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 2em 0 3em;
+	padding: 1em 0 2em;
 	position: relative;
+}
+
+.wrapper {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
 }

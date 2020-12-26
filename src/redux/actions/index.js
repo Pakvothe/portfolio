@@ -1,4 +1,4 @@
-import { CHANGE_LANGUAGE, TOOGLE_THEME } from '../constants';
+import { CHANGE_LANGUAGE, TOGGLE_THEME } from '../constants';
 
 //Global actions =>
 export const changeLanguage = (payload) => {
