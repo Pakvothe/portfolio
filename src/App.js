@@ -19,7 +19,9 @@ function App() {
 			<Normalize />
 			<GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme} />
 			<Switch>
-				<Route path='/' component={HomePage} />
+				<main className='main-container'>
+					<Route path='/' component={HomePage} />
+				</main>
 			</Switch>
 		</>
 	);

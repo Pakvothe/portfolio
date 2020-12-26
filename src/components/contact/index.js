@@ -38,7 +38,7 @@ const Contact = ({ lang }) => {
 		const data = JSON.stringify(message);
 		const config = {
 			headers: {
-				"Content-Type": "application/x-www-form-urlencoded",
+				'Content-Type': 'application/x-www-form-urlencoded',
 			}
 		}
 		setMessage({
@@ -92,53 +92,53 @@ const Contact = ({ lang }) => {
 							onSubmit={handleSubmit}
 						>
 							<input
-								type="text"
+								type='text'
 								className={style.name}
 								onChange={handleChange}
-								name="name"
+								name='name'
 								value={message.name}
-								placeholder={lang === 'EN' ? "Your name" : "Tu nombre"}
-								id="name" />
+								placeholder={lang === 'EN' ? 'Your name' : 'Tu nombre'}
+								id='name' />
 							<input
-								type="text"
+								type='text'
 								className={style.name}
-								name="email"
+								name='email'
 								onChange={handleChange}
 								value={message.email}
-								placeholder={lang === 'EN' ? "Your email address" : "Tu email"}
-								id="email" />
+								placeholder={lang === 'EN' ? 'Your email address' : 'Tu email'}
+								id='email' />
 							<textarea
 								className={style.text}
-								name="message"
+								name='message'
 								onChange={handleChange}
 								value={message.message}
-								placeholder={lang === 'EN' ? "Your message" : "Tu mensaje"}
-								id="message" />
+								placeholder={lang === 'EN' ? 'Your message' : 'Tu mensaje'}
+								id='message' />
 							<div className={style.btnContainer}>
 								{
 									confirm === 'loading' &&
 									<div className={style.confirm}>
-										{lang === 'EN' ? "Sending..." : "Enviando..."}
+										{lang === 'EN' ? 'Sending...' : 'Enviando...'}
 									</div>
 								}
 								{
 									confirm === true &&
 									<div className={style.confirm}>
-										{lang === 'EN' ? "Thanks!" : "Gracias!"}
+										{lang === 'EN' ? 'Thanks!' : 'Gracias!'}
 									</div>
 								}
 								{
 									confirm === false &&
 									<div className={style.confirm}>
-										{lang === 'EN' ? "Something go wrong" : "Algo salió mal :("}
+										{lang === 'EN' ? 'Something go wrong' : 'Algo salió mal :('}
 									</div>
 								}
 								<button
-									type="submit"
+									type='submit'
 									className={style.submit}
 									onClick='submit()'
 								>
-									{lang === 'EN' ? "Submit" : "Enviar"}
+									{lang === 'EN' ? 'Submit' : 'Enviar'}
 								</button>
 							</div>
 						</form>
