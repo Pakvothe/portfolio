@@ -1,3 +1,17 @@
+:root {
+	--clr-primary: #00BCD4;
+	--clr-primary-dark: #0097A7;
+	--clr-primary-light:#B2EBF2;
+	--clr-icon-text: #FFFFFF;
+	--clr-secondary: #009688;
+	--clr-primary-text: #212121;
+	--clr-secondary-text: #757575;
+	--clr-divider: #BDBDBD;
+	--clr-warning: #F6DB2D;
+	--clr-error: #D53051;
+	--clr-success: #97DA3F;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
