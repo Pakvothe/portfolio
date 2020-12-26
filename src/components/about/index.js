@@ -19,12 +19,12 @@ const AboutMe = () => {
 			</div>
 			<div className='about-info'>
 				<p>
-					<span> Aca va todo el aboutme loremloremlashdkjkadshflsjdkfhlakdjsfhlaskdjfhadslkjfsadjklhfasdjklfhasdlkjfhadslkjfhadskljfhadff </span>
+					<span> {strings[language].info}</span>
 				</p>
 			</div>
 			<div className='about-scroll'>
 				<p>
-					<span> scroll to see work </span>
+					<span> {strings[language].scroll}</span>
 				</p>
 			</div>
 		</AboutStyled>

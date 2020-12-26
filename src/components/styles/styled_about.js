@@ -12,6 +12,7 @@ export const AboutStyled = styled.div`
 	.about-title {
 		font-size: 0.5em;
 		margin-bottom: 3em;
+		text-transform: uppercase;
 	}
 
 	.about-info {
