@@ -80,7 +80,10 @@ export const Dropdown = styled.li`
 		top: 100%;
 		transform: translateX(-50%);
 		padding-top: 1em;
-		font-size: 0.9em;
+		font-size: 1em;
+		color: var(--clr-primary-dark);
+		background-color: var(--clr-light);
+		box-shadow: 0 0 10px black;
 		border-radius: .4em;
 		z-index: 10;
 
@@ -93,6 +96,7 @@ export const Dropdown = styled.li`
 			left: 50%;
 			transform: translateX(-50%);
 			border: 10px solid transparent;
+			border-bottom-color: var(--clr-light);
 		}
 
 		& li {
@@ -112,10 +116,29 @@ export const Dropdown = styled.li`
 			padding: 1em 2em;
 			text-decoration: none;
 			color: currentColor;
+			cursor: pointer;
+
+			&:hover {
+				background-color: var(--clr-primary-2);
+				color: var(--clr-white)
+			}
+		}
+
+		.dropdown__first-name {
+			color: var(--clr-primary);
+			font-size: 1.3em;
+			font-family: Poppins, Raleway, sans-serif;
+			font-weight: 900;
+			border-bottom: 1px solid #CCC;
+			padding-bottom: .5em;
+			margin-bottom: .5em !important;
+			text-align: center;
 		}
 	}
 
 `
 
 export const StyledSVG = styled(SVG)`
+	height: 2.1em;
+	cursor: pointer;
 `

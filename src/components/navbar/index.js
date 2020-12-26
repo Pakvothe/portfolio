@@ -30,14 +30,12 @@ const Navbar = () => {
 	return (
 		<NavbarStyled>
 			<div className='wrapper navbar__top'>
-				<div>
-					<h1>FullStack Developer</h1>
-				</div>
+				<div />
 				<ul className='navbar__options'>
 					<Dropdown>
 						<StyledSVG src={languageIcon} />
 						<span>{strings[language].language}</span>
-						<ul className='dropdown__theme' onClick={(e) => handleLang(e)}>
+						<ul onClick={(e) => handleLang(e)}>
 							<li>
 								<a id="en" className={language === 'en' ? 'selected' : null}>
 									{strings[language].language_en}

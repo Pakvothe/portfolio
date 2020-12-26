@@ -5,13 +5,11 @@ export const GlobalStyle = createGlobalStyle`
 	body {
 		background-color: ${({ theme }) => theme.body};
 		color:  ${({ theme }) => theme.text};	
-	}
 
-	.dropdown_theme {
-		box-shadow: 0 0 10px ${({ theme }) => theme.dropdown_sh};
-
-		li{
-			color:red;
+		.dropdown_theme {
+			color: ${({ theme }) => theme.text};
 		}
+		
 	}
+
 `
