@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 
 //styles ==>
+import Normalize from 'react-normalize';
 import './App.css';
 import { GlobalStyle } from './components/styles/GlobalStyle';
 import { lightTheme, darkTheme } from './components/styles/themes';
@@ -15,6 +16,7 @@ function App() {
 
 	return (
 		<>
+			<Normalize />
 			<GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme} />
 			<Switch>
 				<Route path='/' component={HomePage} />
