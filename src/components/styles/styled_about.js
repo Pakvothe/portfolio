@@ -8,6 +8,7 @@ export const AboutStyled = styled.div`
 	overflow-x: hidden;
 	overflow-y: auto;
 	word-break: break-word;
+	margin: 1em 0;
 
 	.about-title {
 		font-size: 0.5em;
