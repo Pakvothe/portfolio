@@ -22,6 +22,7 @@ export const NavbarStyled = styled.nav`
 				position: relative;
 			}
 
+
 			& > li + li { margin-left: 3em; }
 
 			li, li > button {
@@ -114,19 +115,18 @@ export const Dropdown = styled.li`
 			text-align: center;
 			display: block;
 			width: 100%;
-			padding: 0.5em;
-			margin: 0.3em;
+			padding: 1em 2em;
 			text-decoration: none;
 			cursor: pointer;
 			font-weight: 600;
 
-			&:last-child{
-				margin-bottom: 1em;
-			}
-
 			&:hover {
 				background-color: var(--clr-primary-2);
 				color: var(--clr-primary);
+			}
+
+			&:last-child {
+				margin-bottom: 1em;
 			}
 		}
 	}
@@ -134,6 +134,10 @@ export const Dropdown = styled.li`
 `
 
 export const StyledSVG = styled(SVG)`
-	height: 2.1em;
+	height: 2em;
 	cursor: pointer;
+
+	@media (max-width: 480px){
+		height: 1.5em;
+	}
 `
