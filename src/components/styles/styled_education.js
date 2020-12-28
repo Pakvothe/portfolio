@@ -42,6 +42,7 @@ export const Ed = styled.div`
 					color: var(--clr-primary-dark);
 					margin: 0.5em 0;
 					font-weight: 600;
+					line-height: 1.3em;
 				}
 			}
 		}
@@ -102,6 +103,7 @@ export const Skills = styled.div`
 				color: var(--clr-primary-dark);
 				margin: 0.5em 0;
 				font-weight: 600;
+				line-height: 1.3em;
 			}
 		}
 	}
