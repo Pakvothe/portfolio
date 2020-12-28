@@ -1,9 +1,16 @@
 import React from 'react'
 
+//components ==> 
+import Intro from '../intro';
+import Background from '../background';
+import Education from '../education';
+
 const HomePage = () => {
 	return (
 		<div>
-			<h1>portfolio</h1>
+			<Intro />
+			<Background />
+			<Education />
 		</div>
 	)
 }

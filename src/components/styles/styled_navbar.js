@@ -22,6 +22,7 @@ export const NavbarStyled = styled.nav`
 				position: relative;
 			}
 
+
 			& > li + li { margin-left: 3em; }
 
 			li, li > button {
@@ -110,35 +111,33 @@ export const Dropdown = styled.li`
 
 
 		a {
+			color: var(--clr-primary-dark);
 			text-align: center;
 			display: block;
 			width: 100%;
 			padding: 1em 2em;
 			text-decoration: none;
-			color: currentColor;
 			cursor: pointer;
+			font-weight: 600;
 
 			&:hover {
 				background-color: var(--clr-primary-2);
-				color: var(--clr-white)
+				color: var(--clr-primary);
 			}
-		}
 
-		.dropdown__first-name {
-			color: var(--clr-primary);
-			font-size: 1.3em;
-			font-family: Poppins, Raleway, sans-serif;
-			font-weight: 900;
-			border-bottom: 1px solid #CCC;
-			padding-bottom: .5em;
-			margin-bottom: .5em !important;
-			text-align: center;
+			&:last-child {
+				margin-bottom: 1em;
+			}
 		}
 	}
 
 `
 
 export const StyledSVG = styled(SVG)`
-	height: 2.1em;
+	height: 2em;
 	cursor: pointer;
+
+	@media (max-width: 480px){
+		height: 1.5em;
+	}
 `
