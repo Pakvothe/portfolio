@@ -9,7 +9,7 @@ export const IntroStyled = styled.div`
 	overflow-x: hidden;
 	overflow-y: auto;
 	word-break: break-word;
-	margin: 2em  0 3em 0;
+	margin: 2em  0 3.5em 0;
 
 	.intro-title {
 		font-size: 0.5em;
