@@ -22,6 +22,7 @@ const Navbar = () => {
 	const language = useSelector(state => state.language);
 	const theme = useSelector(state => state.theme);
 
+
 	const handleLang = (ev) => {
 		dispatch(changeLanguage(ev.target.id))
 	}

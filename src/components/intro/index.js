@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 
 //styles ==> 
-import { IntroStyled } from '../styles/styled_about';
+import { IntroStyled } from '../styles/styled_intro';
 import LightSpeed from 'react-reveal/LightSpeed';
 import Pulse from 'react-reveal/Pulse';
 
@@ -24,7 +24,7 @@ const Intro = () => {
 			<LightSpeed right>
 				<div className='intro-info'>
 					<p>
-						<span> {strings[language].info}</span>
+						<span> {strings[language].info} <span className='strong'>Franco Ortiz</span> {strings[language].info2} </span>
 					</p>
 				</div>
 			</LightSpeed>

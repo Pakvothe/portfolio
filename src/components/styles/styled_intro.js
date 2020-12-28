@@ -31,6 +31,10 @@ export const IntroStyled = styled.div`
 		margin-top: 3em;
 	}
 
+	.strong{
+		font-weight: 600;
+	}
+
 	@media (max-width: 480px){
 		.intro-title {
 			font-size: 0.3em;
