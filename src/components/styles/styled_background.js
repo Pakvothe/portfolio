@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 
 export const BackgroundStyled = styled.section`
-	margin: 12em auto;
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 1.1em;
+	margin-bottom: 6em;
 
 	.title{
 		text-transform: uppercase;
@@ -33,6 +33,7 @@ export const BackgroundStyled = styled.section`
 
 		.title{
 			align-self: flex-start;
+			margin-right: 2em;
 		}
 
 		.info {
