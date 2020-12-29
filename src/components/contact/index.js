@@ -74,6 +74,7 @@ const Contact = () => {
 				style={customStyles}
 				contentLabel={"Contact"}
 				portalClassName={"ReactModalPortal"}
+				ariaHideApp={false}
 			>
 				<Zoom cascade duration={700}>
 					<button className='button' onClick={closeModal}><StyledSVG src={close} /></button>
