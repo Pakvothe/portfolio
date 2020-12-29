@@ -6,6 +6,8 @@ const strings = {
 		subject: 'Subject',
 		message: 'Message',
 		send: 'Send Message',
+		succ: 'Mail sent successfully, I will reply soon! (:',
+		err: 'There was an error sending the mail :(, please try again or send manually to franqitto@gmail.com',
 	},
 	es: {
 		contact: 'Contacto',
@@ -14,6 +16,8 @@ const strings = {
 		subject: 'Asunto',
 		message: 'Mensaje',
 		send: 'Enviar Mensaje',
+		succ: 'Correo enviado exitosamente, contestaré en breve! (:',
+		err: 'Hubo un error al enviar el correo :(,  por favor intente nuevamente o envie manualmente a franqitto@gmail.com',
 	}
 };
 

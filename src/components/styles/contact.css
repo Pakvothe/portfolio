@@ -50,6 +50,8 @@
 .ReactModal__Body--open .flex-form-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 
@@ -127,11 +129,7 @@
 	margin-top: .3em;
 }
 
-@media (max-width: 480px) {
-	.ReactModal__Body--open .flex-form-container input {
-		width: 100%;
-	}
-}
+
 
 .ReactModal__Body--open .flex-form-container input, textarea:focus{
 	border-color: var(--clr-primary-dark);
@@ -167,11 +165,7 @@
 	transform: scale(0.9);
 }
 
-.ReactModal__Body--open .submit{
-	position: absolute;
-	bottom: 15px;
-	right: 15px;
-	width: 150px;
+.ReactModal__Body--open .flex-form-container .submit{
 	border-radius: 10px;
 	color: var(--clr-primary-dark);
 	font-size: 1em;
@@ -180,6 +174,7 @@
 	font-weight: 600;
 	background-color: transparent;
 	border: 2px solid var(--clr-primary-dark);
+	margin: 1em 0;
 }
 .ReactModal__Body--open .submit:hover{
 	color: var(--clr-primary);
@@ -193,27 +188,21 @@
 		display: block;
 	}
 }
+
 @media (max-width: 480px) {
+	.ReactModal__Body--open .flex-form-container input {
+		width: 100%;
+	}
+	
 	.ReactModal__Body--open .flex-form-container {
 		width: 100%; 
 		justify-content: center;
 	}
-}
-@media (max-width: 480px) {
 	.ReactModal__Body--open .flex-form-container label {
 		width: 70vw; 
 		justify-content: center;
 	}
-}
-@media (max-width: 480px) {
 	.ReactModal__Body--open .contact__info {
 		width: 300px; 
-	}
-}
-
-@media (max-width: 480px) {
-	.ReactModal__Body--open .submit{
-		position: static;
-		margin: 2em 25%;
 	}
 }

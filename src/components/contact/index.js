@@ -34,7 +34,6 @@ const Contact = () => {
 			bottom: 'auto',
 			marginRight: '-50%',
 			transform: 'translate(-50%, -50%)',
-			height: '80%',
 			border: '2px solid #0097A7',
 			borderRadius: '10px',
 			boxShadow: '0 0 10px #00BCD4',
@@ -58,8 +57,10 @@ const Contact = () => {
 		emailjs.sendForm('service_d5iwd6i', 'template_901qvbv', e.target, 'user_LuoBSYK4fAOLTQsEkyDB1')
 			.then((result) => {
 				console.log(result.text);
+				alert(strings[language].succ)
 			}, (error) => {
 				console.log(error.text);
+				alert(strings[language].err)
 			});
 
 		e.target.reset();
@@ -131,8 +132,8 @@ const Contact = () => {
 									required
 								/>
 							</label>
+							<input className='submit' type="submit" value={strings[language].send} />
 						</div>
-						<input className='submit' type="submit" value={strings[language].send} />
 					</form>
 				</Zoom>
 			</Modal>
