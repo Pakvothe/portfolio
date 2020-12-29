@@ -77,7 +77,7 @@ const Contact = () => {
 			>
 				<Zoom cascade duration={700}>
 					<button className='button' onClick={closeModal}><StyledSVG src={close} /></button>
-					<form onSubmit={sendEmail, closeModal}>
+					<form onSubmit={sendEmail}>
 						<div className='flex-form-container'>
 							<h1 style={{ color: theme === 'dark' ? 'white' : 'black' }}>{strings[language].contact}</h1>
 							<label>

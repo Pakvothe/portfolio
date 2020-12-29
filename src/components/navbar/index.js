@@ -47,11 +47,11 @@ const Navbar = () => {
 						<ul onClick={(e) => handleLang(e)}>
 							<HeadShake>
 								<li>
-									<a id="en" className={language === 'en' ? 'selected' : null}>
+									<a id="en" href="/#" className={language === 'en' ? 'selected' : null}>
 										{strings[language].language_en}
 									</a> </li>
 								<li>
-									<a id="es" className={language === 'es' ? 'selected' : null}>
+									<a id="es" href="/#" className={language === 'es' ? 'selected' : null}>
 										{strings[language].language_es}
 									</a>
 								</li>
