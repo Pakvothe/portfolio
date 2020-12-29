@@ -4,10 +4,11 @@ import React, { useRef } from 'react';
 import Intro from '../intro';
 import Background from '../background';
 import Education from '../education';
+import Contact from '../contact';
 
 //styles ==>
 import arrowUp from '../../assets/img/arrow-up.svg';
-import { StyledSVG, ScrollButton } from '../styles/GlobalStyle';
+import { StyledSVG, ScrollButton, GlobalStyle } from '../styles/GlobalStyle';
 
 const HomePage = () => {
 	const scrollButton = useRef();
@@ -36,6 +37,7 @@ const HomePage = () => {
 			<Intro />
 			<Background />
 			<Education />
+			<Contact />
 			<ScrollButton ref={scrollButton} onClick={scrollToTop}>
 				<StyledSVG src={arrowUp} />
 			</ScrollButton>

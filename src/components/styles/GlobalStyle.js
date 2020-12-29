@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
 		.dropdown_theme {
 			color: ${({ theme }) => theme.text};
 		}
+
+		.modal {
+			background: ${({ theme }) => theme.body};
+		}
 		
 	}
 

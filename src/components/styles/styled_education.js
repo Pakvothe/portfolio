@@ -74,7 +74,7 @@ export const Skills = styled.div`
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
-		margin: 0.7em;
+		margin: 0.;
 	}
 	.info{
 		margin-top: 2em;
@@ -87,7 +87,7 @@ export const Skills = styled.div`
 		.skill {
 			margin: 0.7em;
 			display: flex;
-			list-style-type: none;
+			//list-style-type: none;
 			flex-wrap: wrap;
 			
 			.skillDiv{
@@ -101,7 +101,7 @@ export const Skills = styled.div`
 				font-size: 1em;
 				text-align: left;
 				color: var(--clr-primary-dark);
-				margin: 0.5em 0;
+				margin: 0.5em -1em;
 				font-weight: 600;
 				line-height: 1.3em;
 			}
