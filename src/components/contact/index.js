@@ -14,6 +14,7 @@ import close from '../../assets/img/close-transparent-gray.svg';
 import Zoom from 'react-reveal/Zoom';
 
 const Contact = () => {
+	const { REACT_APP_SERVICE, REACT_APP_TEMPLATE, REACT_APP_USER } = process.env;
 	const dispatch = useDispatch();
 	const theme = useSelector(state => state.theme);
 	const language = useSelector(state => state.language);
@@ -54,7 +55,7 @@ const Contact = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-		emailjs.sendForm('service_d5iwd6i', 'template_901qvbv', e.target, 'user_LuoBSYK4fAOLTQsEkyDB1')
+		emailjs.sendForm(REACT_APP_SERVICE, REACT_APP_TEMPLATE, e.target, REACT_APP_USER)
 			.then((result) => {
 				console.log(result.text);
 				alert(strings[language].succ)

@@ -25,6 +25,16 @@ export const BackgroundStyled = styled.section`
 		p{
 			margin: 0.7em;
 		}
+
+		.resume {
+			cursor: pointer;
+			font-size: 1.2em;
+			font-weight: 600;
+
+			&:hover{
+				color: var(--clr-primary);
+			}
+		}
 	}
 
 	@media (max-width: 480px){

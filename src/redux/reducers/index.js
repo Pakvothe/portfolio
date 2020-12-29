@@ -1,9 +1,15 @@
-import { CHANGE_LANGUAGE, TOGGLE_THEME, SET_IS_OPEN } from '../constants';
+import {
+	CHANGE_LANGUAGE,
+	TOGGLE_THEME,
+	SET_IS_OPEN,
+	TOGGLE_RESUME
+} from '../constants';
 
 const initialState = {
 	language: localStorage.getItem('language') || 'es',
 	theme: localStorage.getItem('theme') || 'dark',
-	modalIsOpen: false
+	modalIsOpen: false,
+	showResume: false,
 };
 
 const Reducer = (state = initialState, action) => {
@@ -23,6 +29,11 @@ const Reducer = (state = initialState, action) => {
 			return {
 				...state,
 				modalIsOpen: action.payload
+			}
+		case TOGGLE_RESUME:
+			return {
+				...state,
+				showResume: !state.showResume
 			}
 
 		default: return state;

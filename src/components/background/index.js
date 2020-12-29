@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleResume } from '../../redux/actions';
 
 //styles ==> 
 import { BackgroundStyled } from '../styles/styled_background';
@@ -8,8 +9,20 @@ import Fade from 'react-reveal/Fade';
 //strings ==>
 import strings from './strings'
 
+//components ==>
+import Resume from '../resume';
+
 const Background = () => {
 	const language = useSelector(state => state.language);
+	const dispatch = useDispatch();
+	const showResume = useSelector(state => state.showResume);
+
+	//resume modal ->
+	const toggleModal = () => {
+		dispatch(toggleResume());
+	}
+	// <--
+
 	return (
 		<BackgroundStyled>
 			<div className='title'>
@@ -31,7 +44,9 @@ const Background = () => {
 						{strings[language].p3}
 					</p>
 				</Fade>
+				<p className='resume' onClick={toggleModal}> {strings[language].cv}</p>
 			</div>
+			<Resume closeCallback={toggleModal} show={showResume} />
 		</BackgroundStyled>
 	)
 }

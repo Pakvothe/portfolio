@@ -148,6 +148,13 @@
 	right: 10px;
 	background: none;
 	border: none;
+	width: 30px;
+	height: 30px;
+}
+
+.ReactModal__Body--open .button:hover{
+	width: 35px;
+	height: 35px;
 }
 
 .ReactModal__Body--open .button svg {
