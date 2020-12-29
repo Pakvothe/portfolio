@@ -1,163 +1,142 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import Infobox from '../infobox/infobox.jsx';
-import style from './contact.module.css';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Modal from 'react-modal';
+import emailjs from 'emailjs-com';
+import { setIsOpen } from '../../redux/actions';
 
+//strings ==>
+import strings from './strings'
 
-const Contact = ({ lang }) => {
+//Styles ==>
+import '../styles/contact.css';
+import { StyledSVG } from '../styles/styled_navbar';
+import close from '../../assets/img/close-transparent-gray.svg';
+import Zoom from 'react-reveal/Zoom';
 
-	const [contacto, setContacto] = useState('closed'); //visibility
-	const [sending, setSending] = useState(false)
-	const [message, setMessage] = useState({
-		name: '',
-		email: '',
-		message: '',
-		honeypot: '',
-	})
-	const [confirm, setConfirm] = useState(null)
+const Contact = () => {
+	const dispatch = useDispatch();
+	const theme = useSelector(state => state.theme);
+	const language = useSelector(state => state.language);
+	const modalIsOpen = useSelector(state => state.modalIsOpen);
+	const customStyles = {
+		overlay: {
+			position: 'fixed',
+			top: 0,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			backgroundColor: 'rgba(23, 28, 40, 0.95)',
+		},
+		content: {
+			top: '50%',
+			left: '50%',
+			right: 'auto',
+			bottom: 'auto',
+			marginRight: '-50%',
+			transform: 'translate(-50%, -50%)',
+			height: '80%',
+			border: '2px solid #0097A7',
+			borderRadius: '10px',
+			boxShadow: '0 0 10px #00BCD4',
+			color: theme === 'dark' ? 'white' : 'black',
+			background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
+			WebkitOverflowScrolling: 'touch',
+		},
+	};
 
-	const handleClickOpen = e => {
-		e.preventDefault();
-		setContacto(contacto === 'closed' ? 'open' : 'open');
-		document.documentElement.style.overflow = 'hidden';
+	const afterOpenModal = () => {
+		document.body.style.overflow = 'hidden';
 	}
 
-	const handleClickClose = e => {
-		e.preventDefault();
-		setContacto(contacto === 'open' ? 'closed' : 'closed');
-		document.documentElement.style.overflow = 'auto';
-		setConfirm(null)
+	const closeModal = () => {
+		dispatch(setIsOpen(false))
+		document.body.style.overflow = 'unset';
 	}
 
-	const handleSubmit = e => {
+	const sendEmail = (e) => {
 		e.preventDefault();
-		if (sending) return;
-		setSending(true)
-		setConfirm('loading');
-		const scriptUrl = 'https:/\/script.google.com/macros/s/AKfycby5bQpyQnJEjOGqjMGJcNopE_4SRmI3lswBK9OWESehpEUTWRM/exec';
-		const data = JSON.stringify(message);
-		const config = {
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded',
-			}
-		}
-		setMessage({
-			name: '',
-			email: '',
-			message: '',
-			honeypot: '',
-		})
-		axios.post(scriptUrl, data, config)
-			.then(res => {
-				setConfirm(true)
-				console.log(res.data)
-			})
-			.catch(err => {
-				setConfirm(false)
-				console.log(err)
-			})
-		setSending(false)
-	}
+		emailjs.sendForm('service_d5iwd6i', 'template_901qvbv', e.target, 'user_LuoBSYK4fAOLTQsEkyDB1')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
 
-	const handleChange = e => {
-		e.preventDefault();
-		const keyState = e.target.name;
-		const valueState = e.target.value;
-		setMessage({ ...message, [keyState]: valueState });
+		e.target.reset();
 	}
 
 	return (
-		<section>
-			<div
-				className={`${style.contact} ${style[contacto]}`}
-				onClick={handleClickOpen}
+		<>
+			<Modal
+				isOpen={modalIsOpen}
+				onAfterOpen={afterOpenModal}
+				onRequestClose={closeModal}
+				style={customStyles}
+				contentLabel={"Contact"}
+				portalClassName={"ReactModalPortal"}
 			>
-				<h2 className={style.h2Contact}>
-					{lang === 'ES' && 'Contacto '}
-					{lang === 'EN' && 'Contact  '}
-					{contacto === 'closed' && <i>↑</i>}</h2>
-				{
-					contacto === 'open' &&
-					<div className={style.containerContacto}>
-						{
-							lang === 'ES' &&
-							<Infobox subtitle={'Charlemos!'} text={'Me encantaría hablar con vos.<br />Desde este formulario la página me envía un email directamente a mi correo.<br /> Podés ponerlo a prueba escribiéndome un mensajito para que te responda. '} />
-						}
-						{
-							lang === 'EN' &&
-							<Infobox subtitle={'Let\'s talk!'} text={'I would love to talk with you.<br />Through this form you can email-me.<br />You can test it sending to me a little message '} />
-						}
-						<form
-							className={`${style.form}`}
-							onSubmit={handleSubmit}
-						>
-							<input
-								type='text'
-								className={style.name}
-								onChange={handleChange}
-								name='name'
-								value={message.name}
-								placeholder={lang === 'EN' ? 'Your name' : 'Tu nombre'}
-								id='name' />
-							<input
-								type='text'
-								className={style.name}
-								name='email'
-								onChange={handleChange}
-								value={message.email}
-								placeholder={lang === 'EN' ? 'Your email address' : 'Tu email'}
-								id='email' />
-							<textarea
-								className={style.text}
-								name='message'
-								onChange={handleChange}
-								value={message.message}
-								placeholder={lang === 'EN' ? 'Your message' : 'Tu mensaje'}
-								id='message' />
-							<div className={style.btnContainer}>
-								{
-									confirm === 'loading' &&
-									<div className={style.confirm}>
-										{lang === 'EN' ? 'Sending...' : 'Enviando...'}
-									</div>
-								}
-								{
-									confirm === true &&
-									<div className={style.confirm}>
-										{lang === 'EN' ? 'Thanks!' : 'Gracias!'}
-									</div>
-								}
-								{
-									confirm === false &&
-									<div className={style.confirm}>
-										{lang === 'EN' ? 'Something go wrong' : 'Algo salió mal :('}
-									</div>
-								}
-								<button
-									type='submit'
-									className={style.submit}
-									onClick='submit()'
-								>
-									{lang === 'EN' ? 'Submit' : 'Enviar'}
-								</button>
-							</div>
-						</form>
-
-					</div>
-				}
-			</div>
-			{
-				contacto === 'open' &&
-				<button
-					className={style.btnClose}
-					onClick={handleClickClose}
-					value='coso'
-				>
-				</button>
-			}
-		</section>
-	)
-
+				<Zoom cascade duration={700}>
+					<button className='button' onClick={closeModal}><StyledSVG src={close} /></button>
+					<form onSubmit={sendEmail, closeModal}>
+						<div className='flex-form-container'>
+							<h1 style={{ color: theme === 'dark' ? 'white' : 'black' }}>{strings[language].contact}</h1>
+							<label>
+								<span style={{ background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white' }}>{strings[language].name}</span>
+								<input
+									className='inputs'
+									style={{
+										color: theme === 'dark' ? 'white' : 'black',
+										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
+									}}
+									type="text"
+									name="name"
+									required
+								/>
+							</label>
+							<label>
+								<span style={{ background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white' }}>{strings[language].email}</span>
+								<input
+									className='inputs'
+									style={{
+										color: theme === 'dark' ? 'white' : 'black',
+										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
+									}}
+									type="email"
+									name="email"
+									required
+								/>
+							</label>
+							<label>
+								<span style={{ background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white' }}>{strings[language].subject}</span>
+								<input
+									className='inputs'
+									style={{
+										color: theme === 'dark' ? 'white' : 'black',
+										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
+									}}
+									type="text"
+									name="subject"
+									required
+								/>
+							</label>
+							<label>
+								<span style={{ background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white' }}>{strings[language].message}</span>
+								<textarea
+									style={{
+										color: theme === 'dark' ? 'white' : 'black',
+										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
+									}} className='inputs'
+									name="message"
+									required
+								/>
+							</label>
+						</div>
+						<input className='submit' type="submit" value={strings[language].send} />
+					</form>
+				</Zoom>
+			</Modal>
+		</>
+	);
 }
 
 export default Contact;

@@ -30,7 +30,7 @@ const Education = () => {
 							</div>
 							<div className='education'>
 								<h5>{strings[language].ed2}</h5>
-								<p>HTML5 - CSS3 - JavaScript - jQuery - AJAX - MySQL</p>
+								<p>HTML5 - CSS3 - JavaScript - jQuery - AJAX - MySQL.</p>
 							</div>
 							<div className='education'>
 								<h5>{strings[language].ed3}</h5>
