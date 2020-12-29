@@ -1,4 +1,4 @@
-import { CHANGE_LANGUAGE, TOGGLE_THEME } from '../constants';
+import { CHANGE_LANGUAGE, TOGGLE_THEME, SET_IS_OPEN } from '../constants';
 
 //Global actions =>
 export const changeLanguage = (payload) => {
@@ -12,5 +12,11 @@ export const changeLanguage = (payload) => {
 export const toggleTheme = () => {
 	return {
 		type: TOGGLE_THEME
+	}
+}
+export const setIsOpen = (payload) => {
+	return {
+		type: SET_IS_OPEN,
+		payload
 	}
 }

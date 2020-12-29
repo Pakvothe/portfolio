@@ -30,7 +30,7 @@ export const ScrollButton = styled.button`
 	padding: 0.5em;
 	background: var(--clr-primary);
 	color: var(--clr-light);
-	transition: opacity .2s ease;
+	transition: opacity 1000ms ease-in-out;
 	border-radius: 999em;
 	cursor: pointer;
 

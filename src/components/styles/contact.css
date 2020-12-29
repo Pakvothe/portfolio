@@ -3,7 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	left: 20px;
+	left: 17px;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 10px;
@@ -15,10 +15,13 @@
 	background-color: transparent;
 	border: 2px solid var(--clr-primary-dark);
 	box-shadow: 0 0 5px var(--clr-primary);
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+	width: 25px;
 }
 
 .contact p{
-	margin: 10px 4px;
+	margin: 10px 0;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 }
@@ -26,9 +29,23 @@
 .contact:hover{
 	color: var(--clr-primary);
 	border-color: var(--clr-primary);
+	box-shadow: 0 0 15px var(--clr-secondary);
 	cursor: pointer;
 }
 
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+	opacity: 1;
+
+}
+
+.ReactModal__Overlay--before-close{
+	opacity: 0;
+}
 
 .ReactModal__Body--open .flex-form-container {
 	display: flex;
@@ -127,12 +144,14 @@
 }
 
 .ReactModal__Body--open .button{
+	display: block;
 	position: absolute;
 	top: 10px;
 	right: 10px;
 	background: none;
 	border: none;
 }
+
 .ReactModal__Body--open .button svg {
 	fill:var(--clr-primary-dark);
 	width: 30px;
@@ -141,12 +160,17 @@
 
 .ReactModal__Body--open .button svg:hover {
 	fill:var(--clr-primary);
+	width: 35px;
+	height: 35px;
+}
+.ReactModal__Body--open .button svg:active {
+	transform: scale(0.9);
 }
 
 .ReactModal__Body--open .submit{
 	position: absolute;
-	bottom: 10px;
-	right: 10px;
+	bottom: 15px;
+	right: 15px;
 	width: 150px;
 	border-radius: 10px;
 	color: var(--clr-primary-dark);
