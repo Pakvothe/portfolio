@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 //styles ==>
 import { StyledResume, StyledCloseBtn } from '../styles/styled_resume';
 import Slide from 'react-reveal/Slide';
+import Shake from 'react-reveal/Shake';
 import BigCloseButton from '../../assets/img/close-transparent-gray.svg';
 import CurriculumEN from '../../assets/docs/CurriculumEN.jpg';
 import CurriculumES from '../../assets/docs/CurriculumES.jpg';
@@ -38,7 +39,9 @@ const Resume = ({ show, closeCallback }) => {
 					<button title='Close' className='modal__close' onClick={closeCallback}>
 						<StyledCloseBtn src={BigCloseButton} />
 					</button>
-					<a className="donwload" href={language === 'en' ? CurriculumENpdf : CurriculumESpdf} target="_blank" rel="noreferrer">{strings[language].dw}</a>
+					<Shake>
+						<a className="donwload" href={language === 'en' ? CurriculumENpdf : CurriculumESpdf} target="_blank" rel="noreferrer">{strings[language].dw}</a>
+					</Shake>
 					<img alt='CV RESUME' className='curriculum' src={language === 'en' ? CurriculumEN : CurriculumES} />
 				</div>
 			</Slide>
