@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 //styles ==>
 import { NavbarStyled, Dropdown, StyledSVG } from '../styles/styled_navbar';
 import Fade from 'react-reveal/Fade';
-import HeadShake from 'react-reveal/HeadShake';
 
 //actions ==>
 import { toggleTheme, changeLanguage } from '../../redux/actions';
@@ -45,7 +44,7 @@ const Navbar = () => {
 							<span>{strings[language].language}</span>
 						</Fade>
 						<ul onClick={(e) => handleLang(e)}>
-							<HeadShake>
+							<Fade duration={200}>
 								<li>
 									<a id="en" href="/#" className={language === 'en' ? 'selected' : null}>
 										{strings[language].language_en}
@@ -55,7 +54,7 @@ const Navbar = () => {
 										{strings[language].language_es}
 									</a>
 								</li>
-							</HeadShake>
+							</Fade>
 						</ul>
 					</Dropdown>
 					<li>

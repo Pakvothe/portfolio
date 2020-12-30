@@ -78,7 +78,7 @@ const Contact = () => {
 				portalClassName={"ReactModalPortal"}
 				ariaHideApp={false}
 			>
-				<Zoom cascade duration={700}>
+				<Zoom cascade duration={200}>
 					<button className='button' onClick={closeModal}><StyledSVG src={close} /></button>
 					<form onSubmit={sendEmail}>
 						<div className='flex-form-container'>

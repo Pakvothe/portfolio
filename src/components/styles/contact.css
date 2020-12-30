@@ -7,14 +7,14 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 10px;
-	color: var(--clr-primary-dark);
+	color: currentColor;
 	font-size: 1em;
 	text-align: center;
 	padding: 0.5em;
 	font-weight: 600;
 	background-color: transparent;
-	border: 2px solid var(--clr-primary-dark);
-	box-shadow: 0 0 5px var(--clr-primary);
+	border: 2px solid currentColor;
+	box-shadow: 0 0 10px var(--clr-primary);
 	opacity: 0;
 	transition: opacity 1000ms ease-in-out;
 	width: 25px;

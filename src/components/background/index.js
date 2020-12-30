@@ -5,6 +5,7 @@ import { toggleResume } from '../../redux/actions';
 //styles ==> 
 import { BackgroundStyled } from '../styles/styled_background';
 import Fade from 'react-reveal/Fade';
+import Shake from 'react-reveal/Shake';
 
 //strings ==>
 import strings from './strings'
@@ -44,7 +45,11 @@ const Background = () => {
 						{strings[language].p3}
 					</p>
 				</Fade>
-				<p className='resume' onClick={toggleModal}> {strings[language].cv}</p>
+				<Shake when={showResume}>
+					<Shake>
+						<p className='resume' onClick={toggleModal}> {strings[language].cv}</p>
+					</Shake>
+				</Shake>
 			</div>
 			<Resume closeCallback={toggleModal} show={showResume} />
 		</BackgroundStyled>

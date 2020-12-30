@@ -28,11 +28,17 @@ export const BackgroundStyled = styled.section`
 
 		.resume {
 			cursor: pointer;
-			font-size: 1.2em;
+			font-size: 1em;
+			padding: 0.1em 0;
 			font-weight: 600;
+			width: 150px;
+			text-align: center;
+			border: 2px solid currentColor;
+			border-radius: 7px;
 
 			&:hover{
 				color: var(--clr-primary);
+				box-shadow: 0 0 2px var(--clr-primary)
 			}
 		}
 	}
@@ -47,6 +53,7 @@ export const BackgroundStyled = styled.section`
 		}
 
 		.info {
+			margin-top: 3em;
 			width: 65vw;
 		}
 	}
