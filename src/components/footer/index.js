@@ -20,7 +20,7 @@ const Footer = () => {
 	return (
 		<StyledFooter>
 			<div className='sign'>
-				<Fade top cascade>
+				<Fade cascade>
 					<p>{strings[language].a}</p>
 					<p>{strings[language].b}</p>
 				</Fade>
