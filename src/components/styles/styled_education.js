@@ -67,17 +67,18 @@ export const Skills = styled.div`
 	justify-content: space-evenly;
 	font-size: 1.1em;
 	width: 40vw;
-	margin: 0 2em;
+	margin: 0.75em 2em 0 2em;
 	
 
 	.title{
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
-		margin: 0.;
+		margin-top: 0;
+		align-self: flex-start;
 	}
 	.info{
-		margin-top: 2em;
+		margin-top: 1.35em;
 		display: flex;
 		flex-direction: column;
 		align-items: left;
@@ -118,7 +119,7 @@ export const Skills = styled.div`
 		}
 
 		.info {
-			width: 65vw;
+			width: 60vw;
 		}
 	}
 `

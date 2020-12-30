@@ -46,15 +46,16 @@ export const BackgroundStyled = styled.section`
 	@media (max-width: 480px){
 		flex-direction: column;
 		align-items: flex-end;
-
+		
 		.title{
 			align-self: flex-start;
-			margin-right: 2em;
+			margin-left: 2em;
+			width: 40vw;
 		}
 
 		.info {
 			margin-top: 3em;
-			width: 65vw;
+			width: 60vw;
 		}
 	}
 `
