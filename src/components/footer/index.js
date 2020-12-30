@@ -9,6 +9,7 @@ import github from '../../assets/img/github.svg';
 import instagram from '../../assets/img/instagram.svg';
 import linkedin from '../../assets/img/linkedin.svg';
 import gmail from '../../assets/img/gmail.svg';
+import whatsapp from '../../assets/img/whatsapp.svg';
 
 //strings ==>
 import strings from './strings'
@@ -36,6 +37,11 @@ const Footer = () => {
 						</a>
 					</li>
 					<li>
+						<a href='https://wa.me/541124089678?text=Send%20me%20a%20message' target="_blank" rel="noreferrer">
+							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={whatsapp} />
+						</a>
+					</li>
+					<li>
 						<a href='https://www.linkedin.com/in/franco-david-ortiz/' target="_blank" rel="noreferrer">
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={linkedin} />
 						</a>
@@ -52,7 +58,7 @@ const Footer = () => {
 					</li>
 				</ul>
 			</Fade>
-		</StyledFooter>
+		</StyledFooter >
 	)
 }
 

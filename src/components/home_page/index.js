@@ -7,6 +7,7 @@ import Intro from '../intro';
 import Background from '../background';
 import Education from '../education';
 import Contact from '../contact';
+import Projects from '../projects';
 import Footer from '../footer';
 
 //styles ==>
@@ -61,6 +62,7 @@ const HomePage = () => {
 			<Background />
 			<Education />
 			<Contact />
+			<Projects />
 			<Footer />
 			<ScrollButton ref={scrollButton} onClick={scrollToTop}>
 				<StyledSVG src={arrowUp} />
