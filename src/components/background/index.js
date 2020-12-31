@@ -35,7 +35,7 @@ const Background = () => {
 					</p>
 				</Fade>
 				<Flip left big duration={2000}>
-					<img src={Paco} />
+					<img src={Paco} alt="Franco Ortiz" />
 				</Flip>
 				<div />
 			</div>

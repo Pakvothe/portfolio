@@ -140,8 +140,8 @@ export const ProjectsStyled = styled.section`
 				}
 
 				.image_container {
-					width: 300px;
-						margin-bottom: 1em;
+					width: 80vw;
+					margin-bottom: 1em;
 				}
 
 				figcaption{

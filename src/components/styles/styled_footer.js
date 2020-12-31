@@ -12,6 +12,7 @@ export const StyledFooter = styled.footer`
 	@media (max-width: 950px){
 		justify-content: center;
 		flex-direction: column-reverse;
+		margin-bottom: 0.5em;
 	}
 	
 	.sign{
@@ -59,7 +60,8 @@ export const StyledFooter = styled.footer`
 		@media (max-width: 950px){
 			margin: 0.5em 0;
 			flex-wrap: wrap;
-
+			height: 100%;
+			
 			a:focus{
 				outline: 0;
 			}
