@@ -8,10 +8,21 @@ export const BackgroundStyled = styled.section`
 	margin-bottom: 6em;
 
 	.title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
 		margin: 0.7em;
+
+		img{
+			width: 12em;
+			height: 12em;
+			border-radius: 99em;
+			border: 4px solid var(--clr-primary-dark);
+		}
 	}
 
 	.info {
@@ -21,6 +32,10 @@ export const BackgroundStyled = styled.section`
 		align-items: left;
 		text-align: left;
 		line-height: 1.3em;
+
+		img{
+			display: none;
+		}
 
 		p{
 			margin: 0.7em;
@@ -51,11 +66,24 @@ export const BackgroundStyled = styled.section`
 			align-self: flex-start;
 			margin-left: 2em;
 			width: 40vw;
+
+			img{
+				display: none;
+			}
 		}
 
 		.info {
 			margin-top: 3em;
 			width: 60vw;
+
+			img {
+				align-self: center;
+				display: block;
+				width: 12em;
+				height: 12em;
+				border-radius: 99em;
+				border: 4px solid var(--clr-primary-dark);
+			}
 		}
 	}
 `

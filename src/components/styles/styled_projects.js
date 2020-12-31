@@ -49,13 +49,40 @@ export const ProjectsStyled = styled.section`
 				flex-direction: column;
 				align-items: flex-start;
 				width: 15vw;
-				padding: 0.5em;
+				padding: 0 0 0.5em 0;
 
 				a{
+					position: relative;
+					padding: 0 5px;
+					text-align: center;
 					text-decoration: none;
 					color: var(--clr-primary-dark);
 					font-size: 1.1em;	
-					font-weight: 600;			}
+					font-weight: 600;	
+					
+					&:after{
+						content: '';
+						display: block;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						background: var(--clr-primary-dark);
+						border-radius: 3px;
+						z-index: -1;
+						transform: scaleY(0.1);
+						transition: transform 300ms ease;
+						transform-origin: bottom;
+					}
+
+					&:hover{
+						&:after{
+							transform: scaleY(1);
+						}
+						color: white;
+					}
+				}
 
 				p {
 					margin: 0.5em 0;

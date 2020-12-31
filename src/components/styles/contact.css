@@ -22,6 +22,7 @@
 
 .contact p{
 	margin: 10px 0;
+	text-transform: uppercase;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 }

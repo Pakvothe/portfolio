@@ -6,6 +6,8 @@ import { toggleResume } from '../../redux/actions';
 import { BackgroundStyled } from '../styles/styled_background';
 import Fade from 'react-reveal/Fade';
 import Shake from 'react-reveal/Shake';
+import Flip from 'react-reveal/Flip';
+import Paco from '../../assets/img/Paco.png';
 
 //strings ==>
 import strings from './strings'
@@ -32,8 +34,15 @@ const Background = () => {
 						<span> {strings[language].title}</span>
 					</p>
 				</Fade>
+				<Flip left big duration={2000}>
+					<img src={Paco} />
+				</Flip>
+				<div />
 			</div>
 			<div className='info'>
+				<Flip left big duration={2000}>
+					<img src={Paco} />
+				</Flip>
 				<Fade right big>
 					<p>
 						{strings[language].p1}

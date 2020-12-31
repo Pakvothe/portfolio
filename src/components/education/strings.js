@@ -11,6 +11,8 @@ const strings = {
 		ss2: 'Creative',
 		ss3: 'Tenacious',
 		ss4: 'Self-taught',
+		ss5: 'Teamwork',
+		ss6: 'Agile Methodologies (SCRUM)',
 	},
 	es: {
 		title1: 'Educación',
@@ -24,6 +26,8 @@ const strings = {
 		ss2: 'Creativo',
 		ss3: 'Tenaz',
 		ss4: 'Autodidacta',
+		ss5: 'Trabajo en equipo',
+		ss6: 'Metodologias Agiles (SCRUM)',
 	}
 };
 

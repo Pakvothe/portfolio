@@ -5,9 +5,13 @@ import {
 	TOGGLE_RESUME
 } from '../constants';
 
+const d = new Date();
+const hours = d.getHours();
+const night = hours >= 19 || hours <= 7; // between 7pm and 7am
+
 const initialState = {
 	language: localStorage.getItem('language') || 'es',
-	theme: localStorage.getItem('theme') || 'dark',
+	theme: localStorage.getItem('theme') || (night ? 'dark' : 'light'),
 	modalIsOpen: false,
 	showResume: false,
 };

@@ -86,6 +86,8 @@ const Education = () => {
 								<li><p>{strings[language].ss2}</p></li>
 								<li><p>{strings[language].ss3}</p></li>
 								<li><p>{strings[language].ss4}</p></li>
+								<li><p>{strings[language].ss5}</p></li>
+								<li><p>{strings[language].ss6}</p></li>
 							</div>
 						</Roll>
 					</ul>

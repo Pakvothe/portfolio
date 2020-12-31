@@ -10,9 +10,10 @@ import strings from './strings'
 
 const Intro = () => {
 	const language = useSelector(state => state.language);
+	const theme = useSelector(state => state.theme);
 
 	return (
-		<IntroStyled>
+		<IntroStyled theme={theme}>
 			<LightSpeed left>
 				<div className='intro-title'>
 					<p>

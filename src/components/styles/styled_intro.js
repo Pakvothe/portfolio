@@ -34,6 +34,31 @@ export const IntroStyled = styled.div`
 
 	.strong{
 		font-weight: 600;
+		position:relative;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: ${props => (props.theme === 'dark' ? 'white' : 'var(--clr-dark)')
+	};
+			border-radius: 3px;
+			z-index: -1;
+			transform: scaleY(0.1);
+			transition: transform 300ms ease;
+			transform-origin: bottom;
+		}
+
+		&:hover{
+			&:after{
+				transform: scaleY(1);
+			}
+			color: ${props => (props.theme === 'dark' ? 'var(--clr-dark)' : 'white')};
+		}
 	}
 
 	@media (max-width: 480px){
@@ -53,11 +78,25 @@ export const IntroStyled = styled.div`
 			min-width: auto;
 			min-height: auto;
 			margin: 0 2em 0 0;
+			width: 100%;
 		}
 
 		.intro-scroll{
 			font-size: 0.3em;
 			margin-top: 3em;
+		}
+
+		.strong {
+			&:after{
+				display: none;
+			}
+			&:hover{
+				color: ${props => (props.theme === 'dark' ? 'white' : 'var(--clr-dark)')};
+
+				&:after{
+					display:none;
+				}
+			}
 		}
 	}
 `

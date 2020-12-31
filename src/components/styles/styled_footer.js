@@ -26,16 +26,35 @@ export const StyledFooter = styled.footer`
 
 		a{
 			cursor: pointer;
+			position: relative;
 			font-weight: 900;
 			text-decoration: none;
 			font-size: 1.2em;
+			padding: 0.2em;
 			color: var(--clr-primary-dark);
-
-			&:hover{
-				color: var(--clr-primary);
+		
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: var(--clr-primary-dark);
+				border-radius: 3px;
+				z-index: -1;
+				transform: scaleY(0.1);
+				transition: transform 300ms ease;
+				transform-origin: bottom;
 			}
 
-		
+			&:hover{
+				&:after{
+					transform: scaleY(1);
+				}
+				color: white;
+			}
 		}
 		@media (max-width: 950px){
 			margin: 0.5em 0;
