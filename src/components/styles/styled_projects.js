@@ -2,19 +2,23 @@ import styled from 'styled-components';
 
 export const ProjectsStyled = styled.section`
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	font-size: 1.1em;
-	margin: 6em auto;
+	margin-top: 6em;
 
 	.title{
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
-		margin: 0.7em 0 0 5.5em;;
+		margin: 0.7em 0 0 2.7em;
+		width: 20vw;
 	}
 
 	.info {
-		width: 60vw;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
 		margin: 0;
 		text-align: left;
 		line-height: 1.3em;
@@ -27,6 +31,7 @@ export const ProjectsStyled = styled.section`
 			display: flex;
 			align-items: flex-start;
 			justify-content: space-evenly;
+			width: 100%;
 			margin: 0 0 3em 1.5em;
 
 			&:first-child{
@@ -48,7 +53,7 @@ export const ProjectsStyled = styled.section`
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
-				width: 15vw;
+				width: 25vw;
 				padding: 0 0 0.5em 0;
 
 				a{

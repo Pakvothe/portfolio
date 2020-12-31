@@ -27,7 +27,7 @@ export const ScrollButton = styled.button`
 	right: 50px;
 	bottom: 60px;
 	border: 0;
-	padding: 0.5em;
+	padding: 0.3em;
 	background: var(--clr-primary);
 	color: var(--clr-light);
 	transition: opacity 1000ms ease-in-out;
@@ -36,8 +36,8 @@ export const ScrollButton = styled.button`
 
 	svg {
 		fill: var(--clr-light);
-		width: 30px;
-		height: 30px;
+		width: 2.5em;
+		height: 2.5em;
 	}
 
 	&:hover{
@@ -45,8 +45,6 @@ export const ScrollButton = styled.button`
 
 		svg{
 			fill: var(--clr-light);
-			width: 30px;
-			height: 30px;
 		}
 	}
 

@@ -10,13 +10,13 @@ const Projects = () => {
 
 	return (
 		<ProjectsStyled>
-			<Fade left >
-				<div className='title'>
+			<div className='title'>
+				<Fade left >
 					<p>
 						<span>Projects</span>
 					</p>
-				</div>
-			</Fade>
+				</Fade>
+			</div>
 			<div className='info'>
 				<div className='project_container'>
 					<div className='image_container'>

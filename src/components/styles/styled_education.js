@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const EducationContainer = styled.section`
 	display: flex;
 	justify-content: space-between;
+	margin-top: 6em;
 
 	@media (max-width: 720px){
 		flex-wrap: wrap;

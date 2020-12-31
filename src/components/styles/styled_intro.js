@@ -30,6 +30,20 @@ export const IntroStyled = styled.div`
 	.intro-scroll{
 		font-size: 0.5em;
 		margin-top: 3em;
+		font-weight: 600; 
+		
+		span{
+			display:flex;
+			align-items: center;
+			justify-content: center;
+		}	
+
+		svg {
+			width: 2em;
+			height: 2em;
+			margin-left: 1em;
+			fill: currentColor;
+		}
 	}
 
 	.strong{

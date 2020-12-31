@@ -12,6 +12,12 @@ export const NavbarStyled = styled.nav`
 		align-items: center;
 		margin-bottom: 2em;
 
+		.powr-hit-counter {
+			display: flex;
+			justify-content: flex-start;
+			background: red;
+		}
+
 		.navbar__options {
 			display: flex;
 			align-items: center;

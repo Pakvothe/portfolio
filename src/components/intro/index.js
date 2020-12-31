@@ -3,7 +3,9 @@ import { useSelector } from 'react-redux';
 
 //styles ==> 
 import { IntroStyled } from '../styles/styled_intro';
+import { StyledSVG } from '../styles/GlobalStyle';
 import LightSpeed from 'react-reveal/LightSpeed';
+import arrowDown from '../../assets/img/arrow-down.svg';
 
 //strings ==>
 import strings from './strings'
@@ -31,7 +33,7 @@ const Intro = () => {
 			<LightSpeed left>
 				<div className='intro-scroll'>
 					<p>
-						<span> {strings[language].scroll}</span>
+						<span> {strings[language].scroll}<StyledSVG src={arrowDown} /></span>
 					</p>
 				</div>
 			</LightSpeed>

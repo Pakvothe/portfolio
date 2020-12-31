@@ -10,12 +10,13 @@ export const BackgroundStyled = styled.section`
 	.title{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
 		margin: 0.7em;
+		width: 20vw;
 
 		img{
 			width: 12em;
@@ -26,7 +27,7 @@ export const BackgroundStyled = styled.section`
 	}
 
 	.info {
-		width: 40vw;
+		width: 60vw;
 		display: flex;
 		flex-direction: column;
 		align-items: left;
