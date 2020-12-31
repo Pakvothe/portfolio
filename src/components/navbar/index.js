@@ -44,11 +44,11 @@ const Navbar = () => {
 						<ul onClick={(e) => handleLang(e)}>
 							<Fade duration={200}>
 								<li>
-									<a id="en" href="/#" className={language === 'en' ? 'selected' : null}>
+									<a id='en' href='/#' className={language === 'en' ? 'selected' : null}>
 										{strings[language].language_en}
 									</a> </li>
 								<li>
-									<a id="es" href="/#" className={language === 'es' ? 'selected' : null}>
+									<a id='es' href='/#' className={language === 'es' ? 'selected' : null}>
 										{strings[language].language_es}
 									</a>
 								</li>

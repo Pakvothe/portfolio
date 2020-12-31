@@ -74,8 +74,8 @@ const Contact = () => {
 				onAfterOpen={afterOpenModal}
 				onRequestClose={closeModal}
 				style={customStyles}
-				contentLabel={"Contact"}
-				portalClassName={"ReactModalPortal"}
+				contentLabel={'Contact'}
+				portalClassName={'ReactModalPortal'}
 				ariaHideApp={false}
 			>
 				<Zoom cascade duration={200}>
@@ -91,8 +91,8 @@ const Contact = () => {
 										color: theme === 'dark' ? 'white' : 'black',
 										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
 									}}
-									type="text"
-									name="name"
+									type='text'
+									name='name'
 									required
 								/>
 							</label>
@@ -104,8 +104,8 @@ const Contact = () => {
 										color: theme === 'dark' ? 'white' : 'black',
 										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
 									}}
-									type="email"
-									name="email"
+									type='email'
+									name='email'
 									required
 								/>
 							</label>
@@ -117,8 +117,8 @@ const Contact = () => {
 										color: theme === 'dark' ? 'white' : 'black',
 										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
 									}}
-									type="text"
-									name="subject"
+									type='text'
+									name='subject'
 									required
 								/>
 							</label>
@@ -129,11 +129,11 @@ const Contact = () => {
 										color: theme === 'dark' ? 'white' : 'black',
 										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
 									}} className='inputs'
-									name="message"
+									name='message'
 									required
 								/>
 							</label>
-							<input className='submit' type="submit" value={strings[language].send} />
+							<input className='submit' type='submit' value={strings[language].send} />
 						</div>
 					</form>
 				</Zoom>

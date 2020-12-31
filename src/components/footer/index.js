@@ -26,7 +26,7 @@ const Footer = () => {
 					<p>{strings[language].b}</p>
 				</Fade>
 				<Tada>
-					<a href='https://github.com/Pakvothe/franco-portfolio' target="_blank" rel="noreferrer">{strings[language].c}</a>
+					<a href='https://github.com/Pakvothe/franco-portfolio' target='_blank' rel='noreferrer'>{strings[language].c}</a>
 				</Tada>
 			</div>
 			<Fade bottom cascade>
@@ -37,22 +37,22 @@ const Footer = () => {
 						</a>
 					</li>
 					<li>
-						<a href='https://wa.me/541124089678?text=Send%20me%20a%20message' target="_blank" rel="noreferrer">
+						<a href='https://wa.me/541124089678?text=Send%20me%20a%20message' target='_blank' rel='noreferrer'>
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={whatsapp} />
 						</a>
 					</li>
 					<li>
-						<a href='https://www.linkedin.com/in/franco-david-ortiz/' target="_blank" rel="noreferrer">
+						<a href='https://www.linkedin.com/in/franco-david-ortiz/' target='_blank' rel='noreferrer'>
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={linkedin} />
 						</a>
 					</li>
 					<li>
-						<a href='https://github.com/Pakvothe' target="_blank" rel="noreferrer">
+						<a href='https://github.com/Pakvothe' target='_blank' rel='noreferrer'>
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={github} />
 						</a>
 					</li>
 					<li>
-						<a href='https://www.instagram.com/pacooortiz/' target="_blank" rel="noreferrer">
+						<a href='https://www.instagram.com/pacooortiz/' target='_blank' rel='noreferrer'>
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={instagram} />
 						</a>
 					</li>
