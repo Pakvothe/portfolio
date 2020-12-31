@@ -30,7 +30,7 @@ const Education = () => {
 							</div>
 							<div className='education'>
 								<h5>{strings[language].ed2}</h5>
-								<p>HTML5 - CSS3 - JavaScript - jQuery - AJAX - MySQL</p>
+								<p>HTML5 - CSS3 - JavaScript - jQuery - AJAX - MySQL.</p>
 							</div>
 							<div className='education'>
 								<h5>{strings[language].ed3}</h5>
@@ -86,6 +86,8 @@ const Education = () => {
 								<li><p>{strings[language].ss2}</p></li>
 								<li><p>{strings[language].ss3}</p></li>
 								<li><p>{strings[language].ss4}</p></li>
+								<li><p>{strings[language].ss5}</p></li>
+								<li><p>{strings[language].ss6}</p></li>
 							</div>
 						</Roll>
 					</ul>

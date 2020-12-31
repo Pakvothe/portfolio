@@ -1,0 +1,216 @@
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 17px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	color: currentColor;
+	font-size: 1em;
+	text-align: center;
+	padding: 0.5em;
+	font-weight: 600;
+	background-color: transparent;
+	border: 2px solid currentColor;
+	box-shadow: 0 0 10px var(--clr-primary);
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+	width: 25px;
+}
+
+.contact p{
+	margin: 10px 0;
+	text-transform: uppercase;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+
+.contact:hover{
+	color: var(--clr-primary);
+	border-color: var(--clr-primary);
+	box-shadow: 0 0 15px var(--clr-secondary);
+	cursor: pointer;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+	opacity: 1;
+
+}
+
+.ReactModal__Overlay--before-close{
+	opacity: 0;
+}
+
+.ReactModal__Body--open .flex-form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.ReactModal__Body--open .flex-form-container > div + div {
+	margin-left: 3em;
+
+}
+@media (max-width: 1050px) {
+	.ReactModal__Body--open .flex-form-container > div + div{
+		margin: 1.5em 0 0;
+	}
+}
+
+.ReactModal__Body--open .flex-form-container label {
+	display: block;
+	position: relative;
+	width: 400px;
+	color: var(--clr-primary-dark);
+}	
+
+.ReactModal__Body--open .flex-form-container label > span:not(.no-shadow){
+	position: absolute;
+	left: 1em;
+	top: -.2em;
+	padding: 0 .5em;
+	font-weight: 900;
+	font-size: .9em;
+}
+
+.ReactModal__Body--open .flex-form-container label > input, textarea {
+	font: inherit;
+	font-size: .8em;
+	padding: 1em;
+	border: 3px solid var(--clr-primary-dark);
+	border-radius: .4em;
+	width: 100%;
+	transition: box-shadow .2s ease;
+	outline: none;
+}
+
+.ReactModal__Body--open .flex-form-container label > textarea {
+	line-height: 1.6;
+}
+
+.ReactModal__Body--open .flex-form-container label:not(no-shadow)::after{
+	content: '';
+	position: absolute;
+	top: 5px;
+	bottom: -5px;
+	left: 5px;
+	width: 100%;
+	border-radius: .4em;
+	background: var(--clr-primary-dark);
+	opacity: 0.15;
+	transition: opacity .2s ease;
+	z-index: -1;
+}
+
+.ReactModal__Body--open .flex-form-container label:focus-within::after {
+	opacity: 1;
+}
+
+.ReactModal__Body--open .flex-form-container label + label {
+	margin-top: 2em;
+}
+
+.ReactModal__Body--open .flex-form-container input, textarea {
+	width: 100%;
+	display: block;
+	border: 0;
+	font: inherit;
+	padding: .5em;
+	border: 3px solid var(--clr-primary-dark);
+	border-radius: .3em;
+	margin-top: .3em;
+}
+
+
+
+.ReactModal__Body--open .flex-form-container input, textarea:focus{
+	border-color: var(--clr-primary-dark);
+}
+
+.ReactModal__Body--open .flex-form-container  textarea {
+	min-height: 180px;
+	height: 100%;
+	margin-bottom: .5em;
+}
+
+.ReactModal__Body--open .button{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	width: 30px;
+	height: 30px;
+}
+
+.ReactModal__Body--open .button:hover{
+	width: 35px;
+	height: 35px;
+}
+
+.ReactModal__Body--open .button svg {
+	fill:var(--clr-primary-dark);
+	width: 30px;
+	height: 30px;
+}
+
+.ReactModal__Body--open .button svg:hover {
+	fill:var(--clr-primary);
+	width: 35px;
+	height: 35px;
+}
+.ReactModal__Body--open .button svg:active {
+	transform: scale(0.9);
+}
+
+.ReactModal__Body--open .flex-form-container .submit{
+	border-radius: 10px;
+	color: var(--clr-primary-dark);
+	font-size: 1em;
+	text-align: center;
+	padding: 0.5em;
+	font-weight: 600;
+	background-color: transparent;
+	border: 2px solid var(--clr-primary-dark);
+	margin: 1em 0;
+}
+.ReactModal__Body--open .submit:hover{
+	color: var(--clr-primary);
+	border-color: var(--clr-primary);
+	cursor: pointer;
+}
+
+
+@media (max-width: 1050px) {
+	.ReactModal__Body--open .flex-form-container {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.ReactModal__Body--open .flex-form-container input {
+		width: 100%;
+	}
+	
+	.ReactModal__Body--open .flex-form-container {
+		width: 100%; 
+		justify-content: center;
+	}
+	.ReactModal__Body--open .flex-form-container label {
+		width: 70vw; 
+		justify-content: center;
+	}
+	.ReactModal__Body--open .contact__info {
+		width: 300px; 
+	}
+}

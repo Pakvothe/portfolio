@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 //styles ==>
 import { NavbarStyled, Dropdown, StyledSVG } from '../styles/styled_navbar';
 import Fade from 'react-reveal/Fade';
-import HeadShake from 'react-reveal/HeadShake';
 
 //actions ==>
 import { toggleTheme, changeLanguage } from '../../redux/actions';
@@ -22,7 +21,6 @@ const Navbar = () => {
 	const language = useSelector(state => state.language);
 	const theme = useSelector(state => state.theme);
 
-
 	const handleLang = (ev) => {
 		dispatch(changeLanguage(ev.target.id))
 	}
@@ -30,7 +28,6 @@ const Navbar = () => {
 	const handleTheme = () => {
 		dispatch(toggleTheme())
 	}
-
 
 	return (
 		<NavbarStyled>
@@ -45,17 +42,17 @@ const Navbar = () => {
 							<span>{strings[language].language}</span>
 						</Fade>
 						<ul onClick={(e) => handleLang(e)}>
-							<HeadShake>
+							<Fade duration={200}>
 								<li>
-									<a id="en" className={language === 'en' ? 'selected' : null}>
+									<a id='en' href='/#' className={language === 'en' ? 'selected' : null}>
 										{strings[language].language_en}
 									</a> </li>
 								<li>
-									<a id="es" className={language === 'es' ? 'selected' : null}>
+									<a id='es' href='/#' className={language === 'es' ? 'selected' : null}>
 										{strings[language].language_es}
 									</a>
 								</li>
-							</HeadShake>
+							</Fade>
 						</ul>
 					</Dropdown>
 					<li>

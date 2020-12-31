@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const EducationContainer = styled.section`
 	display: flex;
 	justify-content: space-between;
+	margin-top: 6em;
 
 	@media (max-width: 720px){
 		flex-wrap: wrap;
@@ -30,11 +31,14 @@ export const Ed = styled.div`
 		align-items: left;
 		text-align: left;
 		line-height: 1.3em;
+		width: 100%;
 
 		.edContainer{
+				width: 100%;
 				margin: 0.7em;
 
 			.education {
+				width: 100%;
 				margin: 1.5em 2em;
 				
 				h5 {
@@ -42,6 +46,7 @@ export const Ed = styled.div`
 					color: var(--clr-primary-dark);
 					margin: 0.5em 0;
 					font-weight: 600;
+					line-height: 1.3em;
 				}
 			}
 		}
@@ -66,17 +71,18 @@ export const Skills = styled.div`
 	justify-content: space-evenly;
 	font-size: 1.1em;
 	width: 40vw;
-	margin: 0 2em;
+	margin: 0.75em 2em 0 2em;
 	
 
 	.title{
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
-		margin: 0.7em;
+		margin-top: 0;
+		align-self: flex-start;
 	}
 	.info{
-		margin-top: 2em;
+		margin-top: 1.35em;
 		display: flex;
 		flex-direction: column;
 		align-items: left;
@@ -86,7 +92,7 @@ export const Skills = styled.div`
 		.skill {
 			margin: 0.7em;
 			display: flex;
-			list-style-type: none;
+			//list-style-type: none;
 			flex-wrap: wrap;
 			
 			.skillDiv{
@@ -100,8 +106,9 @@ export const Skills = styled.div`
 				font-size: 1em;
 				text-align: left;
 				color: var(--clr-primary-dark);
-				margin: 0.5em 0;
+				margin: 0.5em -1em;
 				font-weight: 600;
+				line-height: 1.3em;
 			}
 		}
 	}
@@ -116,7 +123,7 @@ export const Skills = styled.div`
 		}
 
 		.info {
-			width: 65vw;
+			width: 60vw;
 		}
 	}
 `

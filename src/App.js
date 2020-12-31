@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 //styles ==>
 import Normalize from 'react-normalize';
@@ -20,11 +20,9 @@ function App() {
 			<Normalize />
 			<GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme} />
 			<Navbar />
-			<Switch>
-				<main className='main-container'>
-					<Route path='/' component={HomePage} />
-				</main>
-			</Switch>
+			<main className='main-container'>
+				<Route path='/' component={HomePage} />
+			</main>
 		</>
 	);
 }
