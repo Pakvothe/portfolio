@@ -31,11 +31,14 @@ export const Ed = styled.div`
 		align-items: left;
 		text-align: left;
 		line-height: 1.3em;
+		width: 100%;
 
 		.edContainer{
+				width: 100%;
 				margin: 0.7em;
 
 			.education {
+				width: 100%;
 				margin: 1.5em 2em;
 				
 				h5 {

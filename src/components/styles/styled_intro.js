@@ -9,8 +9,9 @@ export const IntroStyled = styled.div`
 	overflow-x: hidden;
 	overflow-y: auto;
 	word-break: break-word;
-	height: 80vh;
+	height: 100%;
 	margin-top: 1.5em;
+	margin-bottom: 3em;
 
 	.intro-title {
 		font-size: 0.5em;
@@ -76,7 +77,7 @@ export const IntroStyled = styled.div`
 	}
 
 	@media (max-width: 480px){
-		margin: 0.5em 0 0 0.75em ;
+		margin: 0.5em 0 2em 0.75em ;
 
 		.intro-title {
 			font-size: 0.3em;

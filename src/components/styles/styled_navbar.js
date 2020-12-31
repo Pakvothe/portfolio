@@ -24,6 +24,7 @@ export const NavbarStyled = styled.nav`
 			justify-content: flex-end;
 			flex-basis: 300px;
 
+			
 			& > li {
 				position: relative;
 			}
@@ -45,6 +46,10 @@ export const NavbarStyled = styled.nav`
 				border: none;
 				color: inherit;
 				font: inherit;
+
+				&:focus{
+					outline: none;
+				}
 			}
 		}
 	}
