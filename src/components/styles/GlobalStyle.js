@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import SVG from 'react-inlinesvg';
+import LoadingOverlay from 'react-loading-overlay';
 
 // Estilos globales para habilitar el dark mode:
 export const GlobalStyle = createGlobalStyle`
@@ -52,5 +53,28 @@ export const ScrollButton = styled.button`
 		right: 15px;
 		bottom: 15px;
 		padding: 0.3em;
+	}
+`
+
+export const StyledLoader = styled(LoadingOverlay)`
+	position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+	transform: translate(-50%, -50%);
+	
+	.loading__spinner {
+		width: 100px;
+		& svg circle { stroke: var(--clr-primary)}
+	}
+
+	.loading__content {
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.2em;
+		font-weight: 900;
+		color: ${props => (props.theme === 'dark' ? 'white' : 'var(--clr-dark)')};
 	}
 `

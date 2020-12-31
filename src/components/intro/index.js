@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 //styles ==> 
 import { IntroStyled } from '../styles/styled_intro';
-import { StyledSVG } from '../styles/GlobalStyle';
+import { StyledLoader, StyledSVG } from '../styles/GlobalStyle';
 import LightSpeed from 'react-reveal/LightSpeed';
 import arrowDown from '../../assets/img/arrow-down.svg';
 
@@ -41,4 +41,4 @@ const Intro = () => {
 	)
 }
 
-export default Intro
+export default Intro;

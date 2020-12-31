@@ -1,8 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setIsOpen } from '../../redux/actions';
 
 //components ==> 
+import Loading from '../loading';
 import Intro from '../intro';
 import Background from '../background';
 import Education from '../education';
@@ -12,17 +13,21 @@ import Footer from '../footer';
 
 //styles ==>
 import arrowUp from '../../assets/img/arrow-up.svg';
-import { StyledSVG, ScrollButton } from '../styles/GlobalStyle';
+import { StyledSVG, ScrollButton, StyledLoader } from '../styles/GlobalStyle';
 
 //strings ==>
 import contactStrings from '../contact/strings';
-
 
 const HomePage = () => {
 	const dispatch = useDispatch();
 	const scrollButton = useRef();
 	const contactButton = useRef();
 	const language = useSelector(state => state.language);
+	const [loading, setLoading] = useState(true)
+
+	useEffect(() => {
+		setTimeout(() => setLoading(false), 3000)
+	}, [])
 
 	window.onscroll = function () { scrollFunction() };
 	const scrollDistance = 700;
@@ -57,18 +62,24 @@ const HomePage = () => {
 	}
 
 	return (
-		<div>
-			<Intro />
-			<Background />
-			<Education />
-			<Contact />
-			<Projects />
-			<Footer />
-			<ScrollButton ref={scrollButton} onClick={scrollToTop}>
-				<StyledSVG src={arrowUp} />
-			</ScrollButton>
-			<button ref={contactButton} className='contact' onClick={openModal}><p>{contactStrings[language].contact}</p></button>
-		</div>
+		<>
+			{loading === false ? (
+				<div>
+					<Intro />
+					<Background />
+					<Education />
+					<Contact />
+					<Projects />
+					<Footer />
+					<ScrollButton ref={scrollButton} onClick={scrollToTop}>
+						<StyledSVG src={arrowUp} />
+					</ScrollButton>
+					<button ref={contactButton} className='contact' onClick={openModal}><p>{contactStrings[language].contact}</p></button>
+				</div>
+			) : (
+					<Loading loading={loading} />
+				)}
+		</>
 	)
 }
 
