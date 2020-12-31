@@ -57,12 +57,17 @@ export const ScrollButton = styled.button`
 `
 
 export const StyledLoader = styled(LoadingOverlay)`
-	position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-right: -50%;
-	transform: translate(-50%, -50%);
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20em;
+		height: 20em;
 	
+	.css-df17o1{
+		background: transparent;
+	}
+
 	.loading__spinner {
 		width: 100px;
 		& svg circle { stroke: var(--clr-primary)}

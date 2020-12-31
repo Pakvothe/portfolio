@@ -4,6 +4,7 @@ import { setIsOpen } from '../../redux/actions';
 
 //components ==> 
 import Loading from '../loading';
+import Navbar from '../navbar';
 import Intro from '../intro';
 import Background from '../background';
 import Education from '../education';
@@ -65,6 +66,7 @@ const HomePage = () => {
 		<>
 			{loading === false ? (
 				<div>
+					<Navbar />
 					<Intro />
 					<Background />
 					<Education />
