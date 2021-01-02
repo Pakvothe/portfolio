@@ -38,15 +38,18 @@ export const ProjectsStyled = styled.section`
 				margin-top: 3em;
 			}
 			.image_container{
-				height: 200px;
-				width: 350px;
+				height: 35vh;
+				width: 35vw;
+				margin: 0 2em 0.5em 0;
 
-				img {
-					width: 100%;
-					height: 100%;
+				.image_zoom {
 					object-fit: contain;
-					border: 1px solid red;
-			}
+					border-radius: 10px;
+					border: 3px solid var(--clr-primary-dark);
+					box-shadow: 5px 5px 7px var(--clr-primary-light);
+					transition: box-shadow .2s ease-in-out;
+					transition: border .2s ease-in-out; */
+				}
 		}
 
 			figcaption {
@@ -56,6 +59,10 @@ export const ProjectsStyled = styled.section`
 				width: 25vw;
 				padding: 0 0 0.5em 0;
 
+				.title_container{
+					width: 100%;
+				}
+
 				a{
 					position: relative;
 					padding: 0 5px;
@@ -64,6 +71,7 @@ export const ProjectsStyled = styled.section`
 					color: var(--clr-primary-dark);
 					font-size: 1.1em;	
 					font-weight: 600;	
+					margin: 0 2em 0 0;
 					
 					&:after{
 						content: '';
@@ -131,22 +139,28 @@ export const ProjectsStyled = styled.section`
 		.info {
 			width: 100vw;
 			margin-left: 2em;
-			margin-top: 3em;
 
 			.project_container{
-				flex-direction: column;
-
-				&:first-child{
-					margin-top: 0.5em;
-				}
+				flex-direction: column-reverse;
 
 				.image_container {
 					width: 80vw;
-					margin-bottom: 1em;
+					margin: 2em 0 -9em 0;
 				}
 
 				figcaption{
-					width: 300px;
+					margin-top: 1em;
+					width: 80vw;
+					
+					.title_container {
+						display: flex;
+						align-items: flex-start;
+
+						a{
+							margin: 0 0.5em 0.5em 0;
+							padding: 0.1em;
+						}
+					}
 				}
 			}
 		}
