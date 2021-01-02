@@ -47,8 +47,6 @@ export const ProjectsStyled = styled.section`
 					border-radius: 10px;
 					border: 3px solid var(--clr-primary-dark);
 					box-shadow: 5px 5px 7px var(--clr-primary-light);
-					transition: box-shadow .2s ease-in-out;
-					transition: border .2s ease-in-out; */
 				}
 		}
 
