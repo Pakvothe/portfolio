@@ -1,5 +1,6 @@
 const strings = {
 	en: {
+		vis: 'Visits:',
 		language: 'Language',
 		language_en: "English",
 		language_es: "Spanish",
@@ -9,7 +10,8 @@ const strings = {
 		language: 'Idioma',
 		language_en: "Inglés",
 		language_es: "Español",
-		theme: 'Tema'
+		theme: 'Tema',
+		vis: 'Visitas:',
 	}
 };
 

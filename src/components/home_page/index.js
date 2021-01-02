@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setIsOpen } from '../../redux/actions';
+import { getFirestore } from '../../firebase';
+import firebase from 'firebase/app';
 
 //components ==> 
 import Loading from '../loading';
@@ -14,7 +16,7 @@ import Footer from '../footer';
 
 //styles ==>
 import arrowUp from '../../assets/img/arrow-up.svg';
-import { StyledSVG, ScrollButton, StyledLoader } from '../styles/GlobalStyle';
+import { StyledSVG, ScrollButton } from '../styles/GlobalStyle';
 
 //strings ==>
 import contactStrings from '../contact/strings';
@@ -25,10 +27,24 @@ const HomePage = () => {
 	const contactButton = useRef();
 	const language = useSelector(state => state.language);
 	const [loading, setLoading] = useState(true)
+	const [visits, setVisits] = useState(0)
 
 	useEffect(() => {
-		setTimeout(() => setLoading(false), 3000)
+		const db = getFirestore();
+		const counter = db.collection('Counter').doc('contador666')
+		counter.get().then(visit => {
+			setLoading(false)
+
+			if (!localStorage.getItem('visitante')) {
+				localStorage.setItem('visitante', '1')
+				counter.update({
+					counter: firebase.firestore.FieldValue.increment(1)
+				})
+			}
+			setVisits(visit.data().counter)
+		})
 	}, [])
+
 
 	window.onscroll = function () { scrollFunction() };
 	const scrollDistance = 700;
@@ -66,7 +82,7 @@ const HomePage = () => {
 		<>
 			{loading === false ? (
 				<div>
-					<Navbar />
+					<Navbar visits={visits} />
 					<Intro />
 					<Background />
 					<Education />
