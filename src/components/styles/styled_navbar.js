@@ -32,6 +32,9 @@ export const NavbarStyled = styled.nav`
 				text-align: center;
 				margin-top: 0.3em;
 			}
+			svg{
+				cursor: default;
+			}
 		}
 
 		.powr-hit-counter {
