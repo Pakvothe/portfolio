@@ -102,8 +102,9 @@ export const ProjectsStyled = styled.section`
 					flex-wrap: wrap;
 					list-style-type: none;
 					margin: 0.3em 0;
-
+					
 					li{
+						margin: 0.2em 0;
 						font-size: 0.8em;
 						font-weight: 600;
 						color: var(--clr-primary-dark);
