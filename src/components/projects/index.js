@@ -29,7 +29,7 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={finalweather} alt='final weather' className='image_zoom' zoomScale='0.7' />
+							<InnerImageZoom src={finalweather} alt='final weather' className='image_zoom' zoomScale={0.7} />
 						</Fade>
 					</div>
 					<Fade right cascade big>
@@ -51,7 +51,7 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale='0.5' />
+							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale={0.7} />
 						</Fade>
 					</div>
 					<Fade right cascade big>
@@ -72,7 +72,7 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale='0.5' />
+							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale={0.7} />
 						</Fade>
 					</div>
 					<Fade right cascade big>

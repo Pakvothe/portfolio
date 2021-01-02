@@ -32,7 +32,7 @@ export const ProjectsStyled = styled.section`
 			align-items: flex-start;
 			justify-content: space-evenly;
 			width: 100%;
-			margin: 0 0 3em 1.5em;
+			margin: 0 0 4em 1.5em;
 
 			&:first-child{
 				margin-top: 3em;
