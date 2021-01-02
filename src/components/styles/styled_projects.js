@@ -55,8 +55,9 @@ export const ProjectsStyled = styled.section`
 			figcaption {
 				display: flex;
 				flex-direction: column;
-				align-items: flex-start;
+				justify-content: space-between;
 				width: 25vw;
+				height: 100%;
 				padding: 0 0 0.5em 0;
 
 				.title_container{

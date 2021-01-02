@@ -21,7 +21,7 @@ const Projects = () => {
 			<div className='title'>
 				<Fade left >
 					<p>
-						<span>Projects</span>
+						<span>{strings[language].title}</span>
 					</p>
 				</Fade>
 			</div>
@@ -29,7 +29,7 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale='0.7' />
+							<InnerImageZoom src={finalweather} alt='final weather' className='image_zoom' zoomScale='0.7' />
 						</Fade>
 					</div>
 					<Fade right cascade big>
@@ -59,7 +59,7 @@ const Projects = () => {
 							<div>
 								<a href='/#'>Title</a>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus v</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus vLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus vLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus v</p>
 							<ul className='badges'>
 								<li>React</li>
 								<li>Redux</li>
