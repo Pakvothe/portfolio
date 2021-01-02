@@ -48,6 +48,9 @@ export const ScrollButton = styled.button`
 			fill: var(--clr-light);
 		}
 	}
+	&:focus{
+		outline: none;
+	}
 
 	@media (max-width: 480px){
 		right: 15px;

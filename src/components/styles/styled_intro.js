@@ -50,6 +50,7 @@ export const IntroStyled = styled.div`
 	.strong{
 		font-weight: 600;
 		position:relative;
+		padding: 0 0.1em;
 
 		&:after{
 			content: '';
