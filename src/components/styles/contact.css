@@ -188,6 +188,7 @@
 	color: var(--clr-primary);
 	border-color: var(--clr-primary);
 	cursor: pointer;
+	box-shadow: 0 0 15px var(--clr-secondary);
 }
 
 

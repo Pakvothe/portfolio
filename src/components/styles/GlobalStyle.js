@@ -76,6 +76,11 @@ export const StyledLoader = styled(LoadingOverlay)`
 		& svg circle { stroke: var(--clr-primary)}
 	}
 
+	.spinner{
+		position: relative;
+		top: 0;
+	}
+
 	.loading__content {
 		position: absolute;
 		top: 50px;

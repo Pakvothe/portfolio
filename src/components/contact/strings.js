@@ -7,7 +7,9 @@ const strings = {
 		message: 'Message',
 		send: 'Send Message',
 		succ: 'Mail sent successfully, I will reply soon! (:',
-		err: 'There was an error sending the mail :(, please try again or send manually to franqitto@gmail.com',
+		alert1: 'Email Sent',
+		err: 'There was an error sending the mail :(, please try again or send manually to ortiz.franco@yandex.com',
+		ph: 'This form sends me an email directly to my mailbox. Feel free to write to me.',
 	},
 	es: {
 		contact: 'Contacto',
@@ -17,7 +19,9 @@ const strings = {
 		message: 'Mensaje',
 		send: 'Enviar Mensaje',
 		succ: 'Correo enviado exitosamente, contestaré en breve! (:',
-		err: 'Hubo un error al enviar el correo :(,  por favor intente nuevamente o envie manualmente a franqitto@gmail.com',
+		alert1: 'Correo Enviado',
+		err: 'Hubo un error al enviar el correo :(,  por favor intente nuevamente o envie manualmente a ortiz.franco@yandex.com',
+		ph: 'Este formulario me envia un correo directamente a mi casilla. Sientete libre de escribirme.',
 	}
 };
 
