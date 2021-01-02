@@ -61,6 +61,19 @@ export const ProjectsStyled = styled.section`
 
 				.title_container{
 					width: 100%;
+
+					.title_app{
+						text-transform: uppercase;
+					}
+
+					.repo{
+						font-weight: 400;
+						color: currentColor;
+
+						&:hover{
+							color: white;
+						}
+					}
 				}
 
 				a{
@@ -142,10 +155,11 @@ export const ProjectsStyled = styled.section`
 
 			.project_container{
 				flex-direction: column-reverse;
+				flex-wrap: wrap;
 
 				.image_container {
 					width: 80vw;
-					margin: 2em 0 -9em 0;
+					margin: 0 0 -6em 0;
 				}
 
 				figcaption{

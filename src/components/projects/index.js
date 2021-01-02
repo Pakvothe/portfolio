@@ -35,8 +35,8 @@ const Projects = () => {
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a href='https://ff-weather.herokuapp.com/' target='_blank' rel='noreferrer'> Final Weather </a>
-								<a href='https://github.com/Pakvothe/FinalWeather' target='_blank' rel='noreferrer'>{strings[language].repo}</a>
+								<a className='title_app' href='https://ff-weather.herokuapp.com/' target='_blank' rel='noreferrer'  > Final Weather </a>
+								<a className='repo' href='https://github.com/Pakvothe/FinalWeather' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
 							</div>
 							<p>{strings[language].fw}</p>
 							<ul className='badges'>
