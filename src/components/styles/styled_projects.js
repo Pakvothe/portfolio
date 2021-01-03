@@ -114,6 +114,13 @@ export const ProjectsStyled = styled.section`
 					text-align: left;
 				}
 
+				.in_process{
+					font-weight: 600;
+					margin-bottom: 0;
+					height: 1.6em;
+					width: 6em;
+				}
+
 				.badges{
 					width: 100%;
 					display: flex;
