@@ -9,6 +9,8 @@ import Fade from 'react-reveal/Fade';
 //images ==> 
 import InnerImageZoom from 'react-inner-image-zoom';
 import finalweather from '../../assets/img/finalweather.png';
+import tetrisgame from '../../assets/img/tetrisgame.png';
+import gaminghub from '../../assets/img/gaminghub.png';
 
 //strings ==>
 import strings from './strings'
@@ -29,6 +31,57 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
+							<InnerImageZoom src={gaminghub} className='image_zoom' zoomScale={0.7} />
+						</Fade>
+					</div>
+					<Fade right cascade big>
+						<figcaption>
+							<div className='title_container'>
+								<a className='title_app' href='/#' target='_blank' rel='noreferrer'  > GamingHub </a>
+								<a className='repo' href='/#' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+							</div>
+							<p className='in_process'>{strings[language].progress}</p>
+							<p>{strings[language].gaming}</p>
+							<ul className='badges'>
+								<li>React</li>
+								<li>Redux</li>
+								<li>Styled Components</li>
+								<li>Node</li>
+								<li>Express</li>
+								<li>Sequelize</li>
+								<li>PostgreSQL</li>
+								<li>Firebase</li>
+								<li>Passport</li>
+								<li>SCRUM</li>
+							</ul>
+						</figcaption>
+					</Fade>
+				</div>
+				<div className='project_container'>
+					<div className='image_container'>
+						<Fade left big>
+							<InnerImageZoom src={tetrisgame} className='image_zoom' zoomScale={0.7} />
+						</Fade>
+					</div>
+					<Fade right cascade big>
+						<figcaption>
+							<div className='title_container'>
+								<a className='title_app' href='https://tetris-game-fo.herokuapp.com/' target='_blank' rel='noreferrer'  > Tetris Game </a>
+								<a className='repo' href='https://github.com/Pakvothe/ReactTetris' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+							</div>
+							<p>{strings[language].tetris}</p>
+							<ul className='badges'>
+								<li>JS ES6+</li>
+								<li>React</li>
+								<li>Styled Components</li>
+								<li>Heroku</li>
+							</ul>
+						</figcaption>
+					</Fade>
+				</div>
+				<div className='project_container'>
+					<div className='image_container'>
+						<Fade left big>
 							<InnerImageZoom src={finalweather} alt='final weather' className='image_zoom' zoomScale={0.7} />
 						</Fade>
 					</div>
@@ -44,48 +97,6 @@ const Projects = () => {
 								<li>React-Reveal</li>
 								<li>CSS Modules</li>
 								<li>Heroku</li>
-							</ul>
-						</figcaption>
-					</Fade>
-				</div>
-				<div className='project_container'>
-					<div className='image_container'>
-						<Fade left big>
-							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale={0.7} />
-						</Fade>
-					</div>
-					<Fade right cascade big>
-						<figcaption>
-							<div>
-								<a href='/#'>Title</a>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus vLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus vLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus v</p>
-							<ul className='badges'>
-								<li>React</li>
-								<li>Redux</li>
-								<li>Node</li>
-								<li>Express</li>
-							</ul>
-						</figcaption>
-					</Fade>
-				</div>
-				<div className='project_container'>
-					<div className='image_container'>
-						<Fade left big>
-							<InnerImageZoom src={finalweather} className='image_zoom' zoomScale={0.7} />
-						</Fade>
-					</div>
-					<Fade right cascade big>
-						<figcaption>
-							<div>
-								<a href='/#'>Title</a>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt bibendum velit, quis cursus ligula vehicula vel. Ut mauris sem, ultrices sed velit a, dignissim malesuada quam. Proin facilisis metus v</p>
-							<ul className='badges'>
-								<li>React</li>
-								<li>Redux</li>
-								<li>Node</li>
-								<li>Express</li>
 							</ul>
 						</figcaption>
 					</Fade>

@@ -81,7 +81,7 @@ export const NavbarStyled = styled.nav`
 
 	@media (max-width: 750px){
 		margin-bottom: 4em;
-		padding: 0 0.5em;
+		padding: 0 .5em;
 
 		svg{
 			width: 2em;
@@ -90,6 +90,7 @@ export const NavbarStyled = styled.nav`
 	
 		.visits{
 			height: 100%;
+			width: 20vw;
 		}
 	}
 	@media (max-width: 375px){
