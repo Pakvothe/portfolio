@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 //styles ==> 
 import { IntroStyled } from '../styles/styled_intro';
-import { StyledLoader, StyledSVG } from '../styles/GlobalStyle';
+import { StyledSVG } from '../styles/GlobalStyle';
 import Fade from 'react-reveal/Fade';
 import arrowDown from '../../assets/img/arrow-down.svg';
 

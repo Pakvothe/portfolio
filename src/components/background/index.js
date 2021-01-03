@@ -41,7 +41,7 @@ const Background = () => {
 			</div>
 			<div className='info'>
 				<Flip left big duration={2000}>
-					<img src={Paco} />
+					<img src={Paco} alt='franco ortiz' />
 				</Flip>
 				<Fade right big>
 					<p>
