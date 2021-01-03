@@ -17,6 +17,7 @@ import Footer from '../footer';
 //styles ==>
 import arrowUp from '../../assets/img/arrow-up.svg';
 import { StyledSVG, ScrollButton } from '../styles/GlobalStyle';
+import { animateScroll } from 'react-scroll';
 
 //strings ==>
 import contactStrings from '../contact/strings';
@@ -74,8 +75,7 @@ const HomePage = () => {
 		}
 	}
 	const scrollToTop = () => {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
+		animateScroll.scrollToTop();
 	}
 
 	return (
