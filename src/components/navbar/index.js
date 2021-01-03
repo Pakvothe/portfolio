@@ -22,7 +22,9 @@ const Navbar = ({ visits }) => {
 	const theme = useSelector(state => state.theme);
 
 	const handleLang = (ev) => {
-		dispatch(changeLanguage(ev.target.id))
+		if (ev.target.id) {
+			dispatch(changeLanguage(ev.target.id))
+		}
 	}
 
 	const handleTheme = () => {
