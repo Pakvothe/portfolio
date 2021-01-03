@@ -124,7 +124,7 @@ export const ProjectsStyled = styled.section`
 				.badges{
 					width: 100%;
 					display: flex;
-					justify-content: space-evenly;
+					justify-content: space-around;
 					align-items: flex-start;
 					flex-wrap: wrap;
 					list-style-type: none;
@@ -172,6 +172,9 @@ export const ProjectsStyled = styled.section`
 					margin-top: 1em;
 					width: 80vw;
 					
+					.badges{
+						justify-content: center;
+					}
 					.title_container {
 						display: flex;
 						align-items: flex-start;
