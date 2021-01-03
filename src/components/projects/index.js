@@ -36,7 +36,7 @@ const Projects = () => {
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='https://ff-weather.herokuapp.com/' target='_blank' rel='noreferrer'  > Tetris Game </a>
+								<a className='title_app' href='https://tetris-game-fo.herokuapp.com/' target='_blank' rel='noreferrer'  > Tetris Game </a>
 								<a className='repo' href='https://github.com/Pakvothe/ReactTetris' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
 							</div>
 							<p>{strings[language].tetris}</p>
