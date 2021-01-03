@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 //styles ==> 
 import { IntroStyled } from '../styles/styled_intro';
 import { StyledLoader, StyledSVG } from '../styles/GlobalStyle';
-import LightSpeed from 'react-reveal/LightSpeed';
+import Fade from 'react-reveal/Fade';
 import arrowDown from '../../assets/img/arrow-down.svg';
 
 //strings ==>
@@ -16,27 +16,27 @@ const Intro = () => {
 
 	return (
 		<IntroStyled theme={theme}>
-			<LightSpeed left>
+			<Fade left>
 				<div className='intro-title'>
 					<p>
 						<span> {strings[language].title}</span>
 					</p>
 				</div>
-			</LightSpeed>
-			<LightSpeed right>
+			</Fade>
+			<Fade right>
 				<div className='intro-info'>
 					<p>
 						<span> {strings[language].info}<span className='strong'>Franco Ortiz</span>{strings[language].info2} </span>
 					</p>
 				</div>
-			</LightSpeed>
-			<LightSpeed left>
+			</Fade>
+			<Fade left>
 				<div className='intro-scroll'>
 					<p>
 						<span> {strings[language].scroll}<StyledSVG src={arrowDown} /></span>
 					</p>
 				</div>
-			</LightSpeed>
+			</Fade>
 		</IntroStyled>
 	)
 }

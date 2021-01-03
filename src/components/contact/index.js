@@ -5,11 +5,12 @@ import emailjs from 'emailjs-com';
 import { setIsOpen } from '../../redux/actions';
 
 //strings ==>
-import strings from './strings'
+import strings from './strings';
 
 //Styles ==>
 import '../styles/contact.css';
 import { StyledSVG } from '../styles/styled_navbar';
+import Swal from 'sweetalert2';
 import close from '../../assets/img/close-transparent-gray.svg';
 import Zoom from 'react-reveal/Zoom';
 
@@ -57,11 +58,31 @@ const Contact = () => {
 		e.preventDefault();
 		emailjs.sendForm(REACT_APP_SERVICE, REACT_APP_TEMPLATE, e.target, REACT_APP_USER)
 			.then((result) => {
-				console.log(result.text);
-				alert(strings[language].succ)
+				Swal.fire({
+					heightAuto: false,
+					title: strings[language].alert1,
+					text: strings[language].succ,
+					icon: 'success',
+					confirmButtonText: 'Ok',
+					confirmButtonColor: '#0097A7',
+					onClose: () => {
+						dispatch(setIsOpen(false))
+						document.body.style.overflow = 'unset';
+					}
+				})
 			}, (error) => {
-				console.log(error.text);
-				alert(strings[language].err)
+				Swal.fire({
+					heightAuto: false,
+					title: 'Error!',
+					text: strings[language].err,
+					icon: 'error',
+					confirmButtonText: 'Ok',
+					confirmButtonColor: '#0097A7',
+					onClose: () => {
+						dispatch(setIsOpen(false))
+						document.body.style.overflow = 'unset';
+					}
+				})
 			});
 
 		e.target.reset();
@@ -130,6 +151,7 @@ const Contact = () => {
 										background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
 									}} className='inputs'
 									name='message'
+									placeholder={strings[language].ph}
 									required
 								/>
 							</label>

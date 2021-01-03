@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 //styles ==>
 import { NavbarStyled, Dropdown, StyledSVG } from '../styles/styled_navbar';
 import Fade from 'react-reveal/Fade';
-
 //actions ==>
 import { toggleTheme, changeLanguage } from '../../redux/actions';
 
@@ -12,17 +11,20 @@ import { toggleTheme, changeLanguage } from '../../redux/actions';
 import moon from '../../assets/img/moon.svg';
 import sun from '../../assets/img/sun.svg';
 import languageIcon from '../../assets/img/language.svg';
+import user from '../../assets/img/user.svg';
 
 //strings ==>
 import strings from './strings'
 
-const Navbar = () => {
+const Navbar = ({ visits }) => {
 	const dispatch = useDispatch();
 	const language = useSelector(state => state.language);
 	const theme = useSelector(state => state.theme);
 
 	const handleLang = (ev) => {
-		dispatch(changeLanguage(ev.target.id))
+		if (ev.target.id) {
+			dispatch(changeLanguage(ev.target.id))
+		}
 	}
 
 	const handleTheme = () => {
@@ -32,7 +34,13 @@ const Navbar = () => {
 	return (
 		<NavbarStyled>
 			<div className='wrapper navbar__top'>
-				<div />
+				<div className='visits'>
+					<StyledSVG src={user} />
+
+					<p>{strings[language].vis} <span className='number'>{visits}</span> </p>
+
+
+				</div>
 				<ul className='navbar__options'>
 					<Dropdown>
 						<Fade top>

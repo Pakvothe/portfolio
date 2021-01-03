@@ -32,12 +32,20 @@ const Footer = () => {
 			<Fade bottom cascade>
 				<ul className='social_media'>
 					<li>
-						<a href='mailto:franqitto@gmail.com?Subject=Oferta%20Laboral' target='_blank' rel='noreferrer'>
+						<a href={
+							language === 'en'
+								? 'mailto:ortiz.franco@yandex.com?Subject=Job%20Offer'
+								: 'mailto:ortiz.franco@yandex.com?Subject=Oferta%20Laboral'}
+							target='_blank' rel='noreferrer'>
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={gmail} />
 						</a>
 					</li>
 					<li>
-						<a href='https://wa.me/541124089678?text=Send%20me%20a%20message' target='_blank' rel='noreferrer'>
+						<a href={
+							language === 'en'
+								? 'https://wa.me/541124089678?text=Send%20me%20a%20message'
+								: 'https://wa.me/541124089678?text=Envíame%20un%20mensaje'}
+							target='_blank' rel='noreferrer'>
 							<StyledSVG style={{ fill: theme === 'dark' ? 'white' : 'black' }} src={whatsapp} />
 						</a>
 					</li>

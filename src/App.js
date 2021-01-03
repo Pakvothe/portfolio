@@ -10,7 +10,6 @@ import { lightTheme, darkTheme } from './components/styles/themes';
 
 //components ==>
 import HomePage from './components/home_page';
-import Navbar from './components/navbar';
 
 function App() {
 	const theme = useSelector(state => state.theme);
@@ -19,7 +18,6 @@ function App() {
 		<>
 			<Normalize />
 			<GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme} />
-			<Navbar />
 			<main className='main-container'>
 				<Route path='/' component={HomePage} />
 			</main>

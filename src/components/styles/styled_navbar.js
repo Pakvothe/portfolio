@@ -1,16 +1,41 @@
 import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 
-
 export const NavbarStyled = styled.nav`
-	padding: 1em 0;
-	svg  { fill: currentColor; }
+
+	svg  {
+		 	fill: currentColor; 
+		 	width: 2em;
+			height: 2em;
+		 }
 	
 	.navbar__top {
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 2em;
+		margin: 1em 0 2em 0;
+
+		.visits {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			color: currentColor;
+			font-weight: 400;
+
+			.number {
+				font-weight: 600;
+			}
+			p{
+				text-align: center;
+				margin-top: 0.3em;
+			}
+			svg{
+				cursor: default;
+			}
+		}
 
 		.powr-hit-counter {
 			display: flex;
@@ -51,6 +76,27 @@ export const NavbarStyled = styled.nav`
 					outline: none;
 				}
 			}
+		}
+	}
+
+	@media (max-width: 750px){
+		margin-bottom: 4em;
+		padding: 0 0.5em;
+
+		svg{
+			width: 2em;
+			height: 2em;
+		}
+	
+		.visits{
+			height: 100%;
+		}
+	}
+	@media (max-width: 375px){
+
+		.visits{
+			margin-left: -1em;
+			width: 30vw;
 		}
 	}
 

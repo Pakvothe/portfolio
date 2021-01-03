@@ -32,29 +32,48 @@ export const ProjectsStyled = styled.section`
 			align-items: flex-start;
 			justify-content: space-evenly;
 			width: 100%;
-			margin: 0 0 3em 1.5em;
+			margin: 0 0 4em 1.5em;
 
 			&:first-child{
 				margin-top: 3em;
 			}
 			.image_container{
-				height: 200px;
-				width: 350px;
+				height: 35vh;
+				width: 35vw;
+				margin: 0 2em 0.5em 0;
 
-				img {
-					width: 100%;
-					height: 100%;
+				.image_zoom {
 					object-fit: contain;
-					border: 1px solid red;
-			}
+					border-radius: 10px;
+					border: 3px solid var(--clr-primary-dark);
+					box-shadow: 5px 5px 7px var(--clr-primary-light);
+				}
 		}
 
 			figcaption {
 				display: flex;
 				flex-direction: column;
-				align-items: flex-start;
+				justify-content: space-between;
 				width: 25vw;
+				height: 100%;
 				padding: 0 0 0.5em 0;
+
+				.title_container{
+					width: 100%;
+
+					.title_app{
+						text-transform: uppercase;
+					}
+
+					.repo{
+						font-weight: 400;
+						color: currentColor;
+
+						&:hover{
+							color: white;
+						}
+					}
+				}
 
 				a{
 					position: relative;
@@ -64,6 +83,7 @@ export const ProjectsStyled = styled.section`
 					color: var(--clr-primary-dark);
 					font-size: 1.1em;	
 					font-weight: 600;	
+					margin: 0 2em 0 0;
 					
 					&:after{
 						content: '';
@@ -102,8 +122,9 @@ export const ProjectsStyled = styled.section`
 					flex-wrap: wrap;
 					list-style-type: none;
 					margin: 0.3em 0;
-
+					
 					li{
+						margin: 0.2em 0;
 						font-size: 0.8em;
 						font-weight: 600;
 						color: var(--clr-primary-dark);
@@ -130,22 +151,29 @@ export const ProjectsStyled = styled.section`
 		.info {
 			width: 100vw;
 			margin-left: 2em;
-			margin-top: 3em;
 
 			.project_container{
-				flex-direction: column;
-
-				&:first-child{
-					margin-top: 0.5em;
-				}
+				flex-direction: column-reverse;
+				flex-wrap: wrap;
 
 				.image_container {
 					width: 80vw;
-					margin-bottom: 1em;
+					margin: 0 0 -6em 0;
 				}
 
 				figcaption{
-					width: 300px;
+					margin-top: 1em;
+					width: 80vw;
+					
+					.title_container {
+						display: flex;
+						align-items: flex-start;
+
+						a{
+							margin: 0 0.5em 0.5em 0;
+							padding: 0.1em;
+						}
+					}
 				}
 			}
 		}
