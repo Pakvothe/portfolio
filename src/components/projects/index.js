@@ -37,8 +37,8 @@ const Projects = () => {
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='/#' target='_blank' rel='noreferrer'  > GamingHub </a>
-								<a className='repo' href='/#' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+								<a className='title_app' target='_blank' rel='noreferrer'  > GamingHub </a>
+								<a className='repo' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
 							</div>
 							<p className='in_process'>{strings[language].progress}</p>
 							<p>{strings[language].gaming}</p>
@@ -66,7 +66,7 @@ const Projects = () => {
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='https://tetris-game-fo.herokuapp.com/' target='_blank' rel='noreferrer'  > Tetris Game </a>
+								<a className='title_app' href='https://pakvothe.github.io/ReactTetris/' target='_blank' rel='noreferrer'  > Tetris Game </a>
 								<a className='repo' href='https://github.com/Pakvothe/ReactTetris' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
 							</div>
 							<p>{strings[language].tetris}</p>
@@ -88,7 +88,7 @@ const Projects = () => {
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='https://ff-weather.herokuapp.com/' target='_blank' rel='noreferrer'  > Final Weather </a>
+								<a className='title_app' href='https://pakvothe.github.io/FinalWeather/' target='_blank' rel='noreferrer'  > Final Weather </a>
 								<a className='repo' href='https://github.com/Pakvothe/FinalWeather' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
 							</div>
 							<p>{strings[language].fw}</p>
