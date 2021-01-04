@@ -109,6 +109,7 @@ export const Dropdown = styled.li`
 	margin-bottom: -.8em;
 	cursor: default;
 
+
 	.dropdown-columns{
 		columns: 3;
 		column-rule: 1px solid #ccc;
@@ -117,10 +118,10 @@ export const Dropdown = styled.li`
 			break-inside: avoid;
 			-webkit-column-break-inside: avoid;
 			page-break-inside: avoid;
-			a{
+			p{
 				border-radius: .4em;
 			}
-			&:last-of-type a {
+			&:last-of-type p {
 				border-radius: .4em;
 			}
 		}
@@ -168,7 +169,7 @@ export const Dropdown = styled.li`
 		}
 
 
-		a {
+		p {
 			color: var(--clr-primary-dark);
 			text-align: center;
 			display: block;

@@ -52,11 +52,11 @@ const Navbar = ({ visits }) => {
 						<ul onClick={(e) => handleLang(e)}>
 							<Fade duration={200}>
 								<li>
-									<p id='en' className={language === 'en' ? 'selected' : null}>
+									<p className='boton' id='en' className={language === 'en' ? 'selected' : null}>
 										{strings[language].language_en}
 									</p> </li>
 								<li>
-									<p id='es' className={language === 'es' ? 'selected' : null}>
+									<p className='boton' id='es' className={language === 'es' ? 'selected' : null}>
 										{strings[language].language_es}
 									</p>
 								</li>
