@@ -71,10 +71,10 @@ const Projects = () => {
 							</div>
 							<p>{strings[language].tetris}</p>
 							<ul className='badges'>
-								<li>JS ES6+</li>
 								<li>React</li>
+								<li>Redux</li>
+								<li>Firebase</li>
 								<li>Styled Components</li>
-								<li>Heroku</li>
 							</ul>
 						</figcaption>
 					</Fade>
@@ -96,7 +96,6 @@ const Projects = () => {
 								<li>React</li>
 								<li>React-Reveal</li>
 								<li>CSS Modules</li>
-								<li>Heroku</li>
 							</ul>
 						</figcaption>
 					</Fade>
