@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ab78cce7.chunk.css",
-    "main.js": "/portfolio/static/js/main.0a9360be.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0a9360be.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.29c9c616.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.29c9c616.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0ab3c05e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0ab3c05e.js.map",
     "static/css/2.ce076900.chunk.css": "/portfolio/static/css/2.ce076900.chunk.css",
@@ -29,7 +29,7 @@
     "static/media/linkedin.c09d94e7.svg": "/portfolio/static/media/linkedin.c09d94e7.svg",
     "static/media/moon.37488b4f.svg": "/portfolio/static/media/moon.37488b4f.svg",
     "static/media/sun.3812551f.svg": "/portfolio/static/media/sun.3812551f.svg",
-    "static/media/tetrisgame.62e8fba6.png": "/portfolio/static/media/tetrisgame.62e8fba6.png",
+    "static/media/tetrisgame.fba74272.png": "/portfolio/static/media/tetrisgame.fba74272.png",
     "static/media/user.a1ae9526.svg": "/portfolio/static/media/user.a1ae9526.svg",
     "static/media/whatsapp.c0dc3a96.svg": "/portfolio/static/media/whatsapp.c0dc3a96.svg"
   },
@@ -38,6 +38,6 @@
     "static/css/2.ce076900.chunk.css",
     "static/js/2.6555fa33.chunk.js",
     "static/css/main.ab78cce7.chunk.css",
-    "static/js/main.0a9360be.chunk.js"
+    "static/js/main.29c9c616.chunk.js"
   ]
 }
