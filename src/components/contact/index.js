@@ -65,7 +65,7 @@ const Contact = () => {
 					icon: 'success',
 					confirmButtonText: 'Ok',
 					confirmButtonColor: '#0097A7',
-					onClose: () => {
+					willClose: () => {
 						dispatch(setIsOpen(false))
 						document.body.style.overflow = 'unset';
 					}
@@ -78,7 +78,7 @@ const Contact = () => {
 					icon: 'error',
 					confirmButtonText: 'Ok',
 					confirmButtonColor: '#0097A7',
-					onClose: () => {
+					willClose: () => {
 						dispatch(setIsOpen(false))
 						document.body.style.overflow = 'unset';
 					}
