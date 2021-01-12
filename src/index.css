@@ -14,6 +14,28 @@
 	--clr-success: #97DA3F;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--clr-primary);
+	border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--clr-primary-dark);
+}
+
 ::selection{
 	background-color: var(--clr-primary);
 }
