@@ -5,7 +5,7 @@
 -  **React**
 -  **Redux**
 -  **StyledComponents**
--  **FIrebase**
+-  **Firebase**
 
 ```sh
  For the Emails the 'email.js' service was used.
