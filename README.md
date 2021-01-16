@@ -16,7 +16,7 @@
 
  ##### Contact:
 
- - **Email:** `ortiz.franco@mail.com`
+ - **Email:** `ortiz.franco@yandex.com`
 
 ```sh
  Feel free to send me a email.
