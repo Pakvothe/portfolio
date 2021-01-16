@@ -37,8 +37,8 @@ const Projects = () => {
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' target='_blank' rel='noreferrer'  > GamingHub </a>
-								<a className='repo' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+								<a className='title_app' href='https://ecommerce-ft07-g07.vercel.app/' target='_blank' rel='noreferrer'  > GamingHub </a>
+								<a className='repo' href='/#' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
 							</div>
 							<p className='in_process'>{strings[language].progress}</p>
 							<p>{strings[language].gaming}</p>
