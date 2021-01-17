@@ -7,7 +7,7 @@ import { BackgroundStyled } from '../styles/styled_background';
 import Fade from 'react-reveal/Fade';
 import Shake from 'react-reveal/Shake';
 import Flip from 'react-reveal/Flip';
-import Paco from '../../assets/img/Paco.png';
+import Paco from '../../assets/img/paco.png';
 
 //strings ==>
 import strings from './strings'

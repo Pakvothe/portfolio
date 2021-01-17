@@ -23,6 +23,7 @@ export const BackgroundStyled = styled.section`
 			height: 12em;
 			border-radius: 99em;
 			border: 4px solid var(--clr-primary-dark);
+			object-fit: cover;
 		}
 	}
 
