@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a70247c6.chunk.css",
-    "main.js": "/portfolio/static/js/main.b42ce67d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b42ce67d.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.7bb0e00c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7bb0e00c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0ab3c05e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0ab3c05e.js.map",
     "static/css/2.ce076900.chunk.css": "/portfolio/static/css/2.ce076900.chunk.css",
@@ -19,8 +19,8 @@
     "static/media/arrow-down.245465fb.svg": "/portfolio/static/media/arrow-down.245465fb.svg",
     "static/media/arrow-up.2c20b5e3.svg": "/portfolio/static/media/arrow-up.2c20b5e3.svg",
     "static/media/close-transparent-gray.c7ce3477.svg": "/portfolio/static/media/close-transparent-gray.c7ce3477.svg",
-    "static/media/finalweather.57a903a9.png": "/portfolio/static/media/finalweather.57a903a9.png",
-    "static/media/gaminghub.e1bc49af.png": "/portfolio/static/media/gaminghub.e1bc49af.png",
+    "static/media/finalweather.9b09a970.png": "/portfolio/static/media/finalweather.9b09a970.png",
+    "static/media/gaminghub.2d13042a.png": "/portfolio/static/media/gaminghub.2d13042a.png",
     "static/media/github.2b004cb3.svg": "/portfolio/static/media/github.2b004cb3.svg",
     "static/media/gmail.75dd11d4.svg": "/portfolio/static/media/gmail.75dd11d4.svg",
     "static/media/instagram.00e5d135.svg": "/portfolio/static/media/instagram.00e5d135.svg",
@@ -29,7 +29,7 @@
     "static/media/moon.37488b4f.svg": "/portfolio/static/media/moon.37488b4f.svg",
     "static/media/paco.e9ccd875.png": "/portfolio/static/media/paco.e9ccd875.png",
     "static/media/sun.3812551f.svg": "/portfolio/static/media/sun.3812551f.svg",
-    "static/media/tetrisgame.fba74272.png": "/portfolio/static/media/tetrisgame.fba74272.png",
+    "static/media/tetrisgame.9ba19632.png": "/portfolio/static/media/tetrisgame.9ba19632.png",
     "static/media/user.a1ae9526.svg": "/portfolio/static/media/user.a1ae9526.svg",
     "static/media/whatsapp.c0dc3a96.svg": "/portfolio/static/media/whatsapp.c0dc3a96.svg"
   },
@@ -38,6 +38,6 @@
     "static/css/2.ce076900.chunk.css",
     "static/js/2.aae36170.chunk.js",
     "static/css/main.a70247c6.chunk.css",
-    "static/js/main.b42ce67d.chunk.js"
+    "static/js/main.7bb0e00c.chunk.js"
   ]
 }
