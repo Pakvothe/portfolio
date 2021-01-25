@@ -6,7 +6,7 @@ export const ProjectsStyled = styled.section`
 	font-size: 1.1em;
 	margin-top: 6em;
 
-	.title{
+	.title {
 		text-transform: uppercase;
 		color: var(--clr-primary-dark);
 		font-weight: 600;
@@ -23,10 +23,9 @@ export const ProjectsStyled = styled.section`
 		text-align: left;
 		line-height: 1.3em;
 
-		p{
+		p {
 			margin: 0.7em;
 		}
-
 		.project_container {
 			display: flex;
 			align-items: flex-start;
@@ -34,10 +33,10 @@ export const ProjectsStyled = styled.section`
 			width: 100%;
 			margin: 0 0 4em 1.5em;
 
-			&:first-child{
+			&:first-child {
 				margin-top: 3em;
 			}
-			.image_container{
+			.image_container {
 				height: 35vh;
 				width: 35vw;
 				margin: 0 2em 0.5em 0;
@@ -48,7 +47,23 @@ export const ProjectsStyled = styled.section`
 					border: 3px solid var(--clr-primary-dark);
 					box-shadow: 5px 5px 7px var(--clr-primary-light);
 				}
-		}
+			}
+			.image_mobile_container {
+				height: 35vh;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				.mobile-img {
+					height: auto;
+					width: 80%;
+					object-fit: cover;
+				}
+
+				.hidden {
+					display: none;
+				}
+			}
 
 			figcaption {
 				display: flex;
@@ -58,34 +73,34 @@ export const ProjectsStyled = styled.section`
 				height: 100%;
 				padding: 0 0 0.5em 0;
 
-				.title_container{
+				.title_container {
 					width: 100%;
 
-					.title_app{
+					.title_app {
 						text-transform: uppercase;
 					}
 
-					.repo{
+					.repo {
 						font-weight: 400;
 						color: currentColor;
 
-						&:hover{
+						&:hover {
 							color: white;
 						}
 					}
 				}
 
-				a{
+				a {
 					position: relative;
 					padding: 0 5px;
 					text-align: center;
 					text-decoration: none;
 					color: var(--clr-primary-dark);
-					font-size: 1.1em;	
-					font-weight: 600;	
+					font-size: 1.1em;
+					font-weight: 600;
 					margin: 0 2em 0 0;
-					
-					&:after{
+
+					&:after {
 						content: '';
 						display: block;
 						position: absolute;
@@ -101,8 +116,8 @@ export const ProjectsStyled = styled.section`
 						transform-origin: bottom;
 					}
 
-					&:hover{
-						&:after{
+					&:hover {
+						&:after {
 							transform: scaleY(1);
 						}
 						color: white;
@@ -114,14 +129,14 @@ export const ProjectsStyled = styled.section`
 					text-align: left;
 				}
 
-				.in_process{
+				.in_process {
 					font-weight: 600;
 					margin-bottom: 0;
 					height: 1.6em;
 					width: 6em;
 				}
 
-				.badges{
+				.badges {
 					width: 100%;
 					display: flex;
 					justify-content: space-around;
@@ -129,8 +144,8 @@ export const ProjectsStyled = styled.section`
 					flex-wrap: wrap;
 					list-style-type: none;
 					margin: 0.3em 0;
-					
-					li{
+
+					li {
 						margin: 0.2em 0;
 						font-size: 0.8em;
 						font-weight: 600;
@@ -144,12 +159,12 @@ export const ProjectsStyled = styled.section`
 		}
 	}
 
-	@media (max-width: 480px){
+	@media (max-width: 480px) {
 		flex-direction: row;
 		align-items: flex-end;
 		flex-wrap: wrap;
-		
-		.title{
+
+		.title {
 			align-self: flex-start;
 			margin-left: 2em;
 			width: 100vw;
@@ -159,7 +174,10 @@ export const ProjectsStyled = styled.section`
 			width: 100vw;
 			margin-left: 2em;
 
-			.project_container{
+			.mt-12 {
+				margin-top: 12em;
+			}
+			.project_container {
 				flex-direction: column-reverse;
 				flex-wrap: wrap;
 
@@ -168,18 +186,18 @@ export const ProjectsStyled = styled.section`
 					margin: 0 0 -6em 0;
 				}
 
-				figcaption{
+				figcaption {
 					margin-top: 1em;
 					width: 80vw;
-					
-					.badges{
+
+					.badges {
 						justify-content: center;
 					}
 					.title_container {
 						display: flex;
 						align-items: flex-start;
 
-						a{
+						a {
 							margin: 0 0.5em 0.5em 0;
 							padding: 0.1em;
 						}
@@ -188,4 +206,27 @@ export const ProjectsStyled = styled.section`
 			}
 		}
 	}
-`
+	@media (min-width: 1400px) {
+		.image_mobile_container {
+			align-items: center;
+			justify-content: center;
+
+			.mobile-img {
+				max-height: auto;
+				max-width: 22vh;
+				object-fit: cover;
+			}
+
+			.hidden {
+				display: block !important;
+			}
+		}
+		@media (min-width: 1700px) {
+			.mobile-img {
+				max-height: auto;
+				max-width: 23vh;
+				object-fit: cover;
+			}
+		}
+	}
+`;

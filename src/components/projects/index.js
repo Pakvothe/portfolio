@@ -1,27 +1,30 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-//styles ==> 
+//styles ==>
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import { ProjectsStyled } from '../styles/styled_projects';
 import Fade from 'react-reveal/Fade';
 
-//images ==> 
+//images ==>
 import InnerImageZoom from 'react-inner-image-zoom';
 import finalweather from '../../assets/img/finalweather.png';
 import tetrisgame from '../../assets/img/tetrisgame.png';
 import gaminghub from '../../assets/img/gaminghub.png';
+import quiz1 from '../../assets/img/quiz1.png';
+import quiz2 from '../../assets/img/quiz2.png';
+import quiz3 from '../../assets/img/quiz3.png';
 
 //strings ==>
-import strings from './strings'
-
+import strings from './strings';
+//	<p className='in_process'>{strings[language].progress}</p>
 const Projects = () => {
-	const language = useSelector(state => state.language);
+	const language = useSelector((state) => state.language);
 
 	return (
 		<ProjectsStyled>
 			<div className='title'>
-				<Fade left >
+				<Fade left>
 					<p>
 						<span>{strings[language].title}</span>
 					</p>
@@ -30,17 +33,84 @@ const Projects = () => {
 			<div className='info'>
 				<div className='project_container'>
 					<div className='image_container'>
+						<div className='image_mobile_container'>
+							<Fade left big>
+								<InnerImageZoom
+									src={quiz1}
+									zoomScale={0.7}
+									className='mobile-img'
+								/>
+							</Fade>
+							<Fade left big>
+								<InnerImageZoom
+									src={quiz2}
+									zoomScale={0.7}
+									className='mobile-img'
+								/>
+							</Fade>
+							<Fade left big>
+								<InnerImageZoom
+									src={quiz3}
+									zoomScale={0.7}
+									className='mobile-img hidden'
+								/>
+							</Fade>
+						</div>
+					</div>
+					<Fade right cascade big>
+						<figcaption>
+							<div className='title_container'>
+								<a className='title_app'> QuizzMeApp </a>
+								<p className='in_process'>
+									{strings[language].progress}
+								</p>
+							</div>
+							<p>{strings[language].quiz}</p>
+							<ul className='badges'>
+								<li>React Native</li>
+								<li>Redux Toolkit</li>
+								<li>Styled Components</li>
+								<li>Node</li>
+								<li>Express</li>
+								<li>GraphQL</li>
+								<li>MongoDB</li>
+								<li>Firebase</li>
+								<li>SCRUM</li>
+							</ul>
+						</figcaption>
+					</Fade>
+				</div>
+				<div className='project_container mt-12'>
+					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={gaminghub} className='image_zoom' zoomScale={0.7} />
+							<InnerImageZoom
+								src={gaminghub}
+								className='image_zoom'
+								zoomScale={0.7}
+							/>
 						</Fade>
 					</div>
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='https://ecommerce-ft07-g07.vercel.app/' target='_blank' rel='noreferrer'  > GamingHub </a>
-								<a className='repo' href='https://github.com/Pakvothe/GamingHub' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+								<a
+									className='title_app'
+									href='https://ecommerce-ft07-g07.vercel.app/'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{' '}
+									GamingHub{' '}
+								</a>
+								<a
+									className='repo'
+									href='https://github.com/Pakvothe/GamingHub'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{strings[language].repo}
+								</a>
 							</div>
-							<p className='in_process'>{strings[language].progress}</p>
 							<p>{strings[language].gaming}</p>
 							<ul className='badges'>
 								<li>React</li>
@@ -60,14 +130,33 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={tetrisgame} className='image_zoom' zoomScale={0.7} />
+							<InnerImageZoom
+								src={tetrisgame}
+								className='image_zoom'
+								zoomScale={0.7}
+							/>
 						</Fade>
 					</div>
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='https://pakvothe.github.io/ReactTetris/' target='_blank' rel='noreferrer'  > Tetris Game </a>
-								<a className='repo' href='https://github.com/Pakvothe/ReactTetris' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+								<a
+									className='title_app'
+									href='https://pakvothe.github.io/ReactTetris/'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{' '}
+									Tetris Game{' '}
+								</a>
+								<a
+									className='repo'
+									href='https://github.com/Pakvothe/ReactTetris'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{strings[language].repo}
+								</a>
 							</div>
 							<p>{strings[language].tetris}</p>
 							<ul className='badges'>
@@ -82,14 +171,34 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<Fade left big>
-							<InnerImageZoom src={finalweather} alt='final weather' className='image_zoom' zoomScale={0.7} />
+							<InnerImageZoom
+								src={finalweather}
+								alt='final weather'
+								className='image_zoom'
+								zoomScale={0.7}
+							/>
 						</Fade>
 					</div>
 					<Fade right cascade big>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app' href='https://pakvothe.github.io/FinalWeather/' target='_blank' rel='noreferrer'  > Final Weather </a>
-								<a className='repo' href='https://github.com/Pakvothe/FinalWeather' target='_blank' rel='noreferrer' >{strings[language].repo}</a>
+								<a
+									className='title_app'
+									href='https://pakvothe.github.io/FinalWeather/'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{' '}
+									Final Weather{' '}
+								</a>
+								<a
+									className='repo'
+									href='https://github.com/Pakvothe/FinalWeather'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{strings[language].repo}
+								</a>
 							</div>
 							<p>{strings[language].fw}</p>
 							<ul className='badges'>
@@ -102,7 +211,7 @@ const Projects = () => {
 				</div>
 			</div>
 		</ProjectsStyled>
-	)
-}
+	);
+};
 
 export default Projects;
