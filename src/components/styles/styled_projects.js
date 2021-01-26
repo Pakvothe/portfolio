@@ -31,7 +31,7 @@ export const ProjectsStyled = styled.section`
 			align-items: flex-start;
 			justify-content: space-evenly;
 			width: 100%;
-			margin: 0 0 4em 1.5em;
+			margin: 2em auto;
 
 			&:first-child {
 				margin-top: 3em;
@@ -175,7 +175,7 @@ export const ProjectsStyled = styled.section`
 			margin-left: 2em;
 
 			.mt-12 {
-				margin-top: 12em;
+				margin-top: 6em;
 			}
 			.project_container {
 				flex-direction: column-reverse;
