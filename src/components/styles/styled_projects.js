@@ -45,7 +45,7 @@ export const ProjectsStyled = styled.section`
 					object-fit: contain;
 					border-radius: 10px;
 					border: 3px solid var(--clr-primary-dark);
-					box-shadow: 5px 5px 7px var(--clr-primary-light);
+					box-shadow: 0 7px 30px rgba(0, 0, 0, 0.5);
 				}
 			}
 			.image_mobile_container {
@@ -58,6 +58,8 @@ export const ProjectsStyled = styled.section`
 					height: auto;
 					width: 80%;
 					object-fit: cover;
+					box-shadow: 0 7px 30px rgba(0, 0, 0, 0.5);
+					border-radius: 13%;
 				}
 
 				.hidden {
@@ -153,6 +155,7 @@ export const ProjectsStyled = styled.section`
 						border: 2px solid var(--clr-primary-dark);
 						border-radius: 5px;
 						padding: 0 0.2em;
+						box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 					}
 				}
 			}

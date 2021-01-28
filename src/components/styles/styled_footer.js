@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 
-
 export const StyledFooter = styled.footer`
 	display: flex;
 	justify-content: space-between;
@@ -9,23 +8,23 @@ export const StyledFooter = styled.footer`
 	margin: 3.2em 0 -1.5em 0;
 	width: 100%;
 
-	@media (max-width: 950px){
+	@media (max-width: 950px) {
 		justify-content: center;
 		flex-direction: column-reverse;
 		margin-bottom: 0.5em;
 	}
-	
-	.sign{
+
+	.sign {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		height: 10vh;
-		
-		p{
-			font-weight: 600;	
+
+		p {
+			font-weight: 600;
 		}
 
-		a{
+		a {
 			cursor: pointer;
 			position: relative;
 			font-weight: 900;
@@ -33,8 +32,8 @@ export const StyledFooter = styled.footer`
 			font-size: 1.2em;
 			padding: 0.2em;
 			color: var(--clr-primary-dark);
-		
-			&:after{
+
+			&:after {
 				content: '';
 				display: block;
 				position: absolute;
@@ -50,50 +49,50 @@ export const StyledFooter = styled.footer`
 				transform-origin: bottom;
 			}
 
-			&:hover{
-				&:after{
+			&:hover {
+				&:after {
 					transform: scaleY(1);
 				}
 				color: white;
 			}
 		}
-		@media (max-width: 950px){
+		@media (max-width: 950px) {
 			margin: 0.5em 0;
 			flex-wrap: wrap;
 			height: 100%;
-			
-			a:focus{
+
+			a:focus {
 				outline: 0;
 			}
 		}
 	}
 
-	.social_media{
+	.social_media {
 		display: flex;
 		align-items: center;
 
-		li{
+		li {
 			list-style: none;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin: 1em 1.5em;
 		}
-		
-		@media (max-width: 500px){
-			a:focus{
+
+		@media (max-width: 500px) {
+			a:focus {
 				outline: 0;
 			}
 		}
 	}
-`
+`;
 
 export const StyledSVG = styled(SVG)`
 	height: 2em;
 	cursor: pointer;
 
-	&:hover{
+	&:hover {
 		fill: var(--clr-primary-dark) !important;
 		border: none;
 	}
-`
+`;

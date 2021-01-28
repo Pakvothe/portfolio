@@ -18,9 +18,8 @@ export const GlobalStyle = createGlobalStyle`
 		
 	}
 
-`
-export const StyledSVG = styled(SVG)`
-`
+`;
+export const StyledSVG = styled(SVG)``;
 export const ScrollButton = styled.button`
 	pointer-events: none;
 	opacity: 0;
@@ -31,9 +30,10 @@ export const ScrollButton = styled.button`
 	padding: 0.3em;
 	background: var(--clr-primary);
 	color: var(--clr-light);
-	transition: opacity 1000ms ease-in-out;
 	border-radius: 999em;
 	cursor: pointer;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+	transition: color 0.2s ease-in-out, opacity 1000ms ease-in-out;
 
 	svg {
 		fill: var(--clr-light);
@@ -41,42 +41,45 @@ export const ScrollButton = styled.button`
 		height: 2.5em;
 	}
 
-	&:hover{
+	&:hover {
+		box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
 		background: var(--clr-primary-dark);
 
-		svg{
+		svg {
 			fill: var(--clr-light);
 		}
 	}
-	&:focus{
+	&:focus {
 		outline: none;
 	}
 
-	@media (max-width: 480px){
+	@media (max-width: 480px) {
 		right: 15px;
 		bottom: 15px;
 		padding: 0.3em;
 	}
-`
+`;
 
 export const StyledLoader = styled(LoadingOverlay)`
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 20em;
-		height: 20em;
-	
-	.css-df17o1{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20em;
+	height: 20em;
+
+	.css-df17o1 {
 		background: transparent;
 	}
 
 	.loading__spinner {
 		width: 100px;
-		& svg circle { stroke: var(--clr-primary)}
+		& svg circle {
+			stroke: var(--clr-primary);
+		}
 	}
 
-	.spinner{
+	.spinner {
 		position: relative;
 		top: 0;
 	}
@@ -88,6 +91,7 @@ export const StyledLoader = styled(LoadingOverlay)`
 		transform: translateX(-50%);
 		font-size: 1.2em;
 		font-weight: 900;
-		color: ${props => (props.theme === 'dark' ? 'white' : 'var(--clr-dark)')};
+		color: ${(props) =>
+			props.theme === 'dark' ? 'white' : 'var(--clr-dark)'};
 	}
-`
+`;

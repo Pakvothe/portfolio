@@ -1,19 +1,18 @@
 :root {
-	--clr-primary: #00BCD4;
-	--clr-primary-dark: #0097A7;
-	--clr-primary-light:#B2EBF2;
-	--clr-dark:#171c28;
-	--clr-light: #FFFFFF;
+	--clr-primary: #00bcd4;
+	--clr-primary-dark: #0097a7;
+	--clr-primary-light: #b2ebf2;
+	--clr-dark: #171c28;
+	--clr-light: #ffffff;
 	--clr-secondary: #009688;
 	--clr-primary-text: #212121;
-	--clr-dark-text: #FFFFFF;
+	--clr-dark-text: #ffffff;
 	--clr-secondary-text: #757575;
-	--clr-divider: #BDBDBD;
-	--clr-warning: #F6DB2D;
-	--clr-error: #D53051;
-	--clr-success: #97DA3F;
+	--clr-divider: #bdbdbd;
+	--clr-warning: #f6db2d;
+	--clr-error: #d53051;
+	--clr-success: #97da3f;
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -28,15 +27,18 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: var(--clr-primary);
+	box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
+	transition: color 0.2s ease-in-out;
 	border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--clr-primary-dark);
+	box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-::selection{
+::selection {
 	background-color: var(--clr-primary);
 }
 
@@ -46,19 +48,25 @@
 	box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, button {
-	font-family: Poppins , sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	font-family: Poppins, sans-serif;
 	line-height: 1;
 	font-weight: 900;
 }
 
 body {
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility !important;
+	font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility !important;
 }
 
 #root {

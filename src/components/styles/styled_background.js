@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-
 export const BackgroundStyled = styled.section`
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 1.1em;
 	margin-bottom: 6em;
 
-	.title{
+	.title {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -18,12 +17,13 @@ export const BackgroundStyled = styled.section`
 		margin: 0.7em;
 		width: 20vw;
 
-		img{
+		img {
 			width: 12em;
 			height: 12em;
 			border-radius: 99em;
 			border: 4px solid var(--clr-primary-dark);
 			object-fit: cover;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 		}
 	}
 
@@ -35,11 +35,11 @@ export const BackgroundStyled = styled.section`
 		text-align: left;
 		line-height: 1.3em;
 
-		img{
+		img {
 			display: none;
 		}
 
-		p{
+		p {
 			margin: 0.7em;
 		}
 
@@ -52,24 +52,26 @@ export const BackgroundStyled = styled.section`
 			text-align: center;
 			border: 2px solid currentColor;
 			border-radius: 7px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+			transition: color 0.2s ease-in-out;
 
-			&:hover{
+			&:hover {
 				color: var(--clr-primary);
-				box-shadow: 0 0 2px var(--clr-primary)
+				box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
 			}
 		}
 	}
 
-	@media (max-width: 480px){
+	@media (max-width: 480px) {
 		flex-direction: column;
 		align-items: flex-end;
-		
-		.title{
+
+		.title {
 			align-self: flex-start;
 			margin-left: 2em;
 			width: 40vw;
 
-			img{
+			img {
 				display: none;
 			}
 		}
@@ -88,4 +90,4 @@ export const BackgroundStyled = styled.section`
 			}
 		}
 	}
-`
+`;
