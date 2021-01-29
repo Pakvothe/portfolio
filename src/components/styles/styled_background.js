@@ -22,7 +22,7 @@ export const BackgroundStyled = styled.section`
 			height: 12em;
 			border-radius: 99em;
 			border: 4px solid var(--clr-primary-dark);
-			object-fit: cover;
+			object-fit: contain;
 			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 		}
 	}
