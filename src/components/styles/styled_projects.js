@@ -59,7 +59,7 @@ export const ProjectsStyled = styled.section`
 					width: 80%;
 					object-fit: cover;
 					box-shadow: 0 7px 30px rgba(0, 0, 0, 0.5);
-					border-radius: 13%;
+					border-radius: 5%;
 				}
 
 				.hidden {

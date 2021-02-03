@@ -37,21 +37,21 @@ const Projects = () => {
 							<Fade left big>
 								<InnerImageZoom
 									src={quiz1}
-									zoomScale={0.7}
+									zoomScale={0.3}
 									className='mobile-img'
 								/>
 							</Fade>
 							<Fade left big>
 								<InnerImageZoom
 									src={quiz2}
-									zoomScale={0.7}
+									zoomScale={0.3}
 									className='mobile-img'
 								/>
 							</Fade>
 							<Fade left big>
 								<InnerImageZoom
 									src={quiz3}
-									zoomScale={0.7}
+									zoomScale={0.3}
 									className='mobile-img hidden'
 								/>
 							</Fade>

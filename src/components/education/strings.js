@@ -2,7 +2,7 @@ const strings = {
 	en: {
 		title1: 'Education',
 		title2: 'Skills',
-		ed1: 'Henry Bootcamp ( 700 hs ) Studying',
+		ed1: 'Henry Bootcamp ( 800 hs ) Studying',
 		ed1info:
 			'Algorithms,HTML, CSS, Bootstrap, Data structures, Javascript ES6 +, LESS, React, React Native, GraphQL, MongoDB, Redux, Node, Express, PostgreSQL, Sequelieze, Passport, Webpack.',
 		ed2: 'Complete Web Development Course on Udemy ( 54 hs )',
@@ -20,7 +20,7 @@ const strings = {
 	es: {
 		title1: 'Educación',
 		title2: 'Skills',
-		ed1: 'Henry Bootcamp ( 700 hs ) Cursando',
+		ed1: 'Henry Bootcamp ( 800 hs ) Cursando',
 		ed1info:
 			'Algoritmos, HTML, CSS, Bootstrap,Estrucutras de datos, Javascript ES6+, LESS, React, React Native, GraphQL, MongoDB, Redux, Node, Express, PostgreSQL, Sequelieze, Passport, Webpack.',
 		ed2: 'Curso Desarrollo Web Completo en Udemy ( 54 hs )',
