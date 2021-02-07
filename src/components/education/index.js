@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 //styles ==>
 import { EducationContainer, Ed, Skills } from '../styles/styled_education';
 import Fade from 'react-reveal/Fade';
-import Roll from 'react-reveal/Roll';
 
 //strings ==>
 import strings from './strings';
@@ -15,7 +14,7 @@ const Education = () => {
 		<EducationContainer>
 			<Ed>
 				<div className='title'>
-					<Fade left big>
+					<Fade>
 						<p>
 							<span>{strings[language].title1}</span>
 						</p>
@@ -23,7 +22,7 @@ const Education = () => {
 				</div>
 				<div className='info'>
 					<div className='edContainer'>
-						<Roll left cascade>
+						<Fade cascade>
 							<div className='education'>
 								<h5>{strings[language].ed1}</h5>
 								<p>{strings[language].ed1info}</p>
@@ -39,13 +38,13 @@ const Education = () => {
 								<h5>{strings[language].ed3}</h5>
 								<p>{strings[language].ed3info}</p>
 							</div>
-						</Roll>
+						</Fade>
 					</div>
 				</div>
 			</Ed>
 			<Skills>
 				<div className='title'>
-					<Fade left big>
+					<Fade>
 						<p>
 							<span>{strings[language].title2}</span>
 						</p>
@@ -53,7 +52,7 @@ const Education = () => {
 				</div>
 				<div className='info'>
 					<ul className='skill'>
-						<Roll right cascade>
+						<Fade cascade>
 							<div className='skillDiv'>
 								<h5>Front</h5>
 								<li>
@@ -153,7 +152,7 @@ const Education = () => {
 									<p>{strings[language].ss6}</p>
 								</li>
 							</div>
-						</Roll>
+						</Fade>
 					</ul>
 				</div>
 			</Skills>

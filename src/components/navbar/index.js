@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 //styles ==>
@@ -7,29 +7,29 @@ import Fade from 'react-reveal/Fade';
 //actions ==>
 import { toggleTheme, changeLanguage } from '../../redux/actions';
 
-//logos ==> 
+//logos ==>
 import moon from '../../assets/img/moon.svg';
 import sun from '../../assets/img/sun.svg';
 import languageIcon from '../../assets/img/language.svg';
 import user from '../../assets/img/user.svg';
 
 //strings ==>
-import strings from './strings'
+import strings from './strings';
 
 const Navbar = ({ visits }) => {
 	const dispatch = useDispatch();
-	const language = useSelector(state => state.language);
-	const theme = useSelector(state => state.theme);
+	const language = useSelector((state) => state.language);
+	const theme = useSelector((state) => state.theme);
 
 	const handleLang = (ev) => {
 		if (ev.target.id) {
-			dispatch(changeLanguage(ev.target.id))
+			dispatch(changeLanguage(ev.target.id));
 		}
-	}
+	};
 
 	const handleTheme = () => {
-		dispatch(toggleTheme())
-	}
+		dispatch(toggleTheme());
+	};
 
 	return (
 		<NavbarStyled>
@@ -37,26 +37,42 @@ const Navbar = ({ visits }) => {
 				<div className='visits'>
 					<StyledSVG src={user} />
 
-					<p>{strings[language].vis} <span className='number'>{visits}</span> </p>
-
-
+					<p>
+						{strings[language].vis}{' '}
+						<span className='number'>{visits}</span>{' '}
+					</p>
 				</div>
 				<ul className='navbar__options'>
 					<Dropdown>
-						<Fade top>
+						<Fade>
 							<StyledSVG src={languageIcon} />
 						</Fade>
-						<Fade bottom>
+						<Fade>
 							<span>{strings[language].language}</span>
 						</Fade>
 						<ul onClick={(e) => handleLang(e)}>
 							<Fade duration={200}>
 								<li>
-									<p id='en' className={language === 'en' ? 'selected' : null}>
+									<p
+										id='en'
+										className={
+											language === 'en'
+												? 'selected'
+												: null
+										}
+									>
 										{strings[language].language_en}
-									</p> </li>
+									</p>{' '}
+								</li>
 								<li>
-									<p id='es' className={language === 'es' ? 'selected' : null}>
+									<p
+										id='es'
+										className={
+											language === 'es'
+												? 'selected'
+												: null
+										}
+									>
 										{strings[language].language_es}
 									</p>
 								</li>
@@ -65,10 +81,12 @@ const Navbar = ({ visits }) => {
 					</Dropdown>
 					<li>
 						<button onClick={handleTheme}>
-							<Fade top>
-								<StyledSVG src={theme === 'light' ? sun : moon} />
+							<Fade>
+								<StyledSVG
+									src={theme === 'light' ? sun : moon}
+								/>
 							</Fade>
-							<Fade bottom>
+							<Fade>
 								<span>{strings[language].theme}</span>
 							</Fade>
 						</button>
@@ -76,7 +94,7 @@ const Navbar = ({ visits }) => {
 				</ul>
 			</div>
 		</NavbarStyled>
-	)
-}
+	);
+};
 
 export default Navbar;

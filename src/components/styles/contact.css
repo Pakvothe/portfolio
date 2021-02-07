@@ -139,7 +139,7 @@ textarea:focus {
 }
 
 .ReactModal__Body--open .flex-form-container textarea {
-	min-height: 180px;
+	min-height: 150px;
 	height: 100%;
 	margin-bottom: 0.5em;
 }
@@ -184,7 +184,7 @@ textarea:focus {
 	font-weight: 600;
 	background-color: transparent;
 	border: 2px solid var(--clr-primary-dark);
-	margin: 1em 0;
+	margin: 1em 0 0 0;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 	transition: color 0.2s ease-in-out;
 }

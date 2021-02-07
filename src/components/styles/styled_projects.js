@@ -11,7 +11,7 @@ export const ProjectsStyled = styled.section`
 		color: var(--clr-primary-dark);
 		font-weight: 600;
 		margin: 0.7em 0 0 2.7em;
-		width: 20vw;
+		width: 5vw;
 	}
 
 	.info {
@@ -19,7 +19,8 @@ export const ProjectsStyled = styled.section`
 		flex-direction: column;
 		align-items: flex-start;
 		width: 100%;
-		margin: 0;
+		justify-content: space-between;
+		margin: 2em 0;
 		text-align: left;
 		line-height: 1.3em;
 
@@ -28,21 +29,21 @@ export const ProjectsStyled = styled.section`
 		}
 		.project_container {
 			display: flex;
-			align-items: flex-start;
-			justify-content: space-evenly;
+			justify-content: space-around;
 			width: 100%;
 			margin: 2em auto;
 
 			&:first-child {
 				margin-top: 3em;
+				margin-bottom: 14em;
 			}
+
 			.image_container {
 				height: 35vh;
-				width: 35vw;
-				margin: 0 2em 0.5em 0;
+				width: 50%;
+				margin: 0 auto;
 
 				.image_zoom {
-					object-fit: contain;
 					border-radius: 10px;
 					border: 3px solid var(--clr-primary-dark);
 					box-shadow: 0 7px 30px rgba(0, 0, 0, 0.5);
@@ -50,13 +51,13 @@ export const ProjectsStyled = styled.section`
 			}
 			.image_mobile_container {
 				height: 35vh;
-				width: 100%;
+				width: 95%;
 				display: flex;
 				justify-content: space-between;
 
 				.mobile-img {
 					height: auto;
-					width: 80%;
+					width: auto;
 					object-fit: cover;
 					box-shadow: 0 7px 30px rgba(0, 0, 0, 0.5);
 					border-radius: 5%;
@@ -70,13 +71,15 @@ export const ProjectsStyled = styled.section`
 			figcaption {
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
-				width: 25vw;
+				width: 50%;
 				height: 100%;
-				padding: 0 0 0.5em 0;
+				padding: 0 2em;
 
 				.title_container {
-					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 1em;
 
 					.title_app {
 						text-transform: uppercase;
@@ -127,8 +130,8 @@ export const ProjectsStyled = styled.section`
 				}
 
 				p {
-					margin: 0.5em 0;
-					text-align: left;
+					margin-bottom: 1em;
+					text-align: center;
 				}
 
 				.in_process {
@@ -145,7 +148,7 @@ export const ProjectsStyled = styled.section`
 					align-items: flex-start;
 					flex-wrap: wrap;
 					list-style-type: none;
-					margin: 0.3em 0;
+					margin-bottom: 1em;
 
 					li {
 						margin: 0.2em 0.4em;
@@ -174,31 +177,32 @@ export const ProjectsStyled = styled.section`
 		}
 
 		.info {
-			width: 100vw;
+			width: 100%;
 			margin-left: 2em;
 
-			.mt-12 {
-				margin-top: 6em;
-			}
 			.project_container {
 				flex-direction: column-reverse;
 				flex-wrap: wrap;
 
 				.image_container {
-					width: 80vw;
+					width: 100%;
 					margin: 0 0 -6em 0;
 				}
 
 				figcaption {
 					margin-top: 1em;
-					width: 80vw;
+					width: 100%;
+
+					p {
+						text-align: center;
+					}
 
 					.badges {
 						justify-content: center;
 					}
 					.title_container {
 						display: flex;
-						align-items: flex-start;
+						flex-direction: column;
 
 						a {
 							margin: 0 0.5em 0.5em 0;

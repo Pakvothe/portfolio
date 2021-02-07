@@ -17,14 +17,13 @@ import quiz3 from '../../assets/img/quiz3.png';
 
 //strings ==>
 import strings from './strings';
-//	<p className='in_process'>{strings[language].progress}</p>
 const Projects = () => {
 	const language = useSelector((state) => state.language);
 
 	return (
 		<ProjectsStyled>
 			<div className='title'>
-				<Fade left>
+				<Fade>
 					<p>
 						<span>{strings[language].title}</span>
 					</p>
@@ -34,21 +33,21 @@ const Projects = () => {
 				<div className='project_container'>
 					<div className='image_container'>
 						<div className='image_mobile_container'>
-							<Fade left big>
+							<Fade>
 								<InnerImageZoom
 									src={quiz1}
 									zoomScale={0.3}
 									className='mobile-img'
 								/>
 							</Fade>
-							<Fade left big>
+							<Fade>
 								<InnerImageZoom
 									src={quiz2}
 									zoomScale={0.3}
 									className='mobile-img'
 								/>
 							</Fade>
-							<Fade left big>
+							<Fade>
 								<InnerImageZoom
 									src={quiz3}
 									zoomScale={0.3}
@@ -57,7 +56,7 @@ const Projects = () => {
 							</Fade>
 						</div>
 					</div>
-					<Fade right cascade big>
+					<Fade cascade>
 						<figcaption>
 							<div className='title_container'>
 								<a className='title_app'> QuizzMeApp </a>
@@ -82,7 +81,7 @@ const Projects = () => {
 				</div>
 				<div className='project_container mt-12'>
 					<div className='image_container'>
-						<Fade left big>
+						<Fade>
 							<InnerImageZoom
 								src={gaminghub}
 								className='image_zoom'
@@ -90,7 +89,7 @@ const Projects = () => {
 							/>
 						</Fade>
 					</div>
-					<Fade right cascade big>
+					<Fade cascade>
 						<figcaption>
 							<div className='title_container'>
 								<a
@@ -129,7 +128,7 @@ const Projects = () => {
 				</div>
 				<div className='project_container'>
 					<div className='image_container'>
-						<Fade left big>
+						<Fade>
 							<InnerImageZoom
 								src={tetrisgame}
 								className='image_zoom'
@@ -137,7 +136,7 @@ const Projects = () => {
 							/>
 						</Fade>
 					</div>
-					<Fade right cascade big>
+					<Fade cascade>
 						<figcaption>
 							<div className='title_container'>
 								<a
@@ -170,7 +169,7 @@ const Projects = () => {
 				</div>
 				<div className='project_container'>
 					<div className='image_container'>
-						<Fade left big>
+						<Fade>
 							<InnerImageZoom
 								src={finalweather}
 								alt='final weather'
@@ -179,7 +178,7 @@ const Projects = () => {
 							/>
 						</Fade>
 					</div>
-					<Fade right cascade big>
+					<Fade cascade>
 						<figcaption>
 							<div className='title_container'>
 								<a
