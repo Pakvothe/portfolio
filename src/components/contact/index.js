@@ -46,7 +46,6 @@ const Contact = () => {
 			color: theme === 'dark' ? 'white' : 'black',
 			background: theme === 'dark' ? 'rgba(23, 28, 40, 1)' : 'white',
 			WebkitOverflowScrolling: 'touch',
-			height: '98vh',
 		},
 	};
 

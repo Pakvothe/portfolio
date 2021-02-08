@@ -97,6 +97,9 @@ export const StyledResume = styled.div`
 				transform: translatex(0px);
 			}
 		}
+		@media (max-width: 480px) {
+			padding: 3.5em 0 0 0;
+		}
 	}
 `;
 
