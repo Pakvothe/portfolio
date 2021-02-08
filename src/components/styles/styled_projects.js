@@ -219,25 +219,15 @@ export const ProjectsStyled = styled.section`
 		}
 	}
 	@media (min-width: 1400px) {
-		.image_mobile_container {
-			align-items: center;
-			justify-content: center;
-
-			.mobile-img {
-				max-height: auto;
-				max-width: 22vh;
-				object-fit: cover;
-			}
-
-			.hidden {
-				display: block !important;
+		.project_container {
+			&:first-child {
+				margin-bottom: 0;
 			}
 		}
-		@media (min-width: 1700px) {
-			.mobile-img {
-				max-height: auto;
-				max-width: 23vh;
-				object-fit: cover;
+
+		.image_mobile_container {
+			.hidden {
+				display: block !important;
 			}
 		}
 	}
