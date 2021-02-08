@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.da67a928.chunk.css",
-    "main.js": "/portfolio/static/js/main.f0059f37.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f0059f37.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.149ad79a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.149ad79a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0ab3c05e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0ab3c05e.js.map",
     "static/css/2.ce076900.chunk.css": "/portfolio/static/css/2.ce076900.chunk.css",
@@ -19,17 +19,17 @@
     "static/media/arrow-down.245465fb.svg": "/portfolio/static/media/arrow-down.245465fb.svg",
     "static/media/arrow-up.2c20b5e3.svg": "/portfolio/static/media/arrow-up.2c20b5e3.svg",
     "static/media/close-transparent-gray.c7ce3477.svg": "/portfolio/static/media/close-transparent-gray.c7ce3477.svg",
-    "static/media/finalweather.9b09a970.png": "/portfolio/static/media/finalweather.9b09a970.png",
     "static/media/gaminghub.2d13042a.png": "/portfolio/static/media/gaminghub.2d13042a.png",
     "static/media/github.2b004cb3.svg": "/portfolio/static/media/github.2b004cb3.svg",
     "static/media/gmail.75dd11d4.svg": "/portfolio/static/media/gmail.75dd11d4.svg",
     "static/media/language.4f8b3a1d.svg": "/portfolio/static/media/language.4f8b3a1d.svg",
     "static/media/linkedin.c09d94e7.svg": "/portfolio/static/media/linkedin.c09d94e7.svg",
     "static/media/moon.37488b4f.svg": "/portfolio/static/media/moon.37488b4f.svg",
-    "static/media/paco.d1557bea.png": "/portfolio/static/media/paco.d1557bea.png",
+    "static/media/paco.8c1922c9.png": "/portfolio/static/media/paco.8c1922c9.png",
     "static/media/quiz1.0b8d8c38.png": "/portfolio/static/media/quiz1.0b8d8c38.png",
     "static/media/quiz2.508e2b66.png": "/portfolio/static/media/quiz2.508e2b66.png",
     "static/media/quiz3.3a881534.png": "/portfolio/static/media/quiz3.3a881534.png",
+    "static/media/quizweb.0aa7d45c.png": "/portfolio/static/media/quizweb.0aa7d45c.png",
     "static/media/sun.3812551f.svg": "/portfolio/static/media/sun.3812551f.svg",
     "static/media/tetrisgame.9ba19632.png": "/portfolio/static/media/tetrisgame.9ba19632.png",
     "static/media/user.a1ae9526.svg": "/portfolio/static/media/user.a1ae9526.svg",
@@ -40,6 +40,6 @@
     "static/css/2.ce076900.chunk.css",
     "static/js/2.6eadc04c.chunk.js",
     "static/css/main.da67a928.chunk.css",
-    "static/js/main.f0059f37.chunk.js"
+    "static/js/main.149ad79a.chunk.js"
   ]
 }
