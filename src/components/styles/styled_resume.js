@@ -87,13 +87,13 @@ export const StyledResume = styled.div`
 
 		.curriculum {
 			display: block;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 1em auto;
 			width: 100%;
 			height: auto;
 
 			@media (max-width: 800px) {
-				height: 80vh;
+				object-fit: fill;
+				height: 100%;
 				transform: translatex(0px);
 			}
 		}
