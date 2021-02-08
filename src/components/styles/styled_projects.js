@@ -51,13 +51,12 @@ export const ProjectsStyled = styled.section`
 			}
 			.image_mobile_container {
 				height: 35vh;
-				width: 95%;
+				width: 50%;
 				display: flex;
 				justify-content: space-between;
 
 				.mobile-img {
 					height: auto;
-					width: auto;
 					object-fit: cover;
 					box-shadow: 0 7px 30px rgba(0, 0, 0, 0.5);
 					border-radius: 5%;
@@ -83,6 +82,7 @@ export const ProjectsStyled = styled.section`
 
 					.title_app {
 						text-transform: uppercase;
+						text-align: center;
 					}
 
 					.repo {
@@ -131,7 +131,6 @@ export const ProjectsStyled = styled.section`
 
 				p {
 					margin-bottom: 1em;
-					text-align: center;
 				}
 
 				.in_process {
@@ -188,13 +187,18 @@ export const ProjectsStyled = styled.section`
 					width: 100%;
 					margin: 0 0 -6em 0;
 				}
+				.image_mobile_container {
+					width: 100%;
+					margin: 0 0 -6em 0;
+				}
 
 				figcaption {
+					margin: 0;
 					margin-top: 1em;
 					width: 100%;
+					padding: 0;
 
 					p {
-						text-align: center;
 					}
 
 					.badges {
@@ -202,7 +206,8 @@ export const ProjectsStyled = styled.section`
 					}
 					.title_container {
 						display: flex;
-						flex-direction: column;
+						margin: 0.2em;
+						flex-wrap: wrap;
 
 						a {
 							margin: 0 0.5em 0.5em 0;

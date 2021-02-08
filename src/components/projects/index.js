@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 
 //images ==>
 import InnerImageZoom from 'react-inner-image-zoom';
-import finalweather from '../../assets/img/finalweather.png';
+import quizweb from '../../assets/img/quizweb.png';
 import tetrisgame from '../../assets/img/tetrisgame.png';
 import gaminghub from '../../assets/img/gaminghub.png';
 import quiz1 from '../../assets/img/quiz1.png';
@@ -31,38 +31,40 @@ const Projects = () => {
 			</div>
 			<div className='info'>
 				<div className='project_container'>
-					<div className='image_container'>
-						<div className='image_mobile_container'>
-							<Fade>
-								<InnerImageZoom
-									src={quiz1}
-									zoomScale={0.3}
-									className='mobile-img'
-								/>
-							</Fade>
-							<Fade>
-								<InnerImageZoom
-									src={quiz2}
-									zoomScale={0.3}
-									className='mobile-img'
-								/>
-							</Fade>
-							<Fade>
-								<InnerImageZoom
-									src={quiz3}
-									zoomScale={0.3}
-									className='mobile-img hidden'
-								/>
-							</Fade>
-						</div>
+					<div className='image_mobile_container'>
+						<Fade>
+							<InnerImageZoom
+								src={quiz1}
+								zoomScale={0.3}
+								className='mobile-img'
+							/>
+						</Fade>
+						<Fade>
+							<InnerImageZoom
+								src={quiz2}
+								zoomScale={0.3}
+								className='mobile-img'
+							/>
+						</Fade>
+						<Fade>
+							<InnerImageZoom
+								src={quiz3}
+								zoomScale={0.3}
+								className='mobile-img hidden'
+							/>
+						</Fade>
 					</div>
 					<Fade cascade>
 						<figcaption>
 							<div className='title_container'>
 								<a className='title_app'> QuizzMeApp </a>
-								<p className='in_process'>
+								<a
+									className='repo'
+									target='_blank'
+									rel='noreferrer'
+								>
 									{strings[language].progress}
-								</p>
+								</a>
 							</div>
 							<p>{strings[language].quiz}</p>
 							<ul className='badges'>
@@ -75,6 +77,46 @@ const Projects = () => {
 								<li>MongoDB</li>
 								<li>Firebase</li>
 								<li>SCRUM</li>
+							</ul>
+						</figcaption>
+					</Fade>
+				</div>
+				<div className='project_container'>
+					<div className='image_container'>
+						<Fade>
+							<InnerImageZoom
+								src={quizweb}
+								alt='final weather'
+								className='image_zoom'
+								zoomScale={0.7}
+							/>
+						</Fade>
+					</div>
+					<Fade cascade>
+						<figcaption>
+							<div className='title_container'>
+								<a
+									className='title_app'
+									href='https://quizmeweb-git-alerts.nc-devw.vercel.app/stats'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{' '}
+									QuizMeApp Admin Web{' '}
+								</a>
+								<a
+									className='repo'
+									target='_blank'
+									rel='noreferrer'
+								>
+									{strings[language].progress}
+								</a>
+							</div>
+							<p>{strings[language].fw}</p>
+							<ul className='badges'>
+								<li>TypeScript</li>
+								<li>NextJs</li>
+								<li>Redux Toolkit</li>
 							</ul>
 						</figcaption>
 					</Fade>
@@ -163,47 +205,6 @@ const Projects = () => {
 								<li>Redux</li>
 								<li>Firebase</li>
 								<li>Styled Components</li>
-							</ul>
-						</figcaption>
-					</Fade>
-				</div>
-				<div className='project_container'>
-					<div className='image_container'>
-						<Fade>
-							<InnerImageZoom
-								src={finalweather}
-								alt='final weather'
-								className='image_zoom'
-								zoomScale={0.7}
-							/>
-						</Fade>
-					</div>
-					<Fade cascade>
-						<figcaption>
-							<div className='title_container'>
-								<a
-									className='title_app'
-									href='https://pakvothe.github.io/FinalWeather/'
-									target='_blank'
-									rel='noreferrer'
-								>
-									{' '}
-									Final Weather{' '}
-								</a>
-								<a
-									className='repo'
-									href='https://github.com/Pakvothe/FinalWeather'
-									target='_blank'
-									rel='noreferrer'
-								>
-									{strings[language].repo}
-								</a>
-							</div>
-							<p>{strings[language].fw}</p>
-							<ul className='badges'>
-								<li>React</li>
-								<li>React-Reveal</li>
-								<li>CSS Modules</li>
 							</ul>
 						</figcaption>
 					</Fade>
