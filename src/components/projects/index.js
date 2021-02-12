@@ -57,19 +57,30 @@ const Projects = () => {
 					<Fade cascade>
 						<figcaption>
 							<div className='title_container'>
-								<a className='title_app'> QuizzMeApp </a>
 								<a
+									target='_blank'
+									rel='noreferrer'
+									href='https://appgallery.huawei.com/#/app/C103845919'
+									className='title_app hi'
+								>
+									{' '}
+									QuizzMeApp{' '}
+								</a>
+								<a
+									href='https://github.com/Pakvothe/QuizMe-App'
 									className='repo'
 									target='_blank'
 									rel='noreferrer'
 								>
-									{strings[language].progress}
+									{strings[language].repo}
 								</a>
 							</div>
 							<p>{strings[language].quiz}</p>
 							<ul className='badges'>
 								<li>React Native</li>
 								<li>Redux Toolkit</li>
+								<li>TypeScript</li>
+								<li>NextJs</li>
 								<li>Styled Components</li>
 								<li>Node</li>
 								<li>Express</li>
@@ -77,46 +88,6 @@ const Projects = () => {
 								<li>MongoDB</li>
 								<li>Firebase</li>
 								<li>SCRUM</li>
-							</ul>
-						</figcaption>
-					</Fade>
-				</div>
-				<div className='project_container'>
-					<div className='image_container'>
-						<Fade>
-							<InnerImageZoom
-								src={quizweb}
-								alt='final weather'
-								className='image_zoom'
-								zoomScale={0.7}
-							/>
-						</Fade>
-					</div>
-					<Fade cascade>
-						<figcaption>
-							<div className='title_container'>
-								<a
-									className='title_app'
-									href='https://quizmeweb-git-alerts.nc-devw.vercel.app/stats'
-									target='_blank'
-									rel='noreferrer'
-								>
-									{' '}
-									QuizMeApp Admin Web{' '}
-								</a>
-								<a
-									className='repo'
-									target='_blank'
-									rel='noreferrer'
-								>
-									{strings[language].progress}
-								</a>
-							</div>
-							<p>{strings[language].fw}</p>
-							<ul className='badges'>
-								<li>TypeScript</li>
-								<li>NextJs</li>
-								<li>Redux Toolkit</li>
 							</ul>
 						</figcaption>
 					</Fade>
