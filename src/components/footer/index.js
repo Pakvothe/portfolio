@@ -19,28 +19,28 @@ const Footer = () => {
 
 	return (
 		<StyledFooter>
-			<div className='sign'>
+			<div className="sign">
 				<Fade cascade>
 					<p>{strings[language].a}</p>
 					<p>{strings[language].b}</p>
 				</Fade>
 				<Tada>
 					<a
-						href='https://github.com/Pakvothe/franco-portfolio'
-						target='_blank'
-						rel='noreferrer'
+						href="https://github.com/Pakvothe/franco-portfolio"
+						target="_blank"
+						rel="noreferrer"
 					>
 						{strings[language].c}
 					</a>
 				</Tada>
 			</div>
 			<Fade cascade>
-				<ul className='social_media'>
+				<ul className="social_media">
 					<li>
 						<a
-							href='https://github.com/Pakvothe'
-							target='_blank'
-							rel='noreferrer'
+							href="https://github.com/Pakvothe"
+							target="_blank"
+							rel="noreferrer"
 						>
 							<StyledSVG
 								style={{
@@ -52,9 +52,9 @@ const Footer = () => {
 					</li>
 					<li>
 						<a
-							href='https://www.linkedin.com/in/franco-david-ortiz/'
-							target='_blank'
-							rel='noreferrer'
+							href="https://www.linkedin.com/in/franco-david-ortiz/"
+							target="_blank"
+							rel="noreferrer"
 						>
 							<StyledSVG
 								style={{
@@ -71,8 +71,8 @@ const Footer = () => {
 									? 'mailto:ortiz.franco@yandex.com?Subject=Job%20Offer'
 									: 'mailto:ortiz.franco@yandex.com?Subject=Oferta%20Laboral'
 							}
-							target='_blank'
-							rel='noreferrer'
+							target="_blank"
+							rel="noreferrer"
 						>
 							<StyledSVG
 								style={{
@@ -89,8 +89,8 @@ const Footer = () => {
 									? 'https://wa.me/541124089678?text=Send%20me%20a%20message'
 									: 'https://wa.me/541124089678?text=Envíame%20un%20mensaje'
 							}
-							target='_blank'
-							rel='noreferrer'
+							target="_blank"
+							rel="noreferrer"
 						>
 							<StyledSVG
 								style={{
