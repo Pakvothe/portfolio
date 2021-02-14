@@ -2,13 +2,12 @@ import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 
 export const NavbarStyled = styled.nav`
+	svg {
+		fill: currentColor;
+		width: 2em;
+		height: 2em;
+	}
 
-	svg  {
-		 	fill: currentColor; 
-		 	width: 2em;
-			height: 2em;
-		 }
-	
 	.navbar__top {
 		display: flex;
 		width: 100%;
@@ -28,11 +27,12 @@ export const NavbarStyled = styled.nav`
 			.number {
 				font-weight: 600;
 			}
-			p{
+			p {
 				text-align: center;
 				margin-top: 0.3em;
+				font-size: 0.8em;
 			}
-			svg{
+			svg {
 				cursor: default;
 			}
 		}
@@ -49,68 +49,70 @@ export const NavbarStyled = styled.nav`
 			justify-content: flex-end;
 			flex-basis: 300px;
 
-			
 			& > li {
 				position: relative;
 			}
 
+			& > li + li {
+				margin-left: 3em;
+			}
 
-			& > li + li { margin-left: 3em; }
-
-			li, li > button {
+			li,
+			li > button {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
 			}
 
-			li:hover { color: var(--clr-primary); }
-		
+			li:hover {
+				color: var(--clr-primary);
+			}
+
 			button {
 				background: none;
 				border: none;
 				color: inherit;
 				font: inherit;
 
-				&:focus{
+				&:focus {
 					outline: none;
 				}
 			}
 		}
 	}
 
-	@media (max-width: 750px){
+	@media (max-width: 750px) {
 		margin-bottom: 4em;
-		padding: 0 .5em;
+		margin-top: 0.5em;
+		padding: 0 0.5em;
+		font-size: 1em;
 
-		svg{
-			width: 2em;
-			height: 2em;
+		svg {
+			width: 1.7em;
+			height: 1.7em;
 		}
-	
-		.visits{
+
+		.visits {
 			height: 100%;
 			width: 20vw;
 		}
 	}
-	@media (max-width: 375px){
-
-		.visits{
+	@media (max-width: 375px) {
+		.visits {
 			margin-left: -1em;
 			width: 30vw;
 		}
 	}
-
-`
+`;
 
 export const Dropdown = styled.li`
-	position: relative;
-	padding-bottom: .8em;
-	margin-bottom: -.8em;
+	postion: relative;
+	padding-bottom: 0.8em;
+	margin-bottom: -0.8em;
 	cursor: default;
 
-
-	.dropdown-columns{
+	.dropdown-columns {
 		columns: 3;
 		column-rule: 1px solid #ccc;
 		padding: 1em;
@@ -118,11 +120,11 @@ export const Dropdown = styled.li`
 			break-inside: avoid;
 			-webkit-column-break-inside: avoid;
 			page-break-inside: avoid;
-			p{
-				border-radius: .4em;
+			p {
+				border-radius: 0.4em;
 			}
 			&:last-of-type p {
-				border-radius: .4em;
+				border-radius: 0.4em;
 			}
 		}
 	}
@@ -144,7 +146,7 @@ export const Dropdown = styled.li`
 		color: var(--clr-primary-dark);
 		background-color: var(--clr-light);
 		box-shadow: 0 0 10px black;
-		border-radius: .4em;
+		border-radius: 0.4em;
 		z-index: 10;
 
 		&::before {
@@ -162,12 +164,11 @@ export const Dropdown = styled.li`
 		& li {
 			margin: 0;
 			width: 100%;
-		
+
 			&:last-of-type a {
-				border-radius: 0 0 .3em .3em;
+				border-radius: 0 0 0.3em 0.3em;
 			}
 		}
-
 
 		p {
 			color: var(--clr-primary-dark);
@@ -189,14 +190,14 @@ export const Dropdown = styled.li`
 			}
 		}
 	}
-
-`
+`;
 
 export const StyledSVG = styled(SVG)`
 	height: 2em;
 	cursor: pointer;
 
-	@media (max-width: 480px){
+	@media (max-width: 480px) {
 		height: 1.5em;
 	}
-`
+`;
+

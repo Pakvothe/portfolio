@@ -25,19 +25,19 @@ export const IntroStyled = styled.div`
 		word-spacing: 0px;
 		min-width: auto;
 		min-height: auto;
-		margin: 0 2em 0 0;
+		//margin: 0 2em 0 0;
 	}
 
-	.intro-scroll{
+	.intro-scroll {
 		font-size: 0.5em;
 		margin-top: 3em;
-		font-weight: 600; 
-		
-		span{
-			display:flex;
+		font-weight: 600;
+
+		span {
+			display: flex;
 			align-items: center;
 			justify-content: center;
-		}	
+		}
 
 		svg {
 			width: 2em;
@@ -47,12 +47,12 @@ export const IntroStyled = styled.div`
 		}
 	}
 
-	.strong{
+	.strong {
 		font-weight: 600;
-		position:relative;
+		position: relative;
 		padding: 0 0.1em;
 
-		&:after{
+		&:after {
 			content: '';
 			display: block;
 			position: absolute;
@@ -60,8 +60,8 @@ export const IntroStyled = styled.div`
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background: ${props => (props.theme === 'dark' ? 'white' : 'var(--clr-dark)')
-	};
+			background: ${(props) =>
+				props.theme === 'dark' ? 'white' : 'var(--clr-dark)'};
 			border-radius: 3px;
 			z-index: -1;
 			transform: scaleY(0.1);
@@ -69,16 +69,17 @@ export const IntroStyled = styled.div`
 			transform-origin: bottom;
 		}
 
-		&:hover{
-			&:after{
+		&:hover {
+			&:after {
 				transform: scaleY(1);
 			}
-			color: ${props => (props.theme === 'dark' ? 'var(--clr-dark)' : 'white')};
+			color: ${(props) =>
+				props.theme === 'dark' ? 'var(--clr-dark)' : 'white'};
 		}
 	}
 
-	@media (max-width: 480px){
-		margin: 0.5em 0 2em 0.75em ;
+	@media (max-width: 480px) {
+		margin: 0.5em 0 2em 0.75em;
 
 		.intro-title {
 			font-size: 0.3em;
@@ -97,22 +98,23 @@ export const IntroStyled = styled.div`
 			width: 100%;
 		}
 
-		.intro-scroll{
+		.intro-scroll {
 			font-size: 0.3em;
 			margin-top: 3em;
 		}
 
 		.strong {
-			&:after{
+			&:after {
 				display: none;
 			}
-			&:hover{
-				color: ${props => (props.theme === 'dark' ? 'white' : 'var(--clr-dark)')};
+			&:hover {
+				color: ${(props) =>
+					props.theme === 'dark' ? 'white' : 'var(--clr-dark)'};
 
-				&:after{
-					display:none;
+				&:after {
+					display: none;
 				}
 			}
 		}
 	}
-`
+`;
