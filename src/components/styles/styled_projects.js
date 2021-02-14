@@ -35,7 +35,7 @@ export const ProjectsStyled = styled.section`
 
 			&:first-child {
 				margin-top: 3em;
-				margin-bottom: 14em;
+				margin-bottom: 10em;
 			}
 
 			.image_container {
@@ -131,6 +131,7 @@ export const ProjectsStyled = styled.section`
 
 				p {
 					margin-bottom: 1em;
+					padding: 0 1em;
 				}
 
 				.in_process {
@@ -148,6 +149,7 @@ export const ProjectsStyled = styled.section`
 					flex-wrap: wrap;
 					list-style-type: none;
 					margin-bottom: 1em;
+					padding: 0 1em;
 
 					li {
 						margin: 0.2em 0.4em;
@@ -182,6 +184,10 @@ export const ProjectsStyled = styled.section`
 			.project_container {
 				flex-direction: column-reverse;
 				flex-wrap: wrap;
+				&:first-child {
+					margin-top: 3em;
+					margin-bottom: 14em;
+				}
 
 				.image_container {
 					width: 100%;
@@ -219,15 +225,18 @@ export const ProjectsStyled = styled.section`
 		}
 	}
 	@media (min-width: 1400px) {
-		.project_container {
-			&:first-child {
-				margin-bottom: 0;
+		.info {
+			.project_container {
+				&:first-child {
+					margin-top: 3em;
+					margin-bottom: 2em;
+				}
 			}
-		}
 
-		.image_mobile_container {
-			.hidden {
-				display: block !important;
+			.image_mobile_container {
+				.hidden {
+					display: block !important;
+				}
 			}
 		}
 	}

@@ -4,7 +4,7 @@ import { setIsOpen } from '../../redux/actions';
 import { getFirestore } from '../../firebase';
 import firebase from 'firebase/app';
 
-//components ==> 
+//components ==>
 import Loading from '../loading';
 import Navbar from '../navbar';
 import Intro from '../intro';
@@ -26,37 +26,40 @@ const HomePage = () => {
 	const dispatch = useDispatch();
 	const scrollButton = useRef();
 	const contactButton = useRef();
-	const language = useSelector(state => state.language);
-	const [loading, setLoading] = useState(true)
-	const [visits, setVisits] = useState(0)
+	const language = useSelector((state) => state.language);
+	const [loading, setLoading] = useState(true);
+	const [visits, setVisits] = useState(0);
 
 	useEffect(() => {
 		const db = getFirestore();
-		const counter = db.collection('Counter').doc('contador666')
-		counter.get().then(visit => {
-			setLoading(false)
+		const counter = db.collection('Counter').doc('contador666');
+		counter.get().then((visit) => {
+			setLoading(false);
 
 			if (!localStorage.getItem('visitante')) {
-				localStorage.setItem('visitante', '1')
+				localStorage.setItem('visitante', '1');
 				counter.update({
-					counter: firebase.firestore.FieldValue.increment(1)
-				})
+					counter: firebase.firestore.FieldValue.increment(1),
+				});
 			}
-			setVisits(visit.data().counter)
-		})
-	}, [])
+			setVisits(visit.data().counter);
+		});
+	}, []);
 
-
-	window.onscroll = function () { scrollFunction() };
+	window.onscroll = function () {
+		scrollFunction();
+	};
 	const scrollDistance = 700;
 
 	const openModal = () => {
-		dispatch(setIsOpen(true))
-
-	}
+		dispatch(setIsOpen(true));
+	};
 	function scrollFunction() {
 		if (scrollButton.current) {
-			if (document.body.scrollTop > scrollDistance || document.documentElement.scrollTop > scrollDistance) {
+			if (
+				document.body.scrollTop > scrollDistance ||
+				document.documentElement.scrollTop > scrollDistance
+			) {
 				scrollButton.current.style.pointerEvents = 'auto';
 				scrollButton.current.style.opacity = '100';
 			} else {
@@ -65,7 +68,10 @@ const HomePage = () => {
 			}
 		}
 		if (contactButton.current) {
-			if (document.body.scrollTop > scrollDistance || document.documentElement.scrollTop > scrollDistance) {
+			if (
+				document.body.scrollTop > scrollDistance ||
+				document.documentElement.scrollTop > scrollDistance
+			) {
 				contactButton.current.style.pointerEvents = 'auto';
 				contactButton.current.style.opacity = '100';
 			} else {
@@ -76,7 +82,7 @@ const HomePage = () => {
 	}
 	const scrollToTop = () => {
 		animateScroll.scrollToTop();
-	}
+	};
 
 	return (
 		<>
@@ -92,13 +98,20 @@ const HomePage = () => {
 					<ScrollButton ref={scrollButton} onClick={scrollToTop}>
 						<StyledSVG src={arrowUp} />
 					</ScrollButton>
-					<button ref={contactButton} className='contact' onClick={openModal}><p>{contactStrings[language].contact}</p></button>
+					<button
+						ref={contactButton}
+						className="contact"
+						onClick={openModal}
+					>
+						<p>{contactStrings[language].contact}</p>
+					</button>
 				</div>
 			) : (
-					<Loading loading={loading} />
-				)}
+				<Loading loading={loading} />
+			)}
 		</>
-	)
-}
+	);
+};
 
 export default HomePage;
+
