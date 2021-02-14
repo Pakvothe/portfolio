@@ -53,7 +53,7 @@ export const Ed = styled.div`
 	@media (max-width: 720px) {
 		flex-direction: column;
 		align-items: flex-end;
-		width: 100vw;
+		width: 100%;
 
 		.title {
 			align-self: flex-start;
@@ -61,13 +61,13 @@ export const Ed = styled.div`
 		}
 
 		.info {
-			width: 65vw;
-
+			width: 100%;
+			margin: 1em auto;
 			.edContainer {
-				margin: 0;
+				width: 90%;
 
 				.education {
-					margin: 1em 1.5em;
+					margin: 1em 0;
 				}
 			}
 		}
@@ -130,10 +130,13 @@ export const Skills = styled.div`
 
 		.info {
 			width: 100%;
+			margin: 1em 0;
+
 			.skill {
+				margin: 0;
+
 				.skillDiv {
-					margin: 1em 0 1em 5em;
-					width: 70%;
+					width: 90%;
 					p {
 						text-align: left;
 					}
@@ -142,4 +145,3 @@ export const Skills = styled.div`
 		}
 	}
 `;
-

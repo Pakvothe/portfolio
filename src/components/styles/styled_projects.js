@@ -174,38 +174,43 @@ export const ProjectsStyled = styled.section`
 		.title {
 			align-self: flex-start;
 			margin-left: 2em;
-			width: 100vw;
+			width: 80%;
+			margin: 0 auto;
 		}
 
 		.info {
 			width: 100%;
-			margin-left: 2em;
+			margin: 1em;
 
 			.project_container {
 				flex-direction: column-reverse;
 				flex-wrap: wrap;
+				align-items: center;
+
 				&:first-child {
-					margin-top: 3em;
-					margin-bottom: 14em;
+					margin-top: 1em;
+					margin-bottom: 12em;
 				}
 
 				.image_container {
-					width: 100%;
-					margin: 0 0 -6em 0;
+					width: 80%;
+					margin: 0 auto -6em auto;
 				}
 				.image_mobile_container {
-					width: 100%;
-					margin: 0 0 -6em 0;
+					width: 80%;
+					margin: 0 auto -6em auto;
 				}
 
 				figcaption {
 					margin: 0;
 					margin-top: 1em;
-					width: 85vw;
+					width: 80vw;
 					padding: 0;
 
 					p {
-						width: 100%;
+						width: 90%;
+						padding: 0.5em;
+						margin: 1em auto;
 					}
 					.badges {
 						justify-content: center;

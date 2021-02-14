@@ -77,8 +77,10 @@ export const BackgroundStyled = styled.section`
 		}
 
 		.info {
+			width: 80%;
+			align-items: center;
+			margin: auto;
 			margin-top: 3em;
-			width: 70vw;
 
 			img {
 				align-self: center;
@@ -87,10 +89,6 @@ export const BackgroundStyled = styled.section`
 				height: 12em;
 				border-radius: 99em;
 				border: 4px solid var(--clr-primary-dark);
-			}
-
-			.resume {
-				margin-left: auto;
 			}
 		}
 	}
