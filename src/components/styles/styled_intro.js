@@ -51,6 +51,7 @@ export const IntroStyled = styled.div`
 		font-weight: 600;
 		position: relative;
 		padding: 0 0.1em;
+		cursor: default;
 
 		&:after {
 			content: '';
