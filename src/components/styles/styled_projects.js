@@ -201,12 +201,12 @@ export const ProjectsStyled = styled.section`
 				figcaption {
 					margin: 0;
 					margin-top: 1em;
-					width: 100%;
+					width: 85vw;
 					padding: 0;
 
 					p {
+						width: 100%;
 					}
-
 					.badges {
 						justify-content: center;
 					}
@@ -214,6 +214,7 @@ export const ProjectsStyled = styled.section`
 						display: flex;
 						margin: 0.2em;
 						flex-wrap: wrap;
+						justify-content: space-around;
 
 						a {
 							margin: 0 0.5em 0.5em 0;
