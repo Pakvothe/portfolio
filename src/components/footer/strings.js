@@ -5,10 +5,11 @@ const strings = {
 		c: '->Repository<-',
 	},
 	es: {
-		a: 'Diseñado y Desarrolado por',
+		a: 'Diseñado y Desarrollado por',
 		b: 'Franco Ortiz ~ 2021',
 		c: '->Repositorio<-',
-	}
+	},
 };
 
 export default strings;
+

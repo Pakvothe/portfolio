@@ -9,7 +9,6 @@ export const IntroStyled = styled.div`
 	overflow-x: hidden;
 	overflow-y: auto;
 	word-break: break-word;
-	height: 100%;
 	margin-top: 1.5em;
 	margin-bottom: 3em;
 
@@ -25,7 +24,6 @@ export const IntroStyled = styled.div`
 		word-spacing: 0px;
 		min-width: auto;
 		min-height: auto;
-		//margin: 0 2em 0 0;
 	}
 
 	.intro-scroll {
