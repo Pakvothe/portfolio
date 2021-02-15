@@ -63,6 +63,8 @@ export const NavbarStyled = styled.nav`
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
+				transition: color 0.2s ease-in-out;
+				cursor: pointer;
 			}
 
 			li:hover {
@@ -200,4 +202,3 @@ export const StyledSVG = styled(SVG)`
 		height: 1.5em;
 	}
 `;
-

@@ -22,17 +22,10 @@ const Footer = () => {
 			<div className="sign">
 				<Fade cascade>
 					<p>{strings[language].a}</p>
-					<p>{strings[language].b}</p>
+					<Tada>
+						<p>{strings[language].b}</p>
+					</Tada>
 				</Fade>
-				<Tada>
-					<a
-						href="https://github.com/Pakvothe/franco-portfolio"
-						target="_blank"
-						rel="noreferrer"
-					>
-						{strings[language].c}
-					</a>
-				</Tada>
 			</div>
 			<Fade cascade>
 				<ul className="social_media">
