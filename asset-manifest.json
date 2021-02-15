@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.da67a928.chunk.css",
-    "main.js": "/static/js/main.6a65d28b.chunk.js",
-    "main.js.map": "/static/js/main.6a65d28b.chunk.js.map",
+    "main.js": "/static/js/main.f2ed359d.chunk.js",
+    "main.js.map": "/static/js/main.f2ed359d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8aa6a36a.js",
     "runtime-main.js.map": "/static/js/runtime-main.8aa6a36a.js.map",
     "static/css/2.ce076900.chunk.css": "/static/css/2.ce076900.chunk.css",
@@ -12,10 +12,10 @@
     "static/css/2.ce076900.chunk.css.map": "/static/css/2.ce076900.chunk.css.map",
     "static/css/main.da67a928.chunk.css.map": "/static/css/main.da67a928.chunk.css.map",
     "static/js/2.cb5607ad.chunk.js.LICENSE.txt": "/static/js/2.cb5607ad.chunk.js.LICENSE.txt",
-    "static/media/CurriculumEN.051837f2.pdf": "/static/media/CurriculumEN.051837f2.pdf",
-    "static/media/CurriculumEN.be96dc16.jpg": "/static/media/CurriculumEN.be96dc16.jpg",
-    "static/media/CurriculumES.9859ddf4.jpg": "/static/media/CurriculumES.9859ddf4.jpg",
-    "static/media/CurriculumES.fb978356.pdf": "/static/media/CurriculumES.fb978356.pdf",
+    "static/media/CurriculumEN.25a29eb7.pdf": "/static/media/CurriculumEN.25a29eb7.pdf",
+    "static/media/CurriculumEN.9255261f.jpg": "/static/media/CurriculumEN.9255261f.jpg",
+    "static/media/CurriculumES.acab65ef.pdf": "/static/media/CurriculumES.acab65ef.pdf",
+    "static/media/CurriculumES.f0395340.jpg": "/static/media/CurriculumES.f0395340.jpg",
     "static/media/arrow-down.245465fb.svg": "/static/media/arrow-down.245465fb.svg",
     "static/media/arrow-up.2c20b5e3.svg": "/static/media/arrow-up.2c20b5e3.svg",
     "static/media/close-transparent-gray.c7ce3477.svg": "/static/media/close-transparent-gray.c7ce3477.svg",
@@ -40,6 +40,6 @@
     "static/css/2.ce076900.chunk.css",
     "static/js/2.cb5607ad.chunk.js",
     "static/css/main.da67a928.chunk.css",
-    "static/js/main.6a65d28b.chunk.js"
+    "static/js/main.f2ed359d.chunk.js"
   ]
 }
