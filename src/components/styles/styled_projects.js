@@ -134,6 +134,7 @@ export const ProjectsStyled = styled.section`
 					list-style-type: none;
 					margin-bottom: 1em;
 					padding: 0;
+					padding: 0 0.5em;
 
 					li {
 						margin: 0.2em auto;
