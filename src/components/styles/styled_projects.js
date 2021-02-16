@@ -4,7 +4,7 @@ export const ProjectsStyled = styled.section`
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.1em;
-	margin-top: 6em;
+	margin-top: 4em;
 
 	.title {
 		text-transform: uppercase;
@@ -21,7 +21,7 @@ export const ProjectsStyled = styled.section`
 		width: 100%;
 		margin: 2em 0;
 		text-align: left;
-		line-height: 1.3em;
+		line-height: 1.1em;
 
 		p {
 			margin: 0.7em;
@@ -59,12 +59,12 @@ export const ProjectsStyled = styled.section`
 
 			figcaption {
 				width: 50%;
-				padding: 0 2em;
+				padding: 0 3em;
 
 				.title_container {
 					display: flex;
 					align-items: center;
-					justify-content: center;
+					margin-left: 0.8em;
 					margin-bottom: 1em;
 
 					.title_app {
@@ -118,7 +118,6 @@ export const ProjectsStyled = styled.section`
 
 				p {
 					margin-bottom: 1em;
-					padding: 0 1em;
 				}
 
 				.in_process {
@@ -131,20 +130,19 @@ export const ProjectsStyled = styled.section`
 				.badges {
 					width: 100%;
 					display: flex;
-					justify-content: center;
 					flex-wrap: wrap;
 					list-style-type: none;
 					margin-bottom: 1em;
-					padding: 0 1em;
+					padding: 0;
 
 					li {
-						margin: 0.2em 0.4em;
+						margin: 0.2em auto;
 						font-size: 0.8em;
 						font-weight: 600;
 						color: var(--clr-primary-dark);
 						border: 2px solid var(--clr-primary-dark);
 						border-radius: 5px;
-						padding: 0 0.2em;
+						padding: 0 0.3em;
 						box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 					}
 				}
@@ -154,13 +152,10 @@ export const ProjectsStyled = styled.section`
 
 	@media (max-width: 480px) {
 		flex-direction: row;
-		align-items: flex-end;
 		flex-wrap: wrap;
-		justify-content: space-between;
 
 		.title {
 			align-self: flex-start;
-			margin-left: 2em;
 			width: 80%;
 			margin: 0 auto;
 		}
@@ -168,13 +163,13 @@ export const ProjectsStyled = styled.section`
 		.info {
 			width: 100%;
 			margin: 0;
-			line-height: 1.2em;
+			line-height: 1.1em;
 
 			.project_container {
 				flex-direction: column-reverse;
 				flex-wrap: wrap;
 				align-items: center;
-				margin: 1.5em auto;
+				margin: 2em auto;
 				height: auto;
 
 				&:first-child {
@@ -182,10 +177,10 @@ export const ProjectsStyled = styled.section`
 				}
 
 				.image_container {
-					width: 80%;
+					width: 82%;
 				}
 				.image_mobile_container {
-					width: 80%;
+					width: 82%;
 				}
 
 				figcaption {
@@ -196,7 +191,6 @@ export const ProjectsStyled = styled.section`
 					p {
 						font-size: 0.9em;
 						width: 95%;
-						padding: 0.2em;
 					}
 					.badges {
 						font-size: 0.9em;
@@ -205,7 +199,7 @@ export const ProjectsStyled = styled.section`
 					.title_container {
 						display: flex;
 						flex-wrap: wrap;
-						justify-content: space-around;
+						justify-content: space-between;
 
 						a {
 							margin: 0 0.5em 0.5em 0;

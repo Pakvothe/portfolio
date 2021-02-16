@@ -4,7 +4,6 @@ export const BackgroundStyled = styled.section`
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 1.1em;
-	margin-bottom: 6em;
 
 	.title {
 		display: flex;
@@ -33,7 +32,7 @@ export const BackgroundStyled = styled.section`
 		flex-direction: column;
 		align-items: left;
 		text-align: left;
-		line-height: 1.3em;
+		line-height: 1.1em;
 
 		img {
 			display: none;
@@ -46,7 +45,7 @@ export const BackgroundStyled = styled.section`
 		.resume {
 			cursor: pointer;
 			font-size: 1em;
-			padding: 0.1em 0;
+			padding: 0.2em 0.1em;
 			font-weight: 600;
 			width: 150px;
 			text-align: center;
@@ -90,6 +89,7 @@ export const BackgroundStyled = styled.section`
 				height: 12em;
 				border-radius: 99em;
 				border: 4px solid var(--clr-primary-dark);
+				margin-bottom: 0.5em;
 			}
 		}
 	}

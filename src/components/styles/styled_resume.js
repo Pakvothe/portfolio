@@ -98,7 +98,11 @@ export const StyledResume = styled.div`
 			}
 		}
 		@media (max-width: 480px) {
-			padding: 3.5em 0 0 0;
+			padding: 3.7em 0 0 0;
+
+			.curriculum {
+				height: 77vh;
+			}
 		}
 	}
 `;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const EducationContainer = styled.section`
 	display: flex;
 	justify-content: space-between;
-	margin-top: 6em;
+	margin-top: 4em;
 
 	@media (max-width: 720px) {
 		flex-wrap: wrap;
@@ -29,7 +29,7 @@ export const Ed = styled.div`
 		flex-direction: column;
 		align-items: left;
 		text-align: left;
-		line-height: 1.3em;
+		line-height: 1.1em;
 		width: 100%;
 
 		.edContainer {
@@ -45,7 +45,7 @@ export const Ed = styled.div`
 					color: var(--clr-primary-dark);
 					margin: 0.5em 0;
 					font-weight: 600;
-					line-height: 1.3em;
+					line-height: 1.1em;
 				}
 			}
 		}
@@ -94,7 +94,7 @@ export const Skills = styled.div`
 		flex-direction: column;
 		align-items: left;
 		text-align: left;
-		line-height: 1.3em;
+		line-height: 1.2em;
 		font-size: 0.9em;
 
 		.skill {
@@ -115,7 +115,7 @@ export const Skills = styled.div`
 				color: var(--clr-primary-dark);
 				margin: 0.5em -1em;
 				font-weight: 600;
-				line-height: 1.3em;
+				line-height: 1.1em;
 			}
 		}
 	}

@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const IntroStyled = styled.div`
 	overflow: hidden !important;
 	display: flex;
-	font-size: 3em;
+	font-size: 2.8em;
 	flex-direction: column;
 	align-items: flex-start;
 	overflow-x: hidden;
 	overflow-y: auto;
 	word-break: break-word;
 	margin-top: 1.5em;
-	margin-bottom: 3em;
+	margin-bottom: 1.5em;
 
 	.intro-title {
 		font-size: 0.5em;
@@ -19,7 +19,7 @@ export const IntroStyled = styled.div`
 	}
 
 	.intro-info {
-		line-height: 1.5em;
+		line-height: 1.2em;
 		text-align: left;
 		word-spacing: 0px;
 		min-width: auto;
@@ -78,8 +78,7 @@ export const IntroStyled = styled.div`
 	}
 
 	@media (max-width: 480px) {
-		margin: 0.5em 0 2em 0.75em;
-		font-size: 2.8em;
+		margin: 0.5em 0.3em 1.5em 0.3em;
 
 		.intro-title {
 			font-size: 0.3em;

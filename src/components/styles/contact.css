@@ -96,7 +96,8 @@ textarea {
 }
 
 .ReactModal__Body--open .flex-form-container label > textarea {
-	line-height: 1.6;
+	padding: 1em 0.6em;
+	line-height: 1.3;
 }
 
 .ReactModal__Body--open .flex-form-container label:not(no-shadow)::after {

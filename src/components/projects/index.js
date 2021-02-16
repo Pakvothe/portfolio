@@ -70,12 +70,12 @@ const Projects = () => {
 							<ul className="badges">
 								<li>React Native</li>
 								<li>Styled Components</li>
+								<li>Firebase</li>
 								<li>Redux Toolkit</li>
-								<li>Node</li>
 								<li>GraphQL</li>
+								<li>Node</li>
 								<li>Express</li>
 								<li>MongoDB</li>
-								<li>Firebase</li>
 								<li>TypeScript</li>
 								<li>NextJs</li>
 								<li>SCRUM</li>
