@@ -79,6 +79,7 @@ export const IntroStyled = styled.div`
 
 	@media (max-width: 480px) {
 		margin: 0.5em 0 2em 0.75em;
+		font-size: 2.8em;
 
 		.intro-title {
 			font-size: 0.3em;

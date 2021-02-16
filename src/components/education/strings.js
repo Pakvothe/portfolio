@@ -4,7 +4,7 @@ const strings = {
 		title2: 'Skills',
 		ed1: 'Henry Bootcamp ( 800 hs )',
 		ed1info:
-			'Algorithms,HTML, CSS, Bootstrap, Data structures, Javascript ES6 +, LESS, React, React Native, GraphQL, MongoDB, Redux, Node, Express, PostgreSQL, Sequelieze, Passport, Webpack.',
+			'Algorithms,HTML, CSS, Bootstrap, Data structures, Javascript ES6 +, LESS, React, React Native, GraphQL, MongoDB, Redux, Node, Express, PostgreSQL, Sequelize, Passport, Webpack.',
 		ed2: 'Complete Web Development Course on Udemy ( 54 hs )',
 		ed3:
 			'Motorcycle Mechanic Technician - National Technological University ( UTN )',
@@ -22,7 +22,7 @@ const strings = {
 		title2: 'Skills',
 		ed1: 'Henry Bootcamp ( 800 hs )',
 		ed1info:
-			'Algoritmos, HTML, CSS, Bootstrap,Estrucutras de datos, Javascript ES6+, LESS, React, React Native, GraphQL, MongoDB, Redux, Node, Express, PostgreSQL, Sequelieze, Passport, Webpack.',
+			'Algoritmos, HTML, CSS, Bootstrap,Estrucutras de datos, Javascript ES6+, LESS, React, React Native, GraphQL, MongoDB, Redux, Node, Express, PostgreSQL, Sequelize, Passport, Webpack.',
 		ed2: 'Curso Desarrollo Web Completo en Udemy ( 54 hs )',
 		ed3:
 			'Tecnico Mecánico de Motocicletas - Universidad Tecnológica Nacional ( UTN )',

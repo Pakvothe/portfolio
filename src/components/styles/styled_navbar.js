@@ -20,7 +20,6 @@ export const NavbarStyled = styled.nav`
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			height: 100%;
 			color: currentColor;
 			font-weight: 400;
 
@@ -88,7 +87,7 @@ export const NavbarStyled = styled.nav`
 		margin-bottom: 4em;
 		margin-top: 0.5em;
 		padding: 0 0.5em;
-		font-size: 1em;
+		font-size: 0.9em;
 
 		svg {
 			width: 1.7em;
@@ -96,7 +95,6 @@ export const NavbarStyled = styled.nav`
 		}
 
 		.visits {
-			height: 100%;
 			width: 20vw;
 		}
 	}
@@ -144,7 +142,7 @@ export const Dropdown = styled.li`
 		top: 100%;
 		transform: translateX(-50%);
 		padding-top: 1em;
-		font-size: 1em;
+		font-size: 0.9em;
 		color: var(--clr-primary-dark);
 		background-color: var(--clr-light);
 		box-shadow: 0 0 10px black;

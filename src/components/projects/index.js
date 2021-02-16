@@ -8,12 +8,10 @@ import Fade from 'react-reveal/Fade';
 
 //images ==>
 import InnerImageZoom from 'react-inner-image-zoom';
-import quizweb from '../../assets/img/quizweb.png';
 import tetrisgame from '../../assets/img/tetrisgame.png';
 import gaminghub from '../../assets/img/gaminghub.png';
 import quiz1 from '../../assets/img/quiz1.png';
 import quiz2 from '../../assets/img/quiz2.png';
-import quiz3 from '../../assets/img/quiz3.png';
 
 //strings ==>
 import strings from './strings';
@@ -22,61 +20,54 @@ const Projects = () => {
 
 	return (
 		<ProjectsStyled>
-			<div className='title'>
+			<div className="title">
 				<Fade>
 					<p>
 						<span>{strings[language].title}</span>
 					</p>
 				</Fade>
 			</div>
-			<div className='info'>
-				<div className='project_container'>
-					<div className='image_mobile_container'>
+			<div className="info">
+				<div className="project_container">
+					<div className="image_mobile_container">
 						<Fade>
-							<InnerImageZoom
+							<img
 								src={quiz1}
-								zoomScale={0.3}
-								className='mobile-img'
+								alt="quiz1"
+								className="mobile-img"
 							/>
 						</Fade>
 						<Fade>
-							<InnerImageZoom
+							<img
 								src={quiz2}
-								zoomScale={0.3}
-								className='mobile-img'
-							/>
-						</Fade>
-						<Fade>
-							<InnerImageZoom
-								src={quiz3}
-								zoomScale={0.3}
-								className='mobile-img hidden'
+								alt="quiz2"
+								className="mobile-img"
 							/>
 						</Fade>
 					</div>
 					<Fade cascade>
 						<figcaption>
-							<div className='title_container'>
+							<div className="title_container">
 								<a
-									target='_blank'
-									rel='noreferrer'
-									href='https://appgallery.huawei.com/#/app/C103845919'
-									className='title_app hi'
+									target="_blank"
+									rel="noreferrer"
+									href="https://appgallery.huawei.com/#/app/C103845919"
+									className="title_app hi"
 								>
 									{' '}
 									QuizzMeApp{' '}
 								</a>
 								<a
-									href='https://github.com/Pakvothe/QuizMe-App'
-									className='repo'
-									target='_blank'
-									rel='noreferrer'
+									href="https://github.com/Pakvothe/QuizMe-App"
+									className="repo"
+									target="_blank"
+									rel="noreferrer"
 								>
 									{strings[language].repo}
 								</a>
 							</div>
 							<p>{strings[language].quiz}</p>
-							<ul className='badges'>
+							<ul className="badges">
 								<li>React Native</li>
 								<li>Redux Toolkit</li>
 								<li>TypeScript</li>
@@ -92,39 +83,39 @@ const Projects = () => {
 						</figcaption>
 					</Fade>
 				</div>
-				<div className='project_container mt-12'>
-					<div className='image_container'>
+				<div className="project_container mt-12">
+					<div className="image_container">
 						<Fade>
 							<InnerImageZoom
 								src={gaminghub}
-								className='image_zoom'
+								className="image_zoom"
 								zoomScale={0.7}
 							/>
 						</Fade>
 					</div>
 					<Fade cascade>
 						<figcaption>
-							<div className='title_container'>
+							<div className="title_container">
 								<a
-									className='title_app'
-									href='https://ecommerce-ft07-g07.vercel.app/'
-									target='_blank'
-									rel='noreferrer'
+									className="title_app"
+									href="https://ecommerce-ft07-g07.vercel.app/"
+									target="_blank"
+									rel="noreferrer"
 								>
 									{' '}
 									GamingHub{' '}
 								</a>
 								<a
-									className='repo'
-									href='https://github.com/Pakvothe/GamingHub'
-									target='_blank'
-									rel='noreferrer'
+									className="repo"
+									href="https://github.com/Pakvothe/GamingHub"
+									target="_blank"
+									rel="noreferrer"
 								>
 									{strings[language].repo}
 								</a>
 							</div>
 							<p>{strings[language].gaming}</p>
-							<ul className='badges'>
+							<ul className="badges">
 								<li>React</li>
 								<li>Redux</li>
 								<li>Styled Components</li>
@@ -139,39 +130,39 @@ const Projects = () => {
 						</figcaption>
 					</Fade>
 				</div>
-				<div className='project_container'>
-					<div className='image_container'>
+				<div className="project_container">
+					<div className="image_container">
 						<Fade>
 							<InnerImageZoom
 								src={tetrisgame}
-								className='image_zoom'
+								className="image_zoom"
 								zoomScale={0.7}
 							/>
 						</Fade>
 					</div>
 					<Fade cascade>
 						<figcaption>
-							<div className='title_container'>
+							<div className="title_container">
 								<a
-									className='title_app'
-									href='https://pakvothe.github.io/ReactTetris/'
-									target='_blank'
-									rel='noreferrer'
+									className="title_app"
+									href="https://pakvothe.github.io/ReactTetris/"
+									target="_blank"
+									rel="noreferrer"
 								>
 									{' '}
 									Tetris Game{' '}
 								</a>
 								<a
-									className='repo'
-									href='https://github.com/Pakvothe/ReactTetris'
-									target='_blank'
-									rel='noreferrer'
+									className="repo"
+									href="https://github.com/Pakvothe/ReactTetris"
+									target="_blank"
+									rel="noreferrer"
 								>
 									{strings[language].repo}
 								</a>
 							</div>
 							<p>{strings[language].tetris}</p>
-							<ul className='badges'>
+							<ul className="badges">
 								<li>React</li>
 								<li>Redux</li>
 								<li>Firebase</li>

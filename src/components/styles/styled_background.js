@@ -81,6 +81,7 @@ export const BackgroundStyled = styled.section`
 			align-items: center;
 			margin: auto;
 			margin-top: 3em;
+			font-size: 0.9em;
 
 			img {
 				align-self: center;

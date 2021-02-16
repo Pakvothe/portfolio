@@ -63,6 +63,7 @@ export const Ed = styled.div`
 		.info {
 			width: 100%;
 			margin: 1em auto;
+			font-size: 0.9em;
 			.edContainer {
 				width: 90%;
 
@@ -94,11 +95,11 @@ export const Skills = styled.div`
 		align-items: left;
 		text-align: left;
 		line-height: 1.3em;
+		font-size: 0.9em;
 
 		.skill {
 			margin: 0.7em;
 			display: flex;
-			//list-style-type: none;
 			flex-wrap: wrap;
 
 			.skillDiv {

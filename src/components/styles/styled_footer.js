@@ -11,7 +11,7 @@ export const StyledFooter = styled.footer`
 	@media (max-width: 950px) {
 		justify-content: center;
 		flex-direction: column-reverse;
-		margin-bottom: 0.5em;
+		margin: 1.5em auto 0 auto;
 	}
 
 	.sign {
@@ -19,7 +19,6 @@ export const StyledFooter = styled.footer`
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 10vh;
 		transition: color 0.2s ease-in-out;
 
 		p {
@@ -33,7 +32,9 @@ export const StyledFooter = styled.footer`
 		@media (max-width: 950px) {
 			margin: 0.5em 0 0 0;
 			flex-wrap: wrap;
-			height: 100%;
+		}
+		@media (max-width: 480px) {
+			font-size: 0.8em;
 		}
 	}
 

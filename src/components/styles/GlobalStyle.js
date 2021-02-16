@@ -6,7 +6,7 @@ import LoadingOverlay from 'react-loading-overlay';
 export const GlobalStyle = createGlobalStyle`
 	body {
 		background-color: ${({ theme }) => theme.body};
-		color:  ${({ theme }) => theme.text};	
+		color:  ${({ theme }) => theme.text};
 
 		.dropdown_theme {
 			color: ${({ theme }) => theme.text};
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 		.modal {
 			background: ${({ theme }) => theme.body};
 		}
-		
+
 	}
 
 `;
@@ -54,9 +54,14 @@ export const ScrollButton = styled.button`
 	}
 
 	@media (max-width: 480px) {
-		right: 15px;
-		bottom: 15px;
+		right: 4px;
+		bottom: 20px;
 		padding: 0.3em;
+
+		svg {
+			width: 2.2em;
+			height: 2.2em;
+		}
 	}
 `;
 
