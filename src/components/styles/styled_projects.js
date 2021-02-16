@@ -178,10 +178,10 @@ export const ProjectsStyled = styled.section`
 				}
 
 				.image_container {
-					width: 82%;
+					width: 80%;
 				}
 				.image_mobile_container {
-					width: 82%;
+					width: 80%;
 				}
 
 				figcaption {

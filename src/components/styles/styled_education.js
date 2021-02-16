@@ -131,13 +131,13 @@ export const Skills = styled.div`
 
 		.info {
 			width: 100%;
-			margin: 1em 0;
 
 			.skill {
-				margin: 0;
+				margin: 0 auto;
 
 				.skillDiv {
 					width: 90%;
+					margin: 1em 1.7em;
 					p {
 						text-align: left;
 					}
