@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.da67a928.chunk.css",
-    "main.js": "/static/js/main.f2ed359d.chunk.js",
-    "main.js.map": "/static/js/main.f2ed359d.chunk.js.map",
+    "main.js": "/static/js/main.62845329.chunk.js",
+    "main.js.map": "/static/js/main.62845329.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8aa6a36a.js",
     "runtime-main.js.map": "/static/js/runtime-main.8aa6a36a.js.map",
     "static/css/2.ce076900.chunk.css": "/static/css/2.ce076900.chunk.css",
-    "static/js/2.cb5607ad.chunk.js": "/static/js/2.cb5607ad.chunk.js",
-    "static/js/2.cb5607ad.chunk.js.map": "/static/js/2.cb5607ad.chunk.js.map",
+    "static/js/2.493ad595.chunk.js": "/static/js/2.493ad595.chunk.js",
+    "static/js/2.493ad595.chunk.js.map": "/static/js/2.493ad595.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ce076900.chunk.css.map": "/static/css/2.ce076900.chunk.css.map",
     "static/css/main.da67a928.chunk.css.map": "/static/css/main.da67a928.chunk.css.map",
-    "static/js/2.cb5607ad.chunk.js.LICENSE.txt": "/static/js/2.cb5607ad.chunk.js.LICENSE.txt",
+    "static/js/2.493ad595.chunk.js.LICENSE.txt": "/static/js/2.493ad595.chunk.js.LICENSE.txt",
     "static/media/CurriculumEN.25a29eb7.pdf": "/static/media/CurriculumEN.25a29eb7.pdf",
     "static/media/CurriculumEN.9255261f.jpg": "/static/media/CurriculumEN.9255261f.jpg",
     "static/media/CurriculumES.acab65ef.pdf": "/static/media/CurriculumES.acab65ef.pdf",
@@ -28,8 +28,6 @@
     "static/media/paco.8c1922c9.png": "/static/media/paco.8c1922c9.png",
     "static/media/quiz1.0b8d8c38.png": "/static/media/quiz1.0b8d8c38.png",
     "static/media/quiz2.508e2b66.png": "/static/media/quiz2.508e2b66.png",
-    "static/media/quiz3.3a881534.png": "/static/media/quiz3.3a881534.png",
-    "static/media/quizweb.a84801f1.png": "/static/media/quizweb.a84801f1.png",
     "static/media/sun.3812551f.svg": "/static/media/sun.3812551f.svg",
     "static/media/tetrisgame.9ba19632.png": "/static/media/tetrisgame.9ba19632.png",
     "static/media/user.a1ae9526.svg": "/static/media/user.a1ae9526.svg",
@@ -38,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.8aa6a36a.js",
     "static/css/2.ce076900.chunk.css",
-    "static/js/2.cb5607ad.chunk.js",
+    "static/js/2.493ad595.chunk.js",
     "static/css/main.da67a928.chunk.css",
-    "static/js/main.f2ed359d.chunk.js"
+    "static/js/main.62845329.chunk.js"
   ]
 }
