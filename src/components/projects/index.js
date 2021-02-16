@@ -69,15 +69,15 @@ const Projects = () => {
 							<p>{strings[language].quiz}</p>
 							<ul className="badges">
 								<li>React Native</li>
-								<li>Redux Toolkit</li>
-								<li>TypeScript</li>
-								<li>NextJs</li>
 								<li>Styled Components</li>
+								<li>Redux Toolkit</li>
 								<li>Node</li>
-								<li>Express</li>
 								<li>GraphQL</li>
+								<li>Express</li>
 								<li>MongoDB</li>
 								<li>Firebase</li>
+								<li>TypeScript</li>
+								<li>NextJs</li>
 								<li>SCRUM</li>
 							</ul>
 						</figcaption>
