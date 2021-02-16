@@ -101,7 +101,7 @@ export const StyledResume = styled.div`
 			padding: 3.7em 0 0 0;
 
 			.curriculum {
-				height: 77vh;
+				height: 85vh;
 			}
 		}
 	}
