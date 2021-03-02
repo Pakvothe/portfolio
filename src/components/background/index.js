@@ -16,50 +16,61 @@ import strings from './strings';
 import Resume from '../resume';
 
 const Background = () => {
-	const language = useSelector((state) => state.language);
-	const dispatch = useDispatch();
-	const showResume = useSelector((state) => state.showResume);
+  const language = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+  const showResume = useSelector((state) => state.showResume);
 
-	//resume modal ->
-	const toggleModal = () => {
-		dispatch(toggleResume());
-	};
-	// <--
+  //resume modal ->
+  const toggleModal = () => {
+    dispatch(toggleResume());
+  };
+  // <--
 
-	return (
-		<BackgroundStyled>
-			<div className='title'>
-				<Fade>
-					<p>
-						<span> {strings[language].title}</span>
-					</p>
-				</Fade>
-				<Flip left big duration={2000}>
-					<img src={Paco} alt='Franco Ortiz' />
-				</Flip>
-				<div />
-			</div>
-			<div className='info'>
-				<Flip left big duration={2000}>
-					<img src={Paco} alt='franco ortiz' />
-				</Flip>
-				<Fade>
-					<p>{strings[language].p1}</p>
-					<p>{strings[language].p2}</p>
-					<p>{strings[language].p3}</p>
-				</Fade>
-				<Shake when={showResume}>
-					<Shake>
-						<p className='resume' onClick={toggleModal}>
-							{' '}
-							{strings[language].cv}
-						</p>
-					</Shake>
-				</Shake>
-			</div>
-			<Resume closeCallback={toggleModal} show={showResume} />
-		</BackgroundStyled>
-	);
+  return (
+    <BackgroundStyled>
+      <div className='title'>
+        <Fade>
+          <p>
+            <span> {strings[language].title}</span>
+          </p>
+        </Fade>
+        <Flip left big duration={2000}>
+          <img src={Paco} alt='Franco Ortiz' />
+        </Flip>
+        <div />
+      </div>
+      <div className='info'>
+        <Flip left big duration={2000}>
+          <img src={Paco} alt='franco ortiz' />
+        </Flip>
+        <Fade>
+          <p>
+            {strings[language].p1}{' '}
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://www.aconpy.com/'
+              className='aconpy'
+            >
+              Aconpy.com
+            </a>
+            . {strings[language].p1_1}
+          </p>
+          <p>{strings[language].p2}</p>
+          <p>{strings[language].p3}</p>
+        </Fade>
+        <Shake when={showResume}>
+          <Shake>
+            <p className='resume' onClick={toggleModal}>
+              {' '}
+              {strings[language].cv}
+            </p>
+          </Shake>
+        </Shake>
+      </div>
+      <Resume closeCallback={toggleModal} show={showResume} />
+    </BackgroundStyled>
+  );
 };
 
 export default Background;
