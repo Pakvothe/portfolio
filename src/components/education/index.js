@@ -55,7 +55,7 @@ const Education = () => {
     setModalOpen(false);
     document.body.style.overflow = 'unset';
   };
-
+  //test
   return (
     <EducationContainer>
       <Modal
