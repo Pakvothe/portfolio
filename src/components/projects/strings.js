@@ -2,6 +2,8 @@ const strings = {
 	en: {
 		title: 'Projects',
 		repo: 'Repository',
+		aconpy:'Landing Page of the Aconpy company. This project was a complete restyling of the outdated website of the company I work for. It was done completely with vanilla HTML, CSS and JavaScript in just 2 days. The project was carried out by myself in its entirety.',
+
 		tetris:
 			'This is a "Tetris" game built entirely in Javascript with React.js. Styled Components were used to style it. The game is fully functional, it is controlled with the keyboard arrows and it allows you to go up in score and difficulty. It requires entering a user to play and saves the 3 highest scores in a database in the cloud, in the same way it has a visit counter hosted in the cloud.',
 		gaming:
@@ -13,6 +15,7 @@ const strings = {
 	es: {
 		title: 'Proyectos',
 		repo: 'Repositorio',
+		aconpy:'Landing Page de la empresa Aconpy. Este proyecto fue un restyling completo de la anticuada web de la empresa para la que trabajo. Se realizó completamente con HTML, CSS y JavaScript vanilla en tan solo 2 días. El proyecto lo llevé a cabo yo solo en su totalidad.',
 		tetris:
 			'Este es un juego "Tetris" creado por completo en Javascript con React.js. Se uso Styled Components para darle estilos. El juego es totalmente funcional, se maneja con las flechas del teclado y permite ir subiendo de puntaje y dificultad. Requiere ingresar un usuario para jugar y guarda los 3 mayores puntajes en una base de datos en la nube, de igual manera tiene un contador de visitas en la nube.',
 		gaming:

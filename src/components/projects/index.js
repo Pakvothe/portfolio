@@ -9,6 +9,7 @@ import Fade from 'react-reveal/Fade';
 //images ==>
 import InnerImageZoom from 'react-inner-image-zoom';
 import tetrisgame from '../../assets/img/tetrisgame.png';
+import aconpy from '../../assets/img/aconpy.png';
 import gaminghub from '../../assets/img/gaminghub.png';
 import quiz1 from '../../assets/img/quiz1.png';
 import quiz2 from '../../assets/img/quiz2.png';
@@ -126,6 +127,40 @@ const Projects = () => {
 								<li>Firebase</li>
 								<li>Passport</li>
 								<li>SCRUM</li>
+							</ul>
+						</figcaption>
+					</Fade>
+				</div>
+				<div className="project_container">
+					<div className="image_container">
+						<Fade>
+							<InnerImageZoom
+								src={aconpy}
+								className="image_zoom"
+								zoomScale={0.7}
+							/>
+						</Fade>
+					</div>
+					<Fade cascade>
+						<figcaption>
+							<div className="title_container">
+								<a
+									className="title_app"
+									href="https://www.aconpy.com/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									{' '}
+									Aconpy Landing{' '}
+								</a>
+							
+							</div>
+							<p>{strings[language].aconpy}</p>
+							<ul className="badges">
+								<li>Javascript</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Bootstrap</li>
 							</ul>
 						</figcaption>
 					</Fade>
