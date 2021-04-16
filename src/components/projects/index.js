@@ -10,6 +10,7 @@ import Fade from 'react-reveal/Fade';
 import InnerImageZoom from 'react-inner-image-zoom';
 import tetrisgame from '../../assets/img/tetrisgame.png';
 import aconpy from '../../assets/img/aconpy.png';
+import logia from '../../assets/img/logia.png';
 import gaminghub from '../../assets/img/gaminghub.png';
 import quiz1 from '../../assets/img/quiz1.png';
 import quiz2 from '../../assets/img/quiz2.png';
@@ -161,6 +162,39 @@ const Projects = () => {
 								<li>HTML</li>
 								<li>CSS</li>
 								<li>Bootstrap</li>
+							</ul>
+						</figcaption>
+					</Fade>
+				</div>
+				<div className="project_container">
+					<div className="image_container">
+						<Fade>
+							<InnerImageZoom
+								src={logia}
+								className="image_zoom"
+								zoomScale={0.7}
+							/>
+						</Fade>
+					</div>
+					<Fade cascade>
+						<figcaption>
+							<div className="title_container">
+								<a
+									className="title_app"
+									href="https://www.logiasistemas.com.ar/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									Logia Sistemas
+								</a>
+							
+							</div>
+							<p>{strings[language].logia}</p>
+							<ul className="badges">
+								<li>React</li>
+								<li>Redux</li>
+								<li>Styled Components</li>
+								<li>EmailJs</li>
 							</ul>
 						</figcaption>
 					</Fade>

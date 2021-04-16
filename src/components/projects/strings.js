@@ -11,6 +11,7 @@ const strings = {
 		quiz:
 			'Final project of the "soyHenry" bootcamp for which I implemented self-taught technologies (React Native, GraphQL, MongoDB). In the project I am almost exclusively dedicated to the front with React Native and the UI with Styled Components. The project consists of a mobile quiz application, it allows you to create an account, upload quizzes, validate an account and much more. The project is complemented by "QuizMeWeb" which is a web dashboard for the application administrator,the same developed in TypeScript and NextJS. The application was uploaded to the "Huawei App Gallery"',
 		progress: 'In Progress',
+		logia: 'Landing Page for the security company Logia Sistemas. It was made from 0 from logic to style. Redux was used for state management, Styled Components for styles and EmailJs for messaging. The deployment was also carried out from scratch, including the acquisition of the domain .com.ar'
 	},
 	es: {
 		title: 'Proyectos',
@@ -23,6 +24,7 @@ const strings = {
 		quiz:
 			'Proyecto final del bootcamp "soyHenry" para el cual implementé tecnologias aprendidas de forma autodidacta (React Native, GraphQL, MongoDB). En el proyecto me dedico casi exclusivamente al front con React Native y al UI con Styled Components. El proyecto consiste en una aplicación mobile de quizzes, permite crear cuenta, subir quizzes, validar cuenta y mucho mas. El proyecto se complementa con "QuizMeWeb" el cual es un dashboard web para el administrador de la aplicación, el mismo fue desarollado en TypeScript y NextJS. La aplicacion fue subida a la "Huawei App Gallery"',
 		progress: 'En Curso',
+		logia:'Landing Page para la empresa de seguridad Logia Sistemas. Se realizó desde 0 desde la lógica hasta el estilo. Se utilizó Redux para el manejo de estados, Styled Components para los estilos y EmailJs para la mensajería. También se realizó el deploy desde 0, incluyendo la adquisición del dominio .com.ar'
 	},
 };
 
