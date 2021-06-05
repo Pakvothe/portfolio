@@ -49,12 +49,12 @@ const Background = () => {
             <a
               target='_blank'
               rel='noreferrer'
-              href='https://www.aconpy.com/'
+              href='https://www.navent.com/'
               className='aconpy'
             >
-              Aconpy.com
+              Navent 
             </a>
-            . {strings[language].p1_1}
+            {strings[language].p1_1}
           </p>
           <p>{strings[language].p2}</p>
           <p>{strings[language].p3}</p>

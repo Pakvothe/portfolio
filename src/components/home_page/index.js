@@ -11,6 +11,7 @@ import Intro from '../intro';
 import Background from '../background';
 import Education from '../education';
 import Contact from '../contact';
+import Experience from '../experience';
 import Projects from '../projects';
 import Footer from '../footer';
 
@@ -93,6 +94,7 @@ const HomePage = () => {
 					<Background />
 					<Education />
 					<Contact />
+					<Experience/>
 					<Projects />
 					<Footer />
 					<ScrollButton ref={scrollButton} onClick={scrollToTop}>

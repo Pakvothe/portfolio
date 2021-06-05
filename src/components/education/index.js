@@ -88,6 +88,7 @@ const Education = () => {
                 <p>{strings[language].ed1info}</p>
                 <Shake when={modalOpen}>
                   <Shake>
+                    {/* eslint-disable-next-line  */}
                     <a className='certf' onClick={() => setModalOpen(true)}>
                       {strings[language].certf}
                     </a>
