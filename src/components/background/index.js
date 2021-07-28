@@ -65,7 +65,6 @@ const Background = () => {
               {' '}
               {strings[language].cv}
             </p>
-      <p style={{color:'#ccc'}}>{strings[language].update}</p>
           </Shake>
         </Shake>
       </div>
