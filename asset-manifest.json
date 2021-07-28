@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.e8a0b9a8.chunk.css",
-    "main.js": "/static/js/main.c7f11d8f.chunk.js",
-    "main.js.map": "/static/js/main.c7f11d8f.chunk.js.map",
+    "main.js": "/static/js/main.f0bd063a.chunk.js",
+    "main.js.map": "/static/js/main.f0bd063a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8aa6a36a.js",
     "runtime-main.js.map": "/static/js/runtime-main.8aa6a36a.js.map",
     "static/css/2.ce076900.chunk.css": "/static/css/2.ce076900.chunk.css",
-    "static/js/2.b1ea6c1b.chunk.js": "/static/js/2.b1ea6c1b.chunk.js",
-    "static/js/2.b1ea6c1b.chunk.js.map": "/static/js/2.b1ea6c1b.chunk.js.map",
+    "static/js/2.ea445e14.chunk.js": "/static/js/2.ea445e14.chunk.js",
+    "static/js/2.ea445e14.chunk.js.map": "/static/js/2.ea445e14.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ce076900.chunk.css.map": "/static/css/2.ce076900.chunk.css.map",
     "static/css/main.e8a0b9a8.chunk.css.map": "/static/css/main.e8a0b9a8.chunk.css.map",
-    "static/js/2.b1ea6c1b.chunk.js.LICENSE.txt": "/static/js/2.b1ea6c1b.chunk.js.LICENSE.txt",
+    "static/js/2.ea445e14.chunk.js.LICENSE.txt": "/static/js/2.ea445e14.chunk.js.LICENSE.txt",
     "static/media/CertfHenry.3507c0dd.jpg": "/static/media/CertfHenry.3507c0dd.jpg",
-    "static/media/CurriculumEN.25a29eb7.pdf": "/static/media/CurriculumEN.25a29eb7.pdf",
-    "static/media/CurriculumEN.9255261f.jpg": "/static/media/CurriculumEN.9255261f.jpg",
-    "static/media/CurriculumES.acab65ef.pdf": "/static/media/CurriculumES.acab65ef.pdf",
-    "static/media/CurriculumES.f0395340.jpg": "/static/media/CurriculumES.f0395340.jpg",
+    "static/media/CurriculumEN.204d1c31.jpg": "/static/media/CurriculumEN.204d1c31.jpg",
+    "static/media/CurriculumEN.4e303baa.pdf": "/static/media/CurriculumEN.4e303baa.pdf",
+    "static/media/CurriculumES.15206792.jpg": "/static/media/CurriculumES.15206792.jpg",
+    "static/media/CurriculumES.634a1ebe.pdf": "/static/media/CurriculumES.634a1ebe.pdf",
     "static/media/aconpy.3a1debd9.png": "/static/media/aconpy.3a1debd9.png",
     "static/media/arrow-down.245465fb.svg": "/static/media/arrow-down.245465fb.svg",
     "static/media/arrow-up.2c20b5e3.svg": "/static/media/arrow-up.2c20b5e3.svg",
@@ -39,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.8aa6a36a.js",
     "static/css/2.ce076900.chunk.css",
-    "static/js/2.b1ea6c1b.chunk.js",
+    "static/js/2.ea445e14.chunk.js",
     "static/css/main.e8a0b9a8.chunk.css",
-    "static/js/main.c7f11d8f.chunk.js"
+    "static/js/main.f0bd063a.chunk.js"
   ]
 }
