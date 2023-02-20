@@ -33,6 +33,7 @@ const Navbar = () => {
   return (
     <NavbarStyled>
       <div className="wrapper navbar__top">
+        <div className="visits" />
         <ul className="navbar__options">
           <Dropdown>
             <Fade>
